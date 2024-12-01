@@ -48,19 +48,41 @@ knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
 
 def is_meaningful_resume(resume_text):
-    # Define some keywords that are typical in resumes
-    keywords = ["experience", "education", "skills", "projects", "professional", "achievements", 
-        "certifications", "qualifications", "awards", "work history", "career", "summary", 
-        "references", "contact", "portfolio", "expertise", "profile", "objective", "employment", 
-        "languages", "leadership", "teamwork", "internship", "competencies", "skills summary", 
-        "responsibilities", "training", "accomplishments", "degree", "university", "college", 
-        "research", "development", "volunteer", "publications", "skills set", "job responsibilities", 
-        "technical skills", "soft skills", "hard skills", "professional experience", "education history"]
-    return any(keyword in resume_text for keyword in keywords)
+    """Check if the resume contains meaningful content based on compulsory and optional keywords."""
+    
+    # Define some compulsory keywords that must be present in the resume
+    compulsory_keywords = [
+        "experience", "education", "skills", "career", "contact"
+    ]
+    
+    # Define some optional keywords that are typical in resumes
+    optional_keywords = [
+        "projects", "professional", "achievements", "certifications", "qualifications", 
+        "awards", "work history", "summary", "references", "portfolio", "expertise", 
+        "profile", "objective", "employment", "languages", "leadership", "teamwork", 
+        "internship", "competencies", "responsibilities", "training", "accomplishments", 
+        "degree", "university", "college", "research", "development", "volunteer", 
+        "publications", "skills set", "job responsibilities", "technical skills", 
+        "soft skills", "hard skills", "professional experience", "education history"
+    ]
+    
+    # Check if all compulsory keywords are present in the resume text (case-insensitive)
+    if not all(keyword.lower() in resume_text.lower() for keyword in compulsory_keywords):
+        return False  # If any compulsory keyword is missing, return False
+    
+    # Check if any of the optional keywords exist in the resume text (case-insensitive)
+    if any(keyword.lower() in resume_text.lower() for keyword in optional_keywords):
+        return True  # Resume has relevant content
+    
+    # If no optional keywords are found, check for minimum length
+    if len(resume_text.split()) > 100:
+        return True  # Resume has sufficient length and may still be meaningful
+    
+    return False  # Resume is likely invalid if it doesn't meet criteria
 
 # Initialize TF-IDF Vectorizer and KNN Model
 vectorizer = TfidfVectorizer(max_features=5000)
-job_descriptions = df['Skills'].apply(clean_text).tolist()
+job_descriptions = df['Skills'].apply(clean_text).tolist()  # Assuming df['Skills'] is the job descriptions
 X = vectorizer.fit_transform(job_descriptions)
 
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
@@ -326,7 +348,7 @@ elif page == "Resume Analyzer":
                 # Check if the resume contains meaningful content
                 if not is_meaningful_resume(cleaned_resume):
                     st.error("The uploaded file does not seem to contain meaningful resume content. Please upload a valid resume.")
-                    st.stop()
+                    st.stop()  # Stop further execution if resume is not valid
 
                 # Vectorize the resume text
                 resume_vector = vectorizer.transform([cleaned_resume])
@@ -403,7 +425,7 @@ elif page == "Resume Analyzer":
                 """, unsafe_allow_html=True)
 
                 # Add encouraging message
-                st.markdown("""
+                st.markdown(""" 
                 <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
                 <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
                 """, unsafe_allow_html=True)
