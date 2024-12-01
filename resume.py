@@ -46,18 +46,7 @@ X = vectorizer.fit_transform(job_descriptions)
 
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
-def is_meaningful_resume(resume_text):
-    # Define some keywords that are typical in resumes
-    keywords = ["experience", "education", "skills", "projects", "professional", "achievements", "certifications"]
-    return any(keyword in resume_text for keyword in keywords)
 
-# Initialize TF-IDF Vectorizer and KNN Model
-vectorizer = TfidfVectorizer(max_features=5000)
-job_descriptions = df['Skills'].apply(clean_text).tolist()
-X = vectorizer.fit_transform(job_descriptions)
-
-knn = NearestNeighbors(n_neighbors=5, metric='cosine')
-knn.fit(X)
 
 st.markdown("""<style>
     body {
@@ -302,7 +291,7 @@ if page == "About Us":
 
 
 # Resume Analyzer Page
-if page == "Resume Analyzer":
+elif page == "Resume Analyzer":
     st.markdown("<div class='subtitle'>Resume Analyzer</div>", unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Upload your resume PDF", type="pdf")
 
@@ -311,45 +300,60 @@ if page == "Resume Analyzer":
             resume_text = extract_text_from_pdf(uploaded_file)
             cleaned_resume = clean_text(resume_text)
 
-        # Check if the resume contains meaningful content
-        if is_meaningful_resume(cleaned_resume):
-            # Vectorize resume text
-            resume_vector = vectorizer.transform([cleaned_resume])
+        # Vectorize resume text
+        resume_vector = vectorizer.transform([cleaned_resume])
 
-            # Find the Top 5 Matching Jobs
-            distances, indices = knn.kneighbors(resume_vector)
+        # Find the Top 5 Matching Jobs
+        distances, indices = knn.kneighbors(resume_vector)
 
-            # Ensure we're always getting the top 5 jobs, even if fewer are found
-            num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+        # Ensure we're always getting the top 5 jobs, even if fewer are found
+        num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
 
-            # Check if the number of indices is less than expected
-            top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
-            accuracy_scores = []
+        # Check if the number of indices is less than expected
+        top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
+        accuracy_scores = []
 
-            # Display the top jobs and calculate accuracy
-            st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
+        # Display the top jobs and calculate accuracy
+        st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
 
-            # Use neutral style for boxes
-            for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
-                job_index = indices[0][i]  # Get the job index
-                score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
-                accuracy_scores.append(score)
-                job_row = df.iloc[job_index]  # Get the job details using the index
+        # Use neutral style for boxes
+        for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
+            job_index = indices[0][i]  # Get the job index
+            score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
+            accuracy_scores.append(score)
+            job_row = df.iloc[job_index]  # Get the job details using the index
 
-                # Box styling with neutral background
-                st.markdown(f"""
-                <div style="
-                    background-color: #f9f9f9;  /* Light gray background */
-                    color: #333;  /* Dark text for contrast */
-                    padding: 20px;
-                    margin: 10px;">
-                    <b>{job_row['Job Title']}</b><br>
-                    Skills: {job_row['Skills']}<br>
-                    Accuracy: {score:.2f}
-                </div>
-                """, unsafe_allow_html=True)
-        else:
-            st.error("The uploaded file does not seem to contain a meaningful resume. Please upload a valid resume.")
+            # Box styling with neutral background
+            st.markdown(f"""
+            <div style="
+                background-color: #f9f9f9;  /* Light gray background */
+                color: #333;  /* Dark text for contrast */
+                padding: 20px;
+                margin: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                font-size: 1.1em;
+            ">
+                <strong>Job Title:</strong> {job_row['Job Title']}<br>
+                <strong>Matched Skills:</strong> {job_row['Skills']}<br>
+                <strong>Accuracy:</strong> {score:.2f}
+            </div>
+            """, unsafe_allow_html=True)
+
+        # Pie chart visualization for the top job accuracy scores
+        labels = top_5_jobs['Job Title']
+        sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
+        colors = plt.cm.Paired.colors  # Color palette
+
+        fig, ax = plt.subplots()
+        ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+        st.pyplot(fig)
+
+        # Highlight and animate the top job's name
+        top_job_name = top_5_jobs.iloc[0]['Job Title']
+
         # CSS animation and styling for highlighting
         st.markdown(f"""
         <div style="
@@ -595,37 +599,37 @@ if page == "Enhance Skills":
 
 
 # Contact Us Page
-# import mysql.connector
-# import streamlit as st
+import mysql.connector
+import streamlit as st
 
-# # Page selection
+# Page selection
 
 
-# # Function to save data to MySQL
-# def save_to_mysql(name, email, message, phone, rating):
-#     try:
-#         # Connect to MySQL
-#         conn = mysql.connector.connect(
-#             host="localhost",    # MySQL server host
-#             user="root",         # MySQL username
-#             password="AnvithaGRao8181",  # MySQL password
-#             database="contact_form"    # Database name
-#         )
+# Function to save data to MySQL
+def save_to_mysql(name, email, message, phone, rating):
+    try:
+        # Connect to MySQL
+        conn = mysql.connector.connect(
+            host="localhost",    # MySQL server host
+            user="root",         # MySQL username
+            password="AnvithaGRao8181",  # MySQL password
+            database="contact_form"    # Database name
+        )
         
-#         cursor = conn.cursor()
+        cursor = conn.cursor()
 
-#         # Insert data into "messages" table
-#         cursor.execute('''
-#             INSERT INTO messages (name, email, message, phone, rating)
-#             VALUES (%s, %s, %s, %s, %s)
-#         ''', (name, email, message, phone, rating))
+        # Insert data into "messages" table
+        cursor.execute('''
+            INSERT INTO messages (name, email, message, phone, rating)
+            VALUES (%s, %s, %s, %s, %s)
+        ''', (name, email, message, phone, rating))
 
-#         conn.commit()  # Commit the transaction
-#         cursor.close()
-#         conn.close()
+        conn.commit()  # Commit the transaction
+        cursor.close()
+        conn.close()
 
-#     except mysql.connector.Error as err:
-#         st.error(f"Error occurred: {err}")
+    except mysql.connector.Error as err:
+        st.error(f"Error occurred: {err}")
 
 # Streamlit page for Contact Us
 if page == "Contact Us":
@@ -642,28 +646,28 @@ if page == "Contact Us":
     """)
 
     # Contact Form (Improved design)
-    # with st.form(key="contact_form", clear_on_submit=True):
-    #     # Fields for Name, Email, Phone, and Message
-    #     contact_name = st.text_input("Your Name", max_chars=50)
-    #     contact_email = st.text_input("Your Email", max_chars=100)
-    #     contact_phone = st.text_input("Your Phone Number", max_chars=15)
-    #     contact_message = st.text_area("Your Message", max_chars=500, height=150)
+    with st.form(key="contact_form", clear_on_submit=True):
+        # Fields for Name, Email, Phone, and Message
+        contact_name = st.text_input("Your Name", max_chars=50)
+        contact_email = st.text_input("Your Email", max_chars=100)
+        contact_phone = st.text_input("Your Phone Number", max_chars=15)
+        contact_message = st.text_area("Your Message", max_chars=500, height=150)
 
-    #     # Star Rating using custom HTML (can be customized further)
-    #     emojis = ["😡", "😞", "😐", "😊", "😍"]
-    #     rating = st.radio("Rate Us", emojis, index=2, horizontal=True)
+        # Star Rating using custom HTML (can be customized further)
+        emojis = ["😡", "😞", "😐", "😊", "😍"]
+        rating = st.radio("Rate Us", emojis, index=2, horizontal=True)
 
-    #     # Submit button
-    #     submit_button = st.form_submit_button("Submit")
+        # Submit button
+        submit_button = st.form_submit_button("Submit")
 
-    #     if submit_button:
-    #         # Check if all fields are filled
-    #         if contact_name.strip() and contact_email.strip() and contact_message.strip() and contact_phone.strip():
-    #             # Save to MySQL
-    #             save_to_mysql(contact_name.strip(), contact_email.strip(), contact_message.strip(), contact_phone.strip(), rating)
-    #             st.success("Thank you for your feedback! We'll get back to you shortly.")
-    #         else:
-    #             st.error("Please fill out all fields before submitting.")
+        if submit_button:
+            # Check if all fields are filled
+            if contact_name.strip() and contact_email.strip() and contact_message.strip() and contact_phone.strip():
+                # Save to MySQL
+                save_to_mysql(contact_name.strip(), contact_email.strip(), contact_message.strip(), contact_phone.strip(), rating)
+                st.success("Thank you for your feedback! We'll get back to you shortly.")
+            else:
+                st.error("Please fill out all fields before submitting.")
 
     # Custom CSS for better design and layout
     st.markdown("""
