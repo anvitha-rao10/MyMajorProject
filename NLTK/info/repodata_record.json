@@ -1,0 +1,23 @@
+{
+  "build": "py311haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "click",
+    "joblib",
+    "python >=3.11,<3.12.0a0",
+    "regex >=2021.8.3",
+    "tqdm"
+  ],
+  "fn": "nltk-3.8.1-py311haa95532_0.conda",
+  "license": "Apache-2.0",
+  "md5": "42355824492c44f4f93bf86649983c98",
+  "name": "nltk",
+  "sha256": "bcc69ff3eed2daf324f08726d7d5856e24c0d3fd8f714a95b7a831277f7e1db0",
+  "size": 2900324,
+  "subdir": "win-64",
+  "timestamp": 1688114429000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/nltk-3.8.1-py311haa95532_0.conda",
+  "version": "3.8.1"
+}

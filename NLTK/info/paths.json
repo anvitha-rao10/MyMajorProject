@@ -1,0 +1,4715 @@
+{
+  "paths": [
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/AUTHORS.md",
+      "path_type": "hardlink",
+      "sha256": "9707a088aab5e220a8b847e982ef3955201669d3f65f53242e152c81805f3ce2",
+      "size_in_bytes": 7628
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/LICENSE.txt",
+      "path_type": "hardlink",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "size_in_bytes": 11560
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "2c73cbb7d6620d6524157f92df7418a058f1d66c47a46e438311e95e93e1b51e",
+      "size_in_bytes": 2971
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/README.md",
+      "path_type": "hardlink",
+      "sha256": "fe82e557193cbfe011bf4b78c00cab3ca67c2a62c0db2d6d9612780b7423464d",
+      "size_in_bytes": 1789
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "04dcf2f4641b743fb305f12798cfc3ff0bf71a2b58dc807ba5584dbc41fa55fd",
+      "size_in_bytes": 54679
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+      "size_in_bytes": 92
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "aaa418c68637fa42131c1964b350a2add7a25db4f52bc83ff187a493fa206af3",
+      "size_in_bytes": 84
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/entry_points.txt",
+      "path_type": "hardlink",
+      "sha256": "870f692150a8c302370deb2edaaab8c34ec06daedc1899f1c18e03661a35bcee",
+      "size_in_bytes": 38
+    },
+    {
+      "_path": "Lib/site-packages/nltk-3.8.1.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "62843e9b0a9c9264efd5092d9a59396256fa9431bbee3839ab0a0407b73ea57a",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "Lib/site-packages/nltk/VERSION",
+      "path_type": "hardlink",
+      "sha256": "f77d95c6f3b9321fa158dc99557b2aa5d9de2c62a063490a700e3f5d5492bf24",
+      "size_in_bytes": 7
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "4528e2ed1028739bf21f3380ea907a2cfa4253107ca3af2281de82ad81253860",
+      "size_in_bytes": 6432
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e97045f4f66a0c8519bc9604ede53d8294614cf50472f67055831002d23e753f",
+      "size_in_bytes": 6865
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/book.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "675f465d6e72554d03d2ed77fcce30146c5e3995585045b08211b0fb19144be5",
+      "size_in_bytes": 5631
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/cli.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5b7575b5c2a492471deaca93966cd1ec6dad680f05f39035849cd0e5106a7d98",
+      "size_in_bytes": 3090
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/collections.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e2ed6eeffc61626f808493fcbae8f557d4f820aaf7648f41043bf03f9444889c",
+      "size_in_bytes": 35316
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/collocations.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "80c874531c922e5474ff5f1a2d581bedc17a9cc38fcda199fcb40241b5ae418b",
+      "size_in_bytes": 22465
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/compat.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1958ade5d08a53691723d97082607bc051f60f4d0c4d209cd82236716ef25579",
+      "size_in_bytes": 1747
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/data.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cf6876b864187ecc47ab110a21dbcce9721c35f984f06d03d28f6b124f0f4bea",
+      "size_in_bytes": 58354
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/decorators.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "11afc8df1a5326821ae728e743a09cba4758f48fa379ef45d0a804a3e7bb2899",
+      "size_in_bytes": 9152
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/downloader.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "06d7d91010dfe6f8b32c88ee8bf64ed14f123d1c2c5e4a392fb5232836f5c36e",
+      "size_in_bytes": 117156
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/featstruct.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f3e27a4ed40a66e83800b1073f0653eab3890c72c3b9da6e0eda7931313bc38f",
+      "size_in_bytes": 122122
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/grammar.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "28f25755b26161f49e97e605118ab6f189f9c65660bc209ce63b20d5b5f92632",
+      "size_in_bytes": 79731
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/help.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "121f4bc036c038da9d147e5886eab18fa42282170360461a3626251e8f8c0b90",
+      "size_in_bytes": 2648
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/internals.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "02a205067e488fe3c35094050dd1fb8873046ef5dda302328d888e57f2994b7e",
+      "size_in_bytes": 44905
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/jsontags.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "511f9b0ab002b2b82b7733ea84910d436fb3219ec66541a6537d7b3716be38fd",
+      "size_in_bytes": 3823
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/langnames.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7054e113309dd00fe1deb0a2b63971c318c1ff0b4971ec5528183fe4900a61e8",
+      "size_in_bytes": 27427
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/lazyimport.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "730b054046e864cc927ef7872c4a199a2c3e675b44a7e43b123086366aabab91",
+      "size_in_bytes": 4964
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/probability.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f6da683a51a106fa46b17c44871fcb9598d78beb8e160efac4ffb7dbc7c84d44",
+      "size_in_bytes": 122871
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/text.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1d96e29f1327c783cbe3919e834e10469b24055e75ce8c24b716bec6811f0f5e",
+      "size_in_bytes": 42275
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/tgrep.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6bad52df7f07bc170febb26569e7e35077a0513006f6b7b9da250da88e3d4cf0",
+      "size_in_bytes": 61742
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/toolbox.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7edf8d6cb64001729b55e93ee34b3664890951c12f4c84af773d6b275db30f96",
+      "size_in_bytes": 24649
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/treeprettyprinter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1f47a03486e945dd994b250d05ab77fd59b6a4683bfab821448d0d01cc050f8f",
+      "size_in_bytes": 1061
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/treetransforms.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "295cf58333d44567909ca2fd4108d9a59e9c2ff949ecd94ade3e030348e6499e",
+      "size_in_bytes": 5223
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ea1782554d8ca22b76497f287454c4c7169a5099ad18dd4ddfbdabf547bed9ea",
+      "size_in_bytes": 45941
+    },
+    {
+      "_path": "Lib/site-packages/nltk/__pycache__/wsd.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8d86a58458b82fe79ab9a58423a6b4dff305aeba2d1b4ae89071bade793ca1a6",
+      "size_in_bytes": 2411
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "c4665b6c30b7c6febb5e71c7bacc599823cc36a8f4ec133d5ba6529645a7f5e4",
+      "size_in_bytes": 1578
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c3cfd3563564f8850a34fb4fe800232612f7ccfede31cad902d5ad37b48fe81f",
+      "size_in_bytes": 1685
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/chartparser_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ccfcab701bc1a96e694aa6798af632beaab902eaacc3d650c85ab4bcc1e19006",
+      "size_in_bytes": 123573
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/chunkparser_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6b55c9db67996b8034e49b8e3b9458558f6baefa32b880f2bdba104e1fd65112",
+      "size_in_bytes": 67558
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/collocations_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "719ceb9962a62a14de1b595f60f8cabb4ca1d90414f479f16118de7e4d5cca37",
+      "size_in_bytes": 26752
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/concordance_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1e1320636edf2c2c403b496a64de5750cfc0444207f1ec4b5313141b48fd3af2",
+      "size_in_bytes": 41561
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/nemo_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "42ebaf792c6e67bf547706cd3791473b04dc48a27231dac48a339733a4f820a3",
+      "size_in_bytes": 18193
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/rdparser_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c602d8e01475b6cabcdddc518814b9a51260d4e6f2e86cb5aed4bffd295e7b34",
+      "size_in_bytes": 52614
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/srparser_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "3e5036aad894933dac4130f87e48640d4454f128681fd520ed30de20573bbe1f",
+      "size_in_bytes": 44014
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/wordfreq_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c75017f66ba9f28b026d8cf60c7a9d26806e74b0a89cd8b4360c3226cfb27405",
+      "size_in_bytes": 2685
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/__pycache__/wordnet_app.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9ba6e31ecd22b796cac62d99fef7093a79b306ddfc1c86a92226b97b74c93483",
+      "size_in_bytes": 46007
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/chartparser_app.py",
+      "path_type": "hardlink",
+      "sha256": "f055f7f9e250981fbc2d3f64fa54097bfcb97523b72f2e000f62bfc08b3d16e1",
+      "size_in_bytes": 88195
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/chunkparser_app.py",
+      "path_type": "hardlink",
+      "sha256": "b5b10fb58b5c7324dc6d20948458616e48c2562febb5e97810a3d2a20789393f",
+      "size_in_bytes": 58322
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/collocations_app.py",
+      "path_type": "hardlink",
+      "sha256": "809056c4d9a45235d05a4aeea9c39213c979d4c7767dc337466665ac91c964ae",
+      "size_in_bytes": 14664
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/concordance_app.py",
+      "path_type": "hardlink",
+      "sha256": "1e32cdf726ca6e36caaa48493546a48afc083e88ef0f1aafc27a9beeed3b0581",
+      "size_in_bytes": 24882
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/nemo_app.py",
+      "path_type": "hardlink",
+      "sha256": "e990495e5256296a189ecac4cb7632e88785c5ccb714d68658ae909cc604cb81",
+      "size_in_bytes": 12305
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/rdparser_app.py",
+      "path_type": "hardlink",
+      "sha256": "8f8b4c18d2e7c2bc24570dccc8caf7fb9e935c0c00208128fafd325b28c32844",
+      "size_in_bytes": 37781
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/srparser_app.py",
+      "path_type": "hardlink",
+      "sha256": "510c31a843c37d26094f0db6492769e44517d10c256f3b721f81181ed05eaf0d",
+      "size_in_bytes": 34401
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/wordfreq_app.py",
+      "path_type": "hardlink",
+      "sha256": "d26cd2acda2c5b75a1fc9ff915d255f01abe17f6b6c791d1577890008d377e74",
+      "size_in_bytes": 957
+    },
+    {
+      "_path": "Lib/site-packages/nltk/app/wordnet_app.py",
+      "path_type": "hardlink",
+      "sha256": "52de555378733388a745aca2e1ce6ec8db1b033ed87065bbfeaf01066ac9a4fb",
+      "size_in_bytes": 35574
+    },
+    {
+      "_path": "Lib/site-packages/nltk/book.py",
+      "path_type": "hardlink",
+      "sha256": "7a700f51e271c405d8d02eb4be598f1c2561531558d8ada0c77c163c7ead53a9",
+      "size_in_bytes": 3912
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "1b3db3d7795674dff075cbe7efcaf1246bd4db710a20dfec366e6dc33ff69d6c",
+      "size_in_bytes": 915
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bee60aa05c5d30d68927a7b955ae69e4ee8adda2cda7c25b8c9396990e5ce5b3",
+      "size_in_bytes": 1190
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "33711f95dc719332b74251bad1b8d52a04b0ef176ac4951491087cf591c4385b",
+      "size_in_bytes": 16672
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__pycache__/chart.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9ba8cfa83f9c7730803120e8f1cf2d7c968d5febf63d808bb72fe65ae1d95e53",
+      "size_in_bytes": 21703
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__pycache__/combinator.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "159e8fd91d956d064e6bedfec4e72417cc7e70f0192ed5af173719ca0ed37dc9",
+      "size_in_bytes": 17627
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__pycache__/lexicon.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "312d8df05b99c93d17ae0112eadab9df5b925e3cf1f5c7a9b0465b2f50b8641b",
+      "size_in_bytes": 12741
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/__pycache__/logic.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "191c20812599642ee4bd6594547153e8e8b3986504e2d87913caa2aaa4ee755f",
+      "size_in_bytes": 2902
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/api.py",
+      "path_type": "hardlink",
+      "sha256": "df1cebb05929d1733f4a2843204383404320161f8a60168242ce16352b4b4e05",
+      "size_in_bytes": 10360
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/chart.py",
+      "path_type": "hardlink",
+      "sha256": "da5c9834cf0f63a021b9c46635eb6a83294f7cacf73f39f87da00ab64bd8b850",
+      "size_in_bytes": 14147
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/combinator.py",
+      "path_type": "hardlink",
+      "sha256": "d42e53ab0869f9d883eeb1ed51fa4f6d5b78bf56bba0f058d1b9073e6e76383e",
+      "size_in_bytes": 10633
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/lexicon.py",
+      "path_type": "hardlink",
+      "sha256": "f6b0b5d44cddcce54cc9b06de93798755c38c63ef751fcbb352d5c4eab6ae6c5",
+      "size_in_bytes": 9863
+    },
+    {
+      "_path": "Lib/site-packages/nltk/ccg/logic.py",
+      "path_type": "hardlink",
+      "sha256": "304ba45ce42ee9d5fe8be8ab447dcd928e43d849690c68d5a2c7601cf66cf308",
+      "size_in_bytes": 1871
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e1a4a2734834670865c66ecf0bfb7ed096630a1c8a70f5d34b4868593c93bcbc",
+      "size_in_bytes": 1556
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "59919890950b6e855b7955c38cdcd4785bebd303dbacc132ed9ba783777dbb28",
+      "size_in_bytes": 2059
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/eliza.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "303546b3242831fd3a76ad72701b2eff368c6d434747392a2c0a9356c1205461",
+      "size_in_bytes": 6241
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/iesha.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b13c760c804f04e54ecdf192035d070dc93b038462898772dd4651c7d25f5436",
+      "size_in_bytes": 3834
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/rude.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e295dd8eff286d9694f5d9d705ef13b33420d4826a4875de91ee1bf7a08051e5",
+      "size_in_bytes": 2536
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/suntsu.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "dd878e72e210c3efb5aac46d7269547f74b1eade3087ebbea7bee378e0a68d5e",
+      "size_in_bytes": 6294
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b40bce269df6eaf485345bf0b98b86f1c4e19f0c1388297f935274127b3c9eb4",
+      "size_in_bytes": 5748
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/__pycache__/zen.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fc34a8337b52b2a4437c3efc0ee811696278f51d43a9ce75026c9cb35eadf9af",
+      "size_in_bytes": 7067
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/eliza.py",
+      "path_type": "hardlink",
+      "sha256": "dbb1982d07caa4ccec06f3e2c57427647a994a6688ffc1f7980bee3d901454dc",
+      "size_in_bytes": 9626
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/iesha.py",
+      "path_type": "hardlink",
+      "sha256": "59ab2c05ba9c4f62dbc591dd6bbbf070805e20e7f379f675f5cc5419acbe34d3",
+      "size_in_bytes": 4407
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/rude.py",
+      "path_type": "hardlink",
+      "sha256": "24ca2a3a0dbfaf7d29351c249d7586f2a222ff49a6fff02723bb53335a2b8f62",
+      "size_in_bytes": 3289
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/suntsu.py",
+      "path_type": "hardlink",
+      "sha256": "765602450dc83723976df2f4ab0c8b6aad44f9fa88552f3079193680e0bcb6ad",
+      "size_in_bytes": 7185
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/util.py",
+      "path_type": "hardlink",
+      "sha256": "75b8318a4b812463fa6210cf170fd96134ac06aa6a115e475358a959f8f6d41c",
+      "size_in_bytes": 4014
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chat/zen.py",
+      "path_type": "hardlink",
+      "sha256": "2ad65c533297970c9f2ffb50a5af6bb6e341d763c0b1cc1a5adda96ef93a19c3",
+      "size_in_bytes": 11679
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "848b2c6115998ffe9898740e8497b70d196fa9b7a17fe63b7ba912cbc4a2729d",
+      "size_in_bytes": 7597
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7e10bbc3df2c97f5ef35a3995725268f3480ba340cb4889ee646381e80821c35",
+      "size_in_bytes": 7728
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2733a9b955678176ab6bedb9fda7a5dcaf772b85b7c027e6dc383d4a58da3cd5",
+      "size_in_bytes": 2440
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/__pycache__/named_entity.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "586e9a9f5b88ab0f6aa1f0731929e587172782d4ba35edde8475163ee2a55a01",
+      "size_in_bytes": 19103
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/__pycache__/regexp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "725f7914f2fada6f8af6f5af0f2a1762d7cd97cae9c37b1395024cb3dd95fb5e",
+      "size_in_bytes": 63404
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9265fa8855a8bd45b1a79bfbb6b933aa95385de1937e9e918d800cdd1d640074",
+      "size_in_bytes": 26895
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/api.py",
+      "path_type": "hardlink",
+      "sha256": "fa011f561d67bf708ef985d5de44d230d0d2e3fb1bb8a9ccdf156e4eada873ad",
+      "size_in_bytes": 1946
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/named_entity.py",
+      "path_type": "hardlink",
+      "sha256": "bfffc7dd1a65cb73efaf329150cda4b642d070c60973fd78a8715b88aaaa68ca",
+      "size_in_bytes": 11140
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/regexp.py",
+      "path_type": "hardlink",
+      "sha256": "2977e6f7e28936a49148915f579d7ddb212b5d5b8b1f68e639e0896d13a43d15",
+      "size_in_bytes": 55980
+    },
+    {
+      "_path": "Lib/site-packages/nltk/chunk/util.py",
+      "path_type": "hardlink",
+      "sha256": "2e5e4f074a3317baf0349b6c74ce98880d7392d54b3bb30e690b490d1d90c788",
+      "size_in_bytes": 21311
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "dacd913d1d883e2c75697ba6727a73292609f01cda0be56c29ca551c764f4f41",
+      "size_in_bytes": 4596
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "32b219eab885d624eca7b4e9c970f0ee5c6a1f136d205cef35999155e12e8fd8",
+      "size_in_bytes": 4950
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5e4c00786fbd613f21affcd38fd758993c17071522f35aa478d58737cdf47367",
+      "size_in_bytes": 6254
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/decisiontree.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "85bfb1b1bd60a25028473820cefc7b868e64ca743662f40e3f117f4eabee1fc8",
+      "size_in_bytes": 17207
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/maxent.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2103fb06f810ef58d475735cdd5f6ced5927853dc25c3aa9b8a6c3e2b6c6ec29",
+      "size_in_bytes": 68376
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/megam.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "42caa4a435bf5305d850ceb0b93f65b1ac42ab43e305ce513435541dc0ce2c47",
+      "size_in_bytes": 7427
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/naivebayes.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "19e2f3f1d71adb5b3d539da2bf5b1caab075a1af8727fb01bf5ebaab0b81ca7d",
+      "size_in_bytes": 12258
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/positivenaivebayes.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bcdb437bd348d83aac9487a6e6ca4812b524de59cb2728255feed5807ed9a8d0",
+      "size_in_bytes": 7412
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/rte_classify.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "91b4b3f895e30cc538bba6dd7c97919f13207f5dea242252c21808780c1ccf27",
+      "size_in_bytes": 8709
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/scikitlearn.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b5155439d02aba65194738d6215ee9b483550039aa1df681991f3b65a45fbffe",
+      "size_in_bytes": 7660
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/senna.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "606ad1208fe68d5ead76fea286a5231764027762dad5a3db50d57973538bf70e",
+      "size_in_bytes": 8391
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/svm.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "af95a191035a24da91dbc579954f3d32dabc1c316e990405782fde808c8e4273",
+      "size_in_bytes": 804
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/tadm.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c087bc7a791ce24d720788259dc3c198a2228059f7dc0092e6944994f48f0594",
+      "size_in_bytes": 5158
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/textcat.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cddfa32f9078ec29c7adf16d41f1745794b1dcbfb235e27546b5a50b9016c415",
+      "size_in_bytes": 7090
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e08a2c7f8d9a399ca4325f415ef9b0fbe82bcff5b50f8e461101b19c8dcc91bd",
+      "size_in_bytes": 19027
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/__pycache__/weka.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "401b2c66f40a07ba5b8917723601edb846072feb0431e78c433a2c9fa1273533",
+      "size_in_bytes": 17608
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/api.py",
+      "path_type": "hardlink",
+      "sha256": "3cdd5bfe3c3622765630dbb331a3d2b363cff9ff7fec865fa24a2190a7745eba",
+      "size_in_bytes": 6625
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/decisiontree.py",
+      "path_type": "hardlink",
+      "sha256": "1cbf95f60705617dae61aa2773782542afc2004ab20b12936f51672b1929c7c5",
+      "size_in_bytes": 13083
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/maxent.py",
+      "path_type": "hardlink",
+      "sha256": "a496459ec8711788df62563ef3381fdcdf0fe6355cceac53382008e87ad54ea0",
+      "size_in_bytes": 60921
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/megam.py",
+      "path_type": "hardlink",
+      "sha256": "e1dd8d94c032ad771ad9307fa61a5f7f8d7ea98f1865dab1e8bad82cbe6cd232",
+      "size_in_bytes": 6396
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/naivebayes.py",
+      "path_type": "hardlink",
+      "sha256": "7da85848aa1200c8ac50a3a35f19080ec45153bb302f214c4809682fc993a0d5",
+      "size_in_bytes": 10713
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/positivenaivebayes.py",
+      "path_type": "hardlink",
+      "sha256": "59c90ca7a3a5bbac7a2aefff3424553ceda7e9663f008db2af5cb8e9ccbe2205",
+      "size_in_bytes": 7412
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/rte_classify.py",
+      "path_type": "hardlink",
+      "sha256": "77b061bdc5e9fa3d68bdc6c5b348f3d88db69d9b67d6906f7d3efd929735c676",
+      "size_in_bytes": 6301
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/scikitlearn.py",
+      "path_type": "hardlink",
+      "sha256": "fc3dd3402fa3c449fe7aadd8ed875cd4e7339212006de767c43a5c1696e3f7d5",
+      "size_in_bytes": 5548
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/senna.py",
+      "path_type": "hardlink",
+      "sha256": "5869deebb1f2807065f39b780caa938d682320b4d539a5e80eb42057ba1d2e6f",
+      "size_in_bytes": 6931
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/svm.py",
+      "path_type": "hardlink",
+      "sha256": "2339f7df3f2342143bd2125d6e58be1d473f765cbd3b6b3132ca34bf5319e5d6",
+      "size_in_bytes": 525
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/tadm.py",
+      "path_type": "hardlink",
+      "sha256": "8c647d81af27d6b4140a8460e3d9244b266427bb61b5e1dcd13000a5db556955",
+      "size_in_bytes": 3555
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/textcat.py",
+      "path_type": "hardlink",
+      "sha256": "05e1f2c6d45776a00626d9e2a6339156b0888d64c755ad0e266d7e58ea0cc9b2",
+      "size_in_bytes": 6035
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/util.py",
+      "path_type": "hardlink",
+      "sha256": "d4fbb3d24b394ab617610f1e25b709a6a46d19dc12d478e2d1331093bd190b2e",
+      "size_in_bytes": 12461
+    },
+    {
+      "_path": "Lib/site-packages/nltk/classify/weka.py",
+      "path_type": "hardlink",
+      "sha256": "7a6d918a3e6f30aa392c565b1d606c3d99439016fe40e2cc3041883e34a00682",
+      "size_in_bytes": 12938
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cli.py",
+      "path_type": "hardlink",
+      "sha256": "65d6a428a4634660e7fdbddee132f550da9a4c5e15b0b48c810e23b955acb443",
+      "size_in_bytes": 1897
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "d663e4bddfa68da4577b40216bdab1e469ff0ebdfd051a2fabea93ef86d48b9e",
+      "size_in_bytes": 4361
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e1eba0939b664de8a367fb91729fd26c62d72c9b509afcde61f6ca18d33c1128",
+      "size_in_bytes": 4405
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ba265b6ef338e8b9d813481d1e3b26bcd3e1239b93ca8b0d09f25e0099114314",
+      "size_in_bytes": 3157
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__pycache__/em.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8c3ee24eb87e694e4beaf5c97630491c39ca3646b6989981b38730495a7807ae",
+      "size_in_bytes": 11777
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__pycache__/gaac.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2fbc0c1bc017a7c50003920ca46b445f7bf34bbb2768c8fa9f4ae2625e2e6e55",
+      "size_in_bytes": 8544
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__pycache__/kmeans.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6b7c3b5e19b211ce6ac42897d6e7645d48bebfc9167230f534d6b6e462ef312e",
+      "size_in_bytes": 10695
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8265d02131ecf92f2f1812b90b1c5e579bbe13550fbb125bdc16a46c3ba07c2d",
+      "size_in_bytes": 16196
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/api.py",
+      "path_type": "hardlink",
+      "sha256": "b2b6a755bcb6347ad3af7be679f1a4660444cf33a3944f7830b0946ceeb7ae55",
+      "size_in_bytes": 2162
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/em.py",
+      "path_type": "hardlink",
+      "sha256": "bb177aa90d13d4f484e5eff7ab8d7293ae8e9643cc5f4c2ce0bd09edc8aad583",
+      "size_in_bytes": 8419
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/gaac.py",
+      "path_type": "hardlink",
+      "sha256": "73fd9ec0091c2dd58b856d168d479d112a15ec8d543c694d798fc136139342a6",
+      "size_in_bytes": 5921
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/kmeans.py",
+      "path_type": "hardlink",
+      "sha256": "d4893fdffa488c27e98036a0d0b98fe218b6490891230cbcb10aad5c54ae1d80",
+      "size_in_bytes": 8592
+    },
+    {
+      "_path": "Lib/site-packages/nltk/cluster/util.py",
+      "path_type": "hardlink",
+      "sha256": "4d566d5a86fff12a193b01ba36db013e4e1f383e346558f19c78fda0f6ba782f",
+      "size_in_bytes": 10039
+    },
+    {
+      "_path": "Lib/site-packages/nltk/collections.py",
+      "path_type": "hardlink",
+      "sha256": "0e24a8faf89c2e9ed440ba438834e58c5c1d0cb7505548bb51501d82e6e53bc0",
+      "size_in_bytes": 23673
+    },
+    {
+      "_path": "Lib/site-packages/nltk/collocations.py",
+      "path_type": "hardlink",
+      "sha256": "3560b9ba934dba5448fc56260875f4acd7990a4090c6a5573252e7382fdbc1af",
+      "size_in_bytes": 14964
+    },
+    {
+      "_path": "Lib/site-packages/nltk/compat.py",
+      "path_type": "hardlink",
+      "sha256": "edfd04836fcc6e274a69ef1bad3fe80aea8348771f98eb244bcf18ebe972726c",
+      "size_in_bytes": 1307
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "a8692e359d8620fe2a0ce47a98c56d2479c2ee8315de447188dafc68614785fb",
+      "size_in_bytes": 17359
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "aee445dda253532b9c05ad27bb783b3b1a36f2dd90a5c32982ec9145943cec10",
+      "size_in_bytes": 16725
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/__pycache__/europarl_raw.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8f8c53f34538d1fd3d17d05faaca500b638d80bd1e0f58498b530e4b7104a90b",
+      "size_in_bytes": 1891
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "3a36f3bf1eccf0699b06dea4b1f80e2e3ff13b13c791013384821fb5e4cbfd52",
+      "size_in_bytes": 6621
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/europarl_raw.py",
+      "path_type": "hardlink",
+      "sha256": "69730a562cad0516ebcb827416b3b43f6d094ce5766e08ee250e613b116427ed",
+      "size_in_bytes": 1896
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "babc644882ee84194623daafb0896141aa7a9c52927e42ab622fab6f82c25795",
+      "size_in_bytes": 6677
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a8054b6ae1ae4ef69cb8989d7abcfb6116993a654f2570f361890f9013ae95f3",
+      "size_in_bytes": 6253
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/aligned.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "15176f43168484d4978e45cefba3bc400174901f78f6a4f04538c6cc12117c47",
+      "size_in_bytes": 6282
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a07f2b23327c3ec70d0a56600b740782107d6e1c51d9e9563fe8dd4696316fc6",
+      "size_in_bytes": 28389
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/bcp47.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "15e2d08c41a2c21c17dfc92cd997c7d34ad6b45b87e9d8e1d8b1028e662f3c7b",
+      "size_in_bytes": 12428
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/bnc.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "575586a37e91b5bfd22a6c8b68c38ad71d68634b9c34f0a426c38398c1fa7b2c",
+      "size_in_bytes": 13929
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/bracket_parse.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "38e04b2dfc7e48b697d6ad1cf6558085c277b45081156a96ed974d01e1eae970",
+      "size_in_bytes": 14857
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/categorized_sents.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "745922b0ad6f0431ee15fbceba7e0c927bdae5ed2e252a2efe09159b4582f169",
+      "size_in_bytes": 7636
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/chasen.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "31d4d13dcf62ddae7709f17e1474a0d155c3101e770e3e7b7f0a67fb141dd54a",
+      "size_in_bytes": 8835
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/childes.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bda2ba4d9f3b75db6b5a50e2ba34e698b299a01b9b8d0e0176e7b29da8064256",
+      "size_in_bytes": 31069
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/chunked.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "05e52c87896dce641b6fc1822f5e4068e3497dae1267ad837aee156fc6a05433",
+      "size_in_bytes": 12060
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/cmudict.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7209dc65c08af7567124f37b4792f2e685f606b12efd5758b3c9832cad9f5cb6",
+      "size_in_bytes": 4691
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/comparative_sents.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "49a8c356588320bf77e4582fabbbbdc1d905da559b77e11732f37cc4b634d1cf",
+      "size_in_bytes": 14992
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/conll.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c4bcd895ed3b7e1c2785db1d0ac9fe5a65566a7397d0efe63802f5c2361030ba",
+      "size_in_bytes": 29645
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/crubadan.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6f0ba6c457786b52b71f08e9c2e8e265a0281d8f7b73a76cde3e34d6d34d2650",
+      "size_in_bytes": 6236
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/dependency.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a9a5051f01e91c1888977623753ce3c323de039fa72cff6812fb06eae541352a",
+      "size_in_bytes": 6905
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/framenet.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a11776eb350e9c7ffaadf62afc3c65eb910b3262732fc0d1207e80cd741d35f7",
+      "size_in_bytes": 166897
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/ieer.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "13da4154f18901a21fa89a8c26cc0767c9146f936d19fa9683565d2bceb94854",
+      "size_in_bytes": 5833
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/indian.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "875eed4cea9b9c4fef20caf6a547d379d2fdce9e3ae5fc8a0c8549ebf14b84f5",
+      "size_in_bytes": 5583
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/ipipan.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "30ea17a0e854aeef9add77821dc9cb40f7a31e5bfccc227f6818c112e41cb6f3",
+      "size_in_bytes": 19705
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/knbc.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c7e75961c5ba21fff07c7732f2318123fc09d434e7170087b9d02c36bb6bcaea",
+      "size_in_bytes": 10815
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/lin.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9769a6997ae12eb700e9b285899ab6cd65440d6133d99210a3a5c9e0c308f974",
+      "size_in_bytes": 9004
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/markdown.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a404291fed274eec520f7cec5c23b9d336031fb42746b8830eff5b70c79292d3",
+      "size_in_bytes": 25304
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/mte.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e0594109ed1f7e8ed0c55388e2b891778564b82399011ec8df3bb1f94ad6891a",
+      "size_in_bytes": 22951
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/nkjp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6622491e69def19bd33052a1e1c24087b99a655e4dcf499047c7bf26939df898",
+      "size_in_bytes": 26512
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/nombank.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "150eb244fa1f0b5d1ab38dbb21226f6647813cea923fe4f028476dffc20ebb12",
+      "size_in_bytes": 22367
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/nps_chat.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "77417d8556312413f644e448d5a3cd7bcedd0ea215369bbc98ee448ba8f68df9",
+      "size_in_bytes": 6449
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/opinion_lexicon.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fa4af143c49b041fbc8aa2fc3486cb39a17f6686430bd561f39e6b69fe7ed5d8",
+      "size_in_bytes": 5542
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/panlex_lite.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0f0d19072057cd977b7d8be31f53270fd58bec578950501f283462174ceae94d",
+      "size_in_bytes": 7718
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/panlex_swadesh.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e602a596655df377b24029bb6093a86b47820265fa23bba3b379fa7667b2210b",
+      "size_in_bytes": 6079
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/pl196x.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9b42335e493e411e4e80ed359a61a087c137fd24010db3d893f57371503a1a22",
+      "size_in_bytes": 16785
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/plaintext.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "abc77b7de2c6653071d2de0421eb45ff1b47b2ba14f8ecb6053518366a16c508",
+      "size_in_bytes": 12176
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/ppattach.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "044fc4bf3a0846c9d5c45ff3614eed25fba42461d32de29ab7cd3ac42044d296",
+      "size_in_bytes": 4406
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/propbank.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "221bad3f759e0f5d2612c099cdf21a93806aedfb0899222663175a9fcf95214e",
+      "size_in_bytes": 24529
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/pros_cons.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fb679f746a0419ceab57191d7be2b4a5b586d965c9e26ce799b4448dd24f1aa3",
+      "size_in_bytes": 6167
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/reviews.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "34bc253d47d1b7c0eba5ba3e6522f8a03ff0b0d41042e07bf510e82cd2330948",
+      "size_in_bytes": 15945
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/rte.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "3a69ac7138b4a3785fe8efd4f53d5afe48cd9dd1c6cb9b6fb0827a990b0558b6",
+      "size_in_bytes": 6335
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/semcor.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "156ffba84b6863b818b1a3bacd06af09dcad67e29993b4809ebaec30a93ad20b",
+      "size_in_bytes": 13207
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/senseval.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "521970adf722b5dd6bc7045129af5cad3b90ac41a0b88c08f07afc902f510991",
+      "size_in_bytes": 9899
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/sentiwordnet.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f55d51c550d3216bcaeba2404068fb6e5477bf5796e6d0e91313bc026a536f84",
+      "size_in_bytes": 7860
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/sinica_treebank.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b6c871d470208e0e93aeac8df48f8d15a4a51b123e001d9082795a24530dcc89",
+      "size_in_bytes": 4066
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/string_category.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f3dbc5005eec89740c7bc59e0778c164db64ce6cf156cbdaa1458365a5905d38",
+      "size_in_bytes": 2642
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/switchboard.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6121739f4434f1696b4c765a3c906f8525ca16ed0244f20df97644d638fe6bec",
+      "size_in_bytes": 9446
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/tagged.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0f92e20bb67d20a43255cc993a00f050c51b0c33e88de01bee3202f4c77c3a30",
+      "size_in_bytes": 15598
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/timit.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5c61b89ff4e94cdfae9adb1c64e16581257c51e5412cb89465dddb26d45d91bf",
+      "size_in_bytes": 27422
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/toolbox.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "04002141d8c5c7ae1f87c9ab0ae49c1f75ca13d13887da2359ab8960a54f0a65",
+      "size_in_bytes": 3585
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/twitter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "50e3f1149c8afdc2b0980a0e6136b34dc8abdd7b14b3f225de7467b879c1daf3",
+      "size_in_bytes": 6184
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/udhr.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b9421b0f8cb56d3cc410b61b4bbf42d33155939243673e5e5ed779a5ef2b3309",
+      "size_in_bytes": 2495
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ef8b29139d190ac42cf8aeb14cad0da23df298a455924b5381ddfece4c832259",
+      "size_in_bytes": 36857
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/verbnet.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e806c1c89c2a1397bc353688d986de218d6a065d9fb31eec5861e61b591394fa",
+      "size_in_bytes": 32665
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/wordlist.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "3e0fa784f03b3cc54dff5fdc38204ca5affdca28eab71c7b30d80020288ebd3e",
+      "size_in_bytes": 8093
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/wordnet.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8dcea939fddf4cda0214651ed5541d668e4a81448b811a60679ff03adf4ec752",
+      "size_in_bytes": 110571
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/xmldocs.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "536e2b66aee456129eb64faa5314c757970d1acbddf131063edc8aa102e07175",
+      "size_in_bytes": 18043
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/__pycache__/ycoe.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "abc171c9ca7edc1daaa839d179f2fa119758f58ad461706230cf3fb3f01d4587",
+      "size_in_bytes": 15289
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/aligned.py",
+      "path_type": "hardlink",
+      "sha256": "3895299bc1f2cea4747bc84f1dde42ac0987d5b7d07d7576859e0a09a934673c",
+      "size_in_bytes": 5005
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/api.py",
+      "path_type": "hardlink",
+      "sha256": "0e1bb8f758264c99d64a2966ea559d401379f513356884f8d749ab6e20f00f59",
+      "size_in_bytes": 19671
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/bcp47.py",
+      "path_type": "hardlink",
+      "sha256": "236ecb8f884c5b621133ad91c9778af4e5fe912780bc4124a175563751f01226",
+      "size_in_bytes": 8534
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/bnc.py",
+      "path_type": "hardlink",
+      "sha256": "0211632f3842a608a3486be1847881e404f9be600f44fe8b3be6c71173845dab",
+      "size_in_bytes": 9716
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/bracket_parse.py",
+      "path_type": "hardlink",
+      "sha256": "d447d1b8d98253d0c44968f06a5ca20d9850b8ec1bdc86038cbf9a01794877f5",
+      "size_in_bytes": 9619
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/categorized_sents.py",
+      "path_type": "hardlink",
+      "sha256": "40ba47ac39372656e08ad9296df9dd4971b17ecb00c8003932c9c17ac1522a2b",
+      "size_in_bytes": 6221
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/chasen.py",
+      "path_type": "hardlink",
+      "sha256": "8955bdc6d46d19caf712911ffc18dbbac45c3ea46a3f32a81653897f1768a133",
+      "size_in_bytes": 4699
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/childes.py",
+      "path_type": "hardlink",
+      "sha256": "91e7a5a20065688bc75afd40d10fed1dbce62b232d841dbf60d597410986e778",
+      "size_in_bytes": 26105
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/chunked.py",
+      "path_type": "hardlink",
+      "sha256": "f1fa154fdd0e092233bfb07df6b1ec5464a2017eb67b81c573c432183a9cff86",
+      "size_in_bytes": 9366
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/cmudict.py",
+      "path_type": "hardlink",
+      "sha256": "0820e98d60f3c0f30e5caa6b2b198db6f5fffa051215a8453bebd475325b3615",
+      "size_in_bytes": 3366
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/comparative_sents.py",
+      "path_type": "hardlink",
+      "sha256": "f58c0a224d317ff12107aa817a908c38436dc68caf3aac2e57f6888d6fd6464e",
+      "size_in_bytes": 12069
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/conll.py",
+      "path_type": "hardlink",
+      "sha256": "97ea600507c28993fdd04268d619c6dd32ccf703398a616faa5b7815f5e50c82",
+      "size_in_bytes": 22301
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/crubadan.py",
+      "path_type": "hardlink",
+      "sha256": "14ba2b587a6cba03f56776e092e92be756da230fc5bc074da9128870f79444be",
+      "size_in_bytes": 3627
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/dependency.py",
+      "path_type": "hardlink",
+      "sha256": "9c07634f41fe1d5f495ba89430d7b8716f11479add03c201f1943921063d6887",
+      "size_in_bytes": 3890
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/framenet.py",
+      "path_type": "hardlink",
+      "sha256": "9f9f6ea06a4e48521aa5e62791b3e609a9aeb25011a686bdabcefbdc39310796",
+      "size_in_bytes": 134791
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/ieer.py",
+      "path_type": "hardlink",
+      "sha256": "c7a0a72e59494ce418a7018ac63b1bb468de8feaf154210a6f81d4c946e6080c",
+      "size_in_bytes": 3802
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/indian.py",
+      "path_type": "hardlink",
+      "sha256": "19032c366670a16bd24b86dd7814f982e354c94f3e2c4ad4a0c7ee4f6ba425bd",
+      "size_in_bytes": 3014
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/ipipan.py",
+      "path_type": "hardlink",
+      "sha256": "d72279725ec0c17f5216626cd3b1ecb96f9e647a7f6244cbfa7d6746169dce0c",
+      "size_in_bytes": 13092
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/knbc.py",
+      "path_type": "hardlink",
+      "sha256": "aca83448399e40251a49cdd23abf7bfc87cce451898e3bd309d1439f5567be7f",
+      "size_in_bytes": 5787
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/lin.py",
+      "path_type": "hardlink",
+      "sha256": "d60c78f0e75df1627d3e9a05ebf7f95239aa2798f6d91b2ef0632b69ea6eecc8",
+      "size_in_bytes": 6654
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/markdown.py",
+      "path_type": "hardlink",
+      "sha256": "63d01e07717581b52e10aec736347a8b01c30187a7788e571f5acc930fee6d64",
+      "size_in_bytes": 12028
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/mte.py",
+      "path_type": "hardlink",
+      "sha256": "f29e6240824ebb1bbd30e59ad711f52228e3f49f4a99c4545a1daf99c5923aa4",
+      "size_in_bytes": 14385
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/nkjp.py",
+      "path_type": "hardlink",
+      "sha256": "f67a7320c1beb4e2636f53698b00ef1f5b975d0e5e044abcc69fca790e630f5d",
+      "size_in_bytes": 16332
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/nombank.py",
+      "path_type": "hardlink",
+      "sha256": "bfeb2657761241f979e1c17e34cd12b7d76874e29ac0f2fa246b0cbf9b6f2388",
+      "size_in_bytes": 16247
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/nps_chat.py",
+      "path_type": "hardlink",
+      "sha256": "b63a7df0eec536cca8c577a7313e4e5b45da24dd5172220225f79e90de8059af",
+      "size_in_bytes": 2940
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/opinion_lexicon.py",
+      "path_type": "hardlink",
+      "sha256": "5e76fd46940907165676737e0cde350b0d52e07477e459a898a3be212cb8efa9",
+      "size_in_bytes": 4230
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/panlex_lite.py",
+      "path_type": "hardlink",
+      "sha256": "409834d2f9904e5fa24e8b79db8aa611a8792c189a70d03d1a6a4da7d8616581",
+      "size_in_bytes": 5440
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/panlex_swadesh.py",
+      "path_type": "hardlink",
+      "sha256": "271a4f34b63e5aa1d9bd7b121bb78a15cf5e0541ec28ed2a3821149b88aea54c",
+      "size_in_bytes": 3287
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/pl196x.py",
+      "path_type": "hardlink",
+      "sha256": "7bbc9724e8f22a1e2e4f19fbf2bbd275217e2bcc120e0858badbeb7f520c3e39",
+      "size_in_bytes": 12320
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/plaintext.py",
+      "path_type": "hardlink",
+      "sha256": "a357a400b2265bf532bf8a635e7df2d8feee01ebd6a80014f97d45ac08a7aa20",
+      "size_in_bytes": 8456
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/ppattach.py",
+      "path_type": "hardlink",
+      "sha256": "bc609c44773048c59a1d82352ba2a5883f644cab6f69b1a8b2a1af3d6663215b",
+      "size_in_bytes": 2903
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/propbank.py",
+      "path_type": "hardlink",
+      "sha256": "d41bf5a6c2cf5302ec6df554b933fd45a9c2e0ca09a752476e8c6046a189c6bb",
+      "size_in_bytes": 17776
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/pros_cons.py",
+      "path_type": "hardlink",
+      "sha256": "0f3434c72c3b7e2c99b9c6ebacea94a283ec0eff920804533304f1715cf3c25a",
+      "size_in_bytes": 4896
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/reviews.py",
+      "path_type": "hardlink",
+      "sha256": "9c336745f5ba5ea7491188759ca6c838e1c5c691d33c3dbb9f18106a798bf20a",
+      "size_in_bytes": 12321
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/rte.py",
+      "path_type": "hardlink",
+      "sha256": "8a16b218908467d330e22764df7ee8c285c6942d48927e3233f7946721e5aa06",
+      "size_in_bytes": 4785
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/semcor.py",
+      "path_type": "hardlink",
+      "sha256": "5312e99b6b1b479ffa90f403fbd412c3362472203bd4e1916783c6b9d9659f5c",
+      "size_in_bytes": 11694
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/senseval.py",
+      "path_type": "hardlink",
+      "sha256": "64dc871e1e60a5ad9d1901d384c554a317a40cfd03464ad084a02cf30998d2f2",
+      "size_in_bytes": 7539
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/sentiwordnet.py",
+      "path_type": "hardlink",
+      "sha256": "c90793bc04f64f55c5838e5d8187c5c88241857be4c6fa0407b1fbc3eb44a2c9",
+      "size_in_bytes": 4626
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/sinica_treebank.py",
+      "path_type": "hardlink",
+      "sha256": "eb819e2523428377975055c36ac188aa5eb4382e8fab517073d3ad07c0ec6a2b",
+      "size_in_bytes": 2541
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/string_category.py",
+      "path_type": "hardlink",
+      "sha256": "fa83d4cb9476a9be318b216c08a180954c1cdc20ac5980af42c99cd85ecd36df",
+      "size_in_bytes": 1919
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/switchboard.py",
+      "path_type": "hardlink",
+      "sha256": "c918cfc2d0d1c7ef6b64bb01897fdc01cacc97dd33689da46a70fb441e614f60",
+      "size_in_bytes": 4547
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/tagged.py",
+      "path_type": "hardlink",
+      "sha256": "3fe8141645136b32822733a5aafc00f1a00f59807a3f0d3ca6489e45db886895",
+      "size_in_bytes": 12140
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/timit.py",
+      "path_type": "hardlink",
+      "sha256": "1696c28ae7e312828f64d8068ef50ed7e740853ab7eaa7826ae685233ab344ef",
+      "size_in_bytes": 18473
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/toolbox.py",
+      "path_type": "hardlink",
+      "sha256": "c95c5aaa30ce5428c744dcf866cffc66ef1f91b8bcf1811bfc9c70098b47c151",
+      "size_in_bytes": 2121
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/twitter.py",
+      "path_type": "hardlink",
+      "sha256": "51d9f00761e1eaab88d4a84500096b8b26d5ad806853236ac7350109d14b89cb",
+      "size_in_bytes": 4608
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/udhr.py",
+      "path_type": "hardlink",
+      "sha256": "b63a977352508935111e7b1353c448cf0c5d40865ab1bb5d3123f3e26b271d5a",
+      "size_in_bytes": 2592
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/util.py",
+      "path_type": "hardlink",
+      "sha256": "7d9cb91b233127ebaba53a8ed7d4a3fa8450aa02fe108eb9fd40ec72bda78b38",
+      "size_in_bytes": 32225
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/verbnet.py",
+      "path_type": "hardlink",
+      "sha256": "34123039dd89ae71d46a6b76f72cd08c74b9572cea42c3a8088f59c0e7d76485",
+      "size_in_bytes": 25404
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/wordlist.py",
+      "path_type": "hardlink",
+      "sha256": "f1d95c5d12230ee27a53f76f6f0e8e17f54e81b0b811579723cb84dad0b18db3",
+      "size_in_bytes": 5812
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/wordnet.py",
+      "path_type": "hardlink",
+      "sha256": "9d22037551c5fc50f1e9e3a5b14e69520579cfa6233db86f4285b211f6fcfd8a",
+      "size_in_bytes": 93352
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/xmldocs.py",
+      "path_type": "hardlink",
+      "sha256": "fdf56aa04200698293efbd8811c626ba4ffb39aa9476c44b299a5b68be2ea7cf",
+      "size_in_bytes": 16285
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/reader/ycoe.py",
+      "path_type": "hardlink",
+      "sha256": "f556e43bf267146da3a2259f8ec7d8679defb123e5f2559f2b4d1f68801a2cde",
+      "size_in_bytes": 10504
+    },
+    {
+      "_path": "Lib/site-packages/nltk/corpus/util.py",
+      "path_type": "hardlink",
+      "sha256": "43dc5827ded450ecbcbeeb8303eba2773a44d68114ffe93a33a2f409cc6c67dd",
+      "size_in_bytes": 5867
+    },
+    {
+      "_path": "Lib/site-packages/nltk/data.py",
+      "path_type": "hardlink",
+      "sha256": "aebde2445e14262edb8774acd46a746e7f2a9a5dd8993395f24c9679839abcef",
+      "size_in_bytes": 52814
+    },
+    {
+      "_path": "Lib/site-packages/nltk/decorators.py",
+      "path_type": "hardlink",
+      "sha256": "535f83bc4c71cb452ff7a3344adfeb47c20087c126dde2bab92e005c87ff4e2e",
+      "size_in_bytes": 8526
+    },
+    {
+      "_path": "Lib/site-packages/nltk/downloader.py",
+      "path_type": "hardlink",
+      "sha256": "496525abfeb0e8f0d62ace14097998dc7caf11f0c8235329edb8230a1bfe2843",
+      "size_in_bytes": 95506
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "bed93d90408477ff59674a6a493eb3e526fe9e8f950e9128862ed41c3fd841c1",
+      "size_in_bytes": 810
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "954a7f8124dba664ec8c9bb1defa9b943798ddec24ae497525d177ac0964e290",
+      "size_in_bytes": 898
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__pycache__/cfg.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "26e673c33a07d25cd10e078a03594948222ab43acfaa0b1137191618f99b72e1",
+      "size_in_bytes": 39100
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__pycache__/dispersion.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "84cd3e6c966772a800f6c7c9e7aa3dd7bd778c54e7126d1f6612ebc5cb9921f0",
+      "size_in_bytes": 2972
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__pycache__/table.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5bbe285d95463603b06a5d753c1f61c21926d7a5e01891eb413ece6e4d0a6a19",
+      "size_in_bytes": 60143
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__pycache__/tree.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f0940aa210fa1db31377d503e168367105d16124a09529e9262d59888745bb20",
+      "size_in_bytes": 54610
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "04d1236a2d7599e483528bbb98086f0cdf2e3e091acf2ff5a0c7c70cff09c7b5",
+      "size_in_bytes": 121117
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/cfg.py",
+      "path_type": "hardlink",
+      "sha256": "63ef3d6c82963dd882027d46900d1e38fd3c2fa79e40773881540a333063dac9",
+      "size_in_bytes": 30794
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/dispersion.py",
+      "path_type": "hardlink",
+      "sha256": "31a09e858bba713b9184c4f30d6ec4fdcc068d790fedab8608cb03df55a32dc1",
+      "size_in_bytes": 1854
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/table.py",
+      "path_type": "hardlink",
+      "sha256": "1b3ec867a243c6c7cb51ce732ee8bf8352324df84f084254faef0aef54bfaab7",
+      "size_in_bytes": 46257
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/tree.py",
+      "path_type": "hardlink",
+      "sha256": "37ca9b36cb2be80f0e2e9e332c4d8527e8d0cd66161647804af51e1b3736c0a6",
+      "size_in_bytes": 39275
+    },
+    {
+      "_path": "Lib/site-packages/nltk/draw/util.py",
+      "path_type": "hardlink",
+      "sha256": "f27f1826bad35920fe314132f7a6d7fa869a441b9f12d83be1b5cf5d6cd66c9d",
+      "size_in_bytes": 90944
+    },
+    {
+      "_path": "Lib/site-packages/nltk/featstruct.py",
+      "path_type": "hardlink",
+      "sha256": "0556e8b5cbe09e535328c0c2d5b2f5ebe8b73c2c39cd780fed7db4b6dfb23c5d",
+      "size_in_bytes": 106108
+    },
+    {
+      "_path": "Lib/site-packages/nltk/grammar.py",
+      "path_type": "hardlink",
+      "sha256": "b930b649ca50215c56b77f107d671e61cce44e34d5ccfa65983eb745f2cb2a46",
+      "size_in_bytes": 59174
+    },
+    {
+      "_path": "Lib/site-packages/nltk/help.py",
+      "path_type": "hardlink",
+      "sha256": "4a3d8cdfeb64b69059c701f1c756ed76d849678861671f97517958b86bf62a9f",
+      "size_in_bytes": 1709
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "9f0e294051ce194bf8c7bbb6d46ac904e512da173b2626efbe06d59ea5ee92c0",
+      "size_in_bytes": 814
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e3316b60296c128a76e5f245103e50d97995089ef74f656a7b06f5911bb17a93",
+      "size_in_bytes": 1005
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "84d9ebe6f44238fc2ea6e83bb75c05ca0681e5b1d1faa8e09064747d2b2ba607",
+      "size_in_bytes": 27294
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/discourse.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cb37659ead4da523e58d1379413d5c820c149d011d2e84436bfbc31b2e51718e",
+      "size_in_bytes": 32301
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/mace.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "769c1dc4b51ffea54ace1ce02bd0c1aa09ca9ee5b5d34ec837ce2634d8ad558c",
+      "size_in_bytes": 17468
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/nonmonotonic.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7d4885c75e766e86f3d2b4cf3304dbaa611749f269e801783c5b68c81ee2a181",
+      "size_in_bytes": 31856
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/prover9.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b316d8c81f2bda6f738a985dd07bef47f2d7b7730d603e92b57c66fc33779e54",
+      "size_in_bytes": 19992
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/resolution.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bb8019484303a0b06dbd998b6f89d18cb765de88c43cd19dc6dec6d12f65b95b",
+      "size_in_bytes": 37993
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/__pycache__/tableau.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fddc708d192e46f3900fa7026f88c9bea1fc034fb623ef26d9947b5b031db1ab",
+      "size_in_bytes": 36642
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/api.py",
+      "path_type": "hardlink",
+      "sha256": "19da26919413f7b6fb67f1c447ffcaba10837a145b4f58f10fb32857ed423a76",
+      "size_in_bytes": 19560
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/discourse.py",
+      "path_type": "hardlink",
+      "sha256": "5e88f28b092ebe94e304e642710d2ae4206920c3b0e5f5f0dde3738d93c9a2ac",
+      "size_in_bytes": 22691
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/mace.py",
+      "path_type": "hardlink",
+      "sha256": "10a459bb00ab5f7db48f35abab734e1677c8ba06a9b98760887df57557f666f1",
+      "size_in_bytes": 12243
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/nonmonotonic.py",
+      "path_type": "hardlink",
+      "sha256": "e3fb84886e61d750aff7f67b745206019f0cfd0a59fa058d55ec35d5319b7925",
+      "size_in_bytes": 19174
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/prover9.py",
+      "path_type": "hardlink",
+      "sha256": "2c7cae3a62122e8e5ceb87b954e5e266c2be6c6ef3fb471bdf1634d64584d3af",
+      "size_in_bytes": 16266
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/resolution.py",
+      "path_type": "hardlink",
+      "sha256": "c31d180800b91a020210e83454dff1ebb5bcf1c187bbce786900f7a4825c7eae",
+      "size_in_bytes": 26761
+    },
+    {
+      "_path": "Lib/site-packages/nltk/inference/tableau.py",
+      "path_type": "hardlink",
+      "sha256": "2290d94f715b334d91d939df8e600e9705e2be73f5f435e84fd16eeb15b80afd",
+      "size_in_bytes": 26320
+    },
+    {
+      "_path": "Lib/site-packages/nltk/internals.py",
+      "path_type": "hardlink",
+      "sha256": "78e1a083278319fea0c94efaa76494ebfbc540fea1e45ae0f22743c92ea7696f",
+      "size_in_bytes": 39416
+    },
+    {
+      "_path": "Lib/site-packages/nltk/jsontags.py",
+      "path_type": "hardlink",
+      "sha256": "216ad7c408d2ce581ac6a72590a7009f137300d6c6d598dffe3da38cf9f1532e",
+      "size_in_bytes": 1948
+    },
+    {
+      "_path": "Lib/site-packages/nltk/langnames.py",
+      "path_type": "hardlink",
+      "sha256": "7433651240e6b315942b1539086a582c11e95a5703d59ad488edd74cc10f0455",
+      "size_in_bytes": 17957
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lazyimport.py",
+      "path_type": "hardlink",
+      "sha256": "a812393cd2b3e6a60baf1a30d7d2b02eb484f36d53c9185528269f00630bfb51",
+      "size_in_bytes": 4719
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "1ac83439a79f5a56556c20c662a87570496e857a564bbbcdf018297e6df06bec",
+      "size_in_bytes": 8051
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "331d0330046f74b94dbd9f08ca3191fc340b28ad94ed2e2065afcd26a33e13a9",
+      "size_in_bytes": 7817
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7e0e50bcbe3470937bfd1b91f46fb36cc6b6ecb5d9ab47736dba55bc404b145e",
+      "size_in_bytes": 11589
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/counter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cbb94d04f9cb0cb50bbb9e96033a44517d792495bc22e402170b31507407cf0b",
+      "size_in_bytes": 7131
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/models.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f8f38e0fb04fd9a0417b912a5441ed8bfb3035f4090b1a48527881056bf7de66",
+      "size_in_bytes": 8206
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/preprocessing.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "acbdf485fbd6d07680dabff8b620ed984d4f69acb39f33850a1b1fa87437c8e5",
+      "size_in_bytes": 2362
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/smoothing.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0a21c5fe90ab141cc2d4e22221c842d3c6663c4738fd6d92924feb934d0e923e",
+      "size_in_bytes": 8063
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8288a2655923d9b9edc410301f16f1edaad99e063b6bf2e6549ffb1d086073e5",
+      "size_in_bytes": 625
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/__pycache__/vocabulary.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "61893e46d943d877901ccc455dc83a6dbc2ccc995b09727c4dfa6a926e98f1f9",
+      "size_in_bytes": 9537
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/api.py",
+      "path_type": "hardlink",
+      "sha256": "bbae55d5dc2aa018c27713526cb2d4a58d338f3634f960462bb1c7bd5d0372de",
+      "size_in_bytes": 8495
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/counter.py",
+      "path_type": "hardlink",
+      "sha256": "00eab04d017169634c9c9669e44ea2e5b3c1ab9e0b73b764969efa2794f2feb6",
+      "size_in_bytes": 5250
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/models.py",
+      "path_type": "hardlink",
+      "sha256": "ae271a154e7ddca4f59fcae2e5bfb7253c70a4efff5d791909880f69d3e6acb0",
+      "size_in_bytes": 4903
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/preprocessing.py",
+      "path_type": "hardlink",
+      "sha256": "c9e5bac82a767b4cc6169710fe9b8f674541b2371eb29ab630b3cf754a236370",
+      "size_in_bytes": 1714
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/smoothing.py",
+      "path_type": "hardlink",
+      "sha256": "1aa0406408196d080c1537eef0b245b96a1b75ae000bc03cbdad82de16e4236f",
+      "size_in_bytes": 4745
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/util.py",
+      "path_type": "hardlink",
+      "sha256": "5fbc7efffb24f9ffd9f2db5198b3f50122c842554b395a35ce2203dc5f6a0d94",
+      "size_in_bytes": 474
+    },
+    {
+      "_path": "Lib/site-packages/nltk/lm/vocabulary.py",
+      "path_type": "hardlink",
+      "sha256": "acc9e0df6a2a5d28355d7385a518b44d0b63685fdf40dc776fd3062866a43e74",
+      "size_in_bytes": 7099
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "82ee9f6925b1379bd6f3a2e4edfbf36ff35e0f81fee41714bd3aa6a3995234b8",
+      "size_in_bytes": 1243
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5b8c4beef2de2f8d9195a5e46f0f470c3b7436d1d734b7e289f743370b447363",
+      "size_in_bytes": 1697
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/agreement.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "057f8b8b08f90c7401bc78bf3c1a729824a5b0e3c706dc2ba03987324e2928b6",
+      "size_in_bytes": 26477
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/aline.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "080e49a7c60a7df0b1d0839bfe6f8b475278f7dd35e10ed49a82ee4f5e859c90",
+      "size_in_bytes": 19741
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/association.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bb8f7f5a887ad936c413b8732a227095140c911667b17301d6a2809a33bd1c70",
+      "size_in_bytes": 22078
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/confusionmatrix.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5cea6e601908325a580fd17b1af85d73ec2bbc86e82d646b8bb29e0ec966a5c0",
+      "size_in_bytes": 17497
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/distance.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "282ac3b260e28ec4e3ac6fc7569c9370fb3dc1a072f5fb2fd99602fc4a8c09f4",
+      "size_in_bytes": 20590
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/paice.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "91fd20095e4fe98a03a46827dcc0ce6adda5a77ea154d86b365741930981fce2",
+      "size_in_bytes": 16912
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/scores.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fa45854023bae3ea13280ee20389a7c7089c1c8712d391fbe79acfd41351d72f",
+      "size_in_bytes": 11514
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/segmentation.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "06d1621d20aa71041d279ef2629d00945e65218c85f820a55502fae002baec90",
+      "size_in_bytes": 8713
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/__pycache__/spearman.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c7b405fdcbaac7adcf82ae1c96d86aec173dddc4d3c7459ea381f8c249b97920",
+      "size_in_bytes": 3017
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/agreement.py",
+      "path_type": "hardlink",
+      "sha256": "36f7964df841643416c6ac0459b0cc24aa5e444964eefb5d3746e1f673272962",
+      "size_in_bytes": 16421
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/aline.py",
+      "path_type": "hardlink",
+      "sha256": "c9692d71ed1e43fafad0a2948a82d94a4a2b653f14db33dbc4b03ec2a2f3cc30",
+      "size_in_bytes": 32845
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/association.py",
+      "path_type": "hardlink",
+      "sha256": "d6136ead120a1a8a76ac3b6d4ca75dc6d66432b27fd2a05ccee805f4c9b84b8a",
+      "size_in_bytes": 16569
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/confusionmatrix.py",
+      "path_type": "hardlink",
+      "sha256": "b33558e7cbf3356411af8a1b8e7b22a2e0dcc1dfa4a804f9fdbe7dc2fc31e2af",
+      "size_in_bytes": 13035
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/distance.py",
+      "path_type": "hardlink",
+      "sha256": "a10fa8f6d332bf9913389b117b610a1cb940acb899c6500c258ef7b4a16701cc",
+      "size_in_bytes": 17661
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/paice.py",
+      "path_type": "hardlink",
+      "sha256": "ca07ba140db2f3f00661298259fcdaa66281145ea49094defa9b96a7e29c4c19",
+      "size_in_bytes": 14739
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/scores.py",
+      "path_type": "hardlink",
+      "sha256": "9efd1fe65b11fe7298fc0da926b54cb47e0ccde7ff081a435a9901a079dbf8bd",
+      "size_in_bytes": 7922
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/segmentation.py",
+      "path_type": "hardlink",
+      "sha256": "59d3c3e9a1f7d59e7945f109ece334150a319862ebfeafaaeaf109d02ab1c036",
+      "size_in_bytes": 7221
+    },
+    {
+      "_path": "Lib/site-packages/nltk/metrics/spearman.py",
+      "path_type": "hardlink",
+      "sha256": "8aba2b244e5f62c186c4b2ef286bef2fa8defa13386a89c30558564bf662392d",
+      "size_in_bytes": 2197
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "a6062908c9fa7d17fdd19c27e763a3cc70dee4cb0f825eeef5c6d329e107f299",
+      "size_in_bytes": 406
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "dfc7c53b405f27278d036b7fe541a0627c929a3b5d8bf20f6a8884d0a438230b",
+      "size_in_bytes": 439
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__pycache__/babelfish.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e967dae70916ed7e91e55b89fed661fcd0115807ffc4fe767a7180907482c1a5",
+      "size_in_bytes": 657
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__pycache__/chomsky.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6fc766505b71b3a44053b71735ec7c6e971ee1603feac6dbb9eae903630273ca",
+      "size_in_bytes": 5728
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__pycache__/minimalset.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c0a24c75f12d6ff2380ea3f5e5e4f72a17bd22f7a40e644509db3be531acb993",
+      "size_in_bytes": 3988
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__pycache__/sort.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "de99fe830b79b004b12373cec36142649992596e8333dd40e140edbdb29faa0a",
+      "size_in_bytes": 5822
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/__pycache__/wordfinder.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "38ab341e44191125ab9ca3dfb9d1a62f9c9d3b9d45bae1fae0e1ce9094f7d350",
+      "size_in_bytes": 7269
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/babelfish.py",
+      "path_type": "hardlink",
+      "sha256": "f549126ba97f8f5047c5a4fd094d558afff9d5107493d000fbedf2b66429b009",
+      "size_in_bytes": 361
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/chomsky.py",
+      "path_type": "hardlink",
+      "sha256": "51ab6066eed98f75b90d0ceec47656e99cb1bf9907f65fd6daefd99ce0aa5dc7",
+      "size_in_bytes": 5319
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/minimalset.py",
+      "path_type": "hardlink",
+      "sha256": "cfbf946aa4fb17ed9b6bfab26f0638e9b81a1f8979cd07320648392bf8e8150b",
+      "size_in_bytes": 2979
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/sort.py",
+      "path_type": "hardlink",
+      "sha256": "69ea8e34744648371592cbc1e9ae67a64c1d7f9b00cba036bd13fdc18a74635c",
+      "size_in_bytes": 4547
+    },
+    {
+      "_path": "Lib/site-packages/nltk/misc/wordfinder.py",
+      "path_type": "hardlink",
+      "sha256": "d87479163e21bfb43620316525be4d97ae38b8d5ad4a458451efa104a62de998",
+      "size_in_bytes": 4352
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "c361fccabb3cf96a2fff0b464c7a0cc91c86b7b43888bc900ba674e4b86e1217",
+      "size_in_bytes": 3797
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "908427c1561c70d7c46104b825238b2326407860a00e49458bc73b31329ecb05",
+      "size_in_bytes": 4562
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2f06758c51e1f9a8052dd5759c7339acec314aa8b0c9a64a18b340fcfaa138a6",
+      "size_in_bytes": 3548
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/bllip.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "68cc93d3eea7e2a506c9fb0e1830554fe5a9a7307fa9afb75c593b5155d33ecc",
+      "size_in_bytes": 9850
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/chart.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "358052efeb4558e9c8b058e1a10e3cfa101e48388b706ebb7f12781f0393524d",
+      "size_in_bytes": 81298
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/corenlp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c3b8bdb4fe0e9df1c6b51a7476b6080dcbfb967a2c2f8e7568d5995d0102e7fd",
+      "size_in_bytes": 32463
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/dependencygraph.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1e44c7ef384f994565d2b38adbee05ec80b9fdcf3256546d77b95106fdba0c7a",
+      "size_in_bytes": 40810
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/earleychart.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "be36627c25ef124a18da251bde8ae26b655bc8c62a18211f5511ce909978015a",
+      "size_in_bytes": 27449
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/evaluate.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "88d9a7b085f30b7ed950d7c26920b7d79c6cb11527dbb406ffe0ec8e8f0158bd",
+      "size_in_bytes": 5187
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/featurechart.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8bed75cce53abf3a452ebda95bff8cd0b102e016f84cfb9db711a8ec5f1fabc4",
+      "size_in_bytes": 31917
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/generate.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "63b13501aa3bc14a723d00d33c830b0924b0ae04eba3aa8bcb382d9c1dbdf4e6",
+      "size_in_bytes": 3327
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/malt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a04211bb1168cbd12b38f32ddfc931dada879b58be8383d761b16d9c7fb477b4",
+      "size_in_bytes": 15355
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/nonprojectivedependencyparser.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "dcae1ea4d39de61703d1526408949f3f63490790277d0f17f1dfb230b704c8e3",
+      "size_in_bytes": 33467
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/pchart.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6134c5ab5916847afdd1f5b477aa141d342317c5dbb80cd7f439f7be6b0afebf",
+      "size_in_bytes": 27238
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/projectivedependencyparser.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f00267d6185d09599770d88f2d14cc529b01f80955368d1bb9901796431d42a5",
+      "size_in_bytes": 29736
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/recursivedescent.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6472c704a3053c992c314cd8f2f0f1ccc955a7c1270202240f9ac25c49d3f346",
+      "size_in_bytes": 33214
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/shiftreduce.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "40528a371ffb6b765125de20e258735a6180b726941050340c76a4c51ccb152c",
+      "size_in_bytes": 21863
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/stanford.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c30729c56332f9f61281f5ee340ccb1fe6e78f3c27d0300fa880e7991618f041",
+      "size_in_bytes": 22609
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/transitionparser.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cf6752ab75c6c93c9debad62d17c82e47933996f1db10fa1f06059635e031ae5",
+      "size_in_bytes": 34863
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4e942a43a7eab771e56e2571d31ca8c7fbc464086c66a72746eb38037605e524",
+      "size_in_bytes": 9438
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/__pycache__/viterbi.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "86700804d942171c8a0fec8c17fe58be159f2c9b9af447a784e6c09ccf34c4ff",
+      "size_in_bytes": 21467
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/api.py",
+      "path_type": "hardlink",
+      "sha256": "477c46d8d10402ae53bf3429b9328613fc57fc92e8570a7495318242c2f6595f",
+      "size_in_bytes": 2354
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/bllip.py",
+      "path_type": "hardlink",
+      "sha256": "2e2a5d185949aca8a7c0a54882210aa2cbdd683ac540642afbbad950e9243cdc",
+      "size_in_bytes": 10976
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/chart.py",
+      "path_type": "hardlink",
+      "sha256": "e9bdc7a0b3db4f43a52a4113b5ecc8383beaa4128896400fa18eebe2057dd683",
+      "size_in_bytes": 63760
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/corenlp.py",
+      "path_type": "hardlink",
+      "sha256": "b7d78f96caf7cd6c5fe822846dcce4ef598255eff2e63f54dac77c7a5f11126b",
+      "size_in_bytes": 27745
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/dependencygraph.py",
+      "path_type": "hardlink",
+      "sha256": "27d0dc3bbb2ccece8fa7f4ea4912fea492f00404f0fc5f7cff1699f66d3e91b3",
+      "size_in_bytes": 32468
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/earleychart.py",
+      "path_type": "hardlink",
+      "sha256": "395046cb31dbbfa33be8bc85947bf51b3fb43ef674c5d45d2188126ff41eb7ce",
+      "size_in_bytes": 18274
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/evaluate.py",
+      "path_type": "hardlink",
+      "sha256": "3f7a8667b586f7498eacfe0c1105f30db20e07c596843046dcf2032187e8cf1d",
+      "size_in_bytes": 4468
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/featurechart.py",
+      "path_type": "hardlink",
+      "sha256": "88ad0ed2e0be640820e81723f4009e42402f053ad6a3e86d7aef9bf9c3dd3e15",
+      "size_in_bytes": 22532
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/generate.py",
+      "path_type": "hardlink",
+      "sha256": "9039588168f57ff6296f3549abb38be8ee47d33534de1aeb8f12ee28bcc982f1",
+      "size_in_bytes": 2381
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/malt.py",
+      "path_type": "hardlink",
+      "sha256": "fd7305716dd2387d170abcdfbfea38f94f114e47300db1521e97db58ecccb6e3",
+      "size_in_bytes": 16571
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/nonprojectivedependencyparser.py",
+      "path_type": "hardlink",
+      "sha256": "9dc329bda30c73c4ed47368f4ae6fc42dd0851f697415e366126d43100c49ef8",
+      "size_in_bytes": 29446
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/pchart.py",
+      "path_type": "hardlink",
+      "sha256": "28631829fe71da9b12f5765f53ac1b527205e63c2da1e02db07cc9cfabf267e1",
+      "size_in_bytes": 20480
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/projectivedependencyparser.py",
+      "path_type": "hardlink",
+      "sha256": "58858345801a52aafcbbd5103f903048b5db722ca86829523784dabee9a47e46",
+      "size_in_bytes": 28243
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/recursivedescent.py",
+      "path_type": "hardlink",
+      "sha256": "b9a56e9def9f20859aff04f70936383bca7d3214cfe15816d54a0d6ae3ec0594",
+      "size_in_bytes": 26032
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/shiftreduce.py",
+      "path_type": "hardlink",
+      "sha256": "625d896117543aa2488d05ce116bf87d47e97c6bb990babde076983d35794009",
+      "size_in_bytes": 17071
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/stanford.py",
+      "path_type": "hardlink",
+      "sha256": "c723d1c7bd7475d3025582178deda04f0bd9aef620c4e33508c84cef3883b954",
+      "size_in_bytes": 19312
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/transitionparser.py",
+      "path_type": "hardlink",
+      "sha256": "f447583881993eaefb9777e02387671fadf5e3a6290b93c17da64a6813e48655",
+      "size_in_bytes": 32272
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/util.py",
+      "path_type": "hardlink",
+      "sha256": "ea6bbd6553b685176e2a1646af8d1b03044fbe12b24cefd2af1d8c4fca40cba1",
+      "size_in_bytes": 8667
+    },
+    {
+      "_path": "Lib/site-packages/nltk/parse/viterbi.py",
+      "path_type": "hardlink",
+      "sha256": "7333a3a2d1fffd753f03f3297f9fb1625622f1b5d83936c87dfd66acf6413584",
+      "size_in_bytes": 18351
+    },
+    {
+      "_path": "Lib/site-packages/nltk/probability.py",
+      "path_type": "hardlink",
+      "sha256": "8a4589ca9d04aae9b84721b15ce24504180d7ebda3a367cad0293bc7099292cd",
+      "size_in_bytes": 92907
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "dfe41d0584e02ddd62447ce8e9ed9fdce4f4083056640566ce19e587b62fbb6e",
+      "size_in_bytes": 2443
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "491418d21c1770675e53e11cb70cde2addc54b0175ab2dbc6c056e11d03c5c65",
+      "size_in_bytes": 2675
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/boxer.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1214d0def12bd7bf51bc27dff5dc36838ffbbc0365f350675ac2a2e8b4ba5aa0",
+      "size_in_bytes": 91574
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/chat80.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f71eb7bc20f59d9dfcac034626c6ae146ab2b7cb21d06acd1e589a335f364c26",
+      "size_in_bytes": 29485
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/cooper_storage.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "3c4ecbd1048a7b96b88ad30e0e32275de3492b6c9d2ae40bd412f43ad703ecf8",
+      "size_in_bytes": 6124
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/drt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0b6bb980b3637b3553675af6328159cc78efc5215b7fbb39e55047e62dd05c9b",
+      "size_in_bytes": 84582
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/drt_glue_demo.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cbb3e476605588dcdee1106b0fc37d366e2b5c60a110c23058dbadb0b53069d7",
+      "size_in_bytes": 25969
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/evaluate.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5105e5406c6b3a0a6a0dd9e1405677259bf248172c1b18062762e650a9c26055",
+      "size_in_bytes": 35381
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/glue.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ef59f2da5ebc4d172b7ce24635edd2e4fe919dc0dc9c8869f656f4c859f38dbc",
+      "size_in_bytes": 37427
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/hole.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cb43fd22829edba76e4526570628d39a71853ebcb35a442ad02fb074ebedfc2f",
+      "size_in_bytes": 17292
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/lfg.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1b00132e3acf715edc619e5c4813ad70c6197e79dd013cedb0482ddaebdeebad",
+      "size_in_bytes": 10579
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/linearlogic.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5e9187f9ebefc7cd2c0e77b969dbb67a1ca6c7740903c2e3d0c0e6e0755776af",
+      "size_in_bytes": 26081
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/logic.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c0e9b28770c3ac9906a276923a2bdf0ee38ac05c15f7e2319a6de2bdda3741bb",
+      "size_in_bytes": 108695
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/relextract.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "32c6bf18e028f12ba0486f81e488592fd4e80f38802f61af16787f50d3d08706",
+      "size_in_bytes": 21329
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/skolemize.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "deb8a21c1ddb4612e5c66d1eed3cec0e1b3e0128c2aaf493665f27a253a23c40",
+      "size_in_bytes": 6192
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0ecd582a4f299a3fbc521ddba03e075b39677b699345c12c496b352784cef71d",
+      "size_in_bytes": 11970
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/boxer.py",
+      "path_type": "hardlink",
+      "sha256": "ac00a41465c62a92b4a4cc465f1b6991a285e74f9acac1f0ffd1908dff71b70c",
+      "size_in_bytes": 55287
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/chat80.py",
+      "path_type": "hardlink",
+      "sha256": "4c0899e0144e0732226f3de356472058bfc1966902fb780cce2132492f0958cc",
+      "size_in_bytes": 26519
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/cooper_storage.py",
+      "path_type": "hardlink",
+      "sha256": "82183a9181ba6b9e08e2c0e2c20cd7ef425c9ba1e53423c39b98198b666a3c6e",
+      "size_in_bytes": 4210
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/drt.py",
+      "path_type": "hardlink",
+      "sha256": "ed80d8a9cf57b96065799d1a2f8d4b5bfc2aa416e9bc2320a8c9d33a24575fdb",
+      "size_in_bytes": 53149
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/drt_glue_demo.py",
+      "path_type": "hardlink",
+      "sha256": "c5ef92a0d1ba255218b41ed8a0c3bbe6f12297429254623e83171fcee2e041d7",
+      "size_in_bytes": 19171
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/evaluate.py",
+      "path_type": "hardlink",
+      "sha256": "d3b3679604e67e3272f7752d15f141ea67594625b686b9bd6537cee112df8dc3",
+      "size_in_bytes": 26282
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/glue.py",
+      "path_type": "hardlink",
+      "sha256": "d6706395bb2a9dae205e7346f223109f9c1bd7940fc5e8f20e7faf6d33e65eb7",
+      "size_in_bytes": 30254
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/hole.py",
+      "path_type": "hardlink",
+      "sha256": "0fd0a773cf56bc6f56083943363605ddc8a0e14987260148c2d7afb8d5f5081b",
+      "size_in_bytes": 14216
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/lfg.py",
+      "path_type": "hardlink",
+      "sha256": "491f8e62f8fc1c1b48c7e101be77e4385b2d4a3f1e297cc0895c9078522c9992",
+      "size_in_bytes": 7716
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/linearlogic.py",
+      "path_type": "hardlink",
+      "sha256": "5a0fe3cd55500f2d670af624b8907e83db5dc016119ac7a741ba03ede45b114f",
+      "size_in_bytes": 17234
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/logic.py",
+      "path_type": "hardlink",
+      "sha256": "174822541a73662dc760b40196c894d2d2ce39510492cc25398911b22b625675",
+      "size_in_bytes": 70239
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/relextract.py",
+      "path_type": "hardlink",
+      "sha256": "50fbffedd2a6f86a5d6062ff27c0ac247033d002f11afff8119feb164effcbba",
+      "size_in_bytes": 15809
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/skolemize.py",
+      "path_type": "hardlink",
+      "sha256": "0ad39f535d803e4788929f99fe332500e3245c810ef657bc4d052f959e6b067b",
+      "size_in_bytes": 5870
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sem/util.py",
+      "path_type": "hardlink",
+      "sha256": "181f1239ceddb72cb06b85ab9551ebd661f0467b57f69a43ecdd5e9be061d58a",
+      "size_in_bytes": 9062
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "beb7bda1944e5fac478dd2a333c8a7bb161f8952dfdf8d4767fb0f2b2a00d89a",
+      "size_in_bytes": 382
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e244e45cb1e78f2a326f53abc671b028fbcfd061a3f4ca0450c5852fbf904cc9",
+      "size_in_bytes": 391
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/__pycache__/sentiment_analyzer.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c6e25a721dcd27a869911783c1fe9858626a9870c4acefda02c89746e5d38c72",
+      "size_in_bytes": 12827
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4986d05f4564cfcad756cbc5c4bb058ead347704f6c80e5c3ffd798ceaf338ea",
+      "size_in_bytes": 35531
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/__pycache__/vader.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "26d39ffd83f7ee20c555f239c1d0e6c9ec2c7b382f0cf266cf63f371faaace71",
+      "size_in_bytes": 22977
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/sentiment_analyzer.py",
+      "path_type": "hardlink",
+      "sha256": "bc1d3d12cacafb5e88a870c3ed376c1d9606ae4ad4718d6b3f336d1e94eb2f5c",
+      "size_in_bytes": 10432
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/util.py",
+      "path_type": "hardlink",
+      "sha256": "99e99290e9477937c9a5e658b60609f4bb2230e728570e30bf01c13ac1709de6",
+      "size_in_bytes": 31275
+    },
+    {
+      "_path": "Lib/site-packages/nltk/sentiment/vader.py",
+      "path_type": "hardlink",
+      "sha256": "79f24794051a46be9b57add954320c00e6a8955a9cb7a9412a8f6d31508ea648",
+      "size_in_bytes": 21764
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "05455abc91afc3fc209cbdcf92496c560f4f34c6f3deb096d54e974ee7da982f",
+      "size_in_bytes": 1296
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ea76d85ed3006bb8312be0be39e762565dde9b0d3d3c7aab23fb9678ac915031",
+      "size_in_bytes": 1442
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "d5b4cb7a1defbace0aa0a8479a3243fc945cd80aee405cabf7b52fb172aa603b",
+      "size_in_bytes": 942
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/arlstem.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9fa99e91ffb6512bb27fa0177e4fe867ef9b674533f03b71aa92829d4900347d",
+      "size_in_bytes": 15611
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/arlstem2.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e03dfee37792166a087b4163ec56bb819cba15def2282cf143ac8b5027fb73f2",
+      "size_in_bytes": 19161
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/cistem.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6a2fc2490aa1b73a5a09e7b8728ec8092017f45f8cb62fd0751fabe7643d612a",
+      "size_in_bytes": 8775
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/isri.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "12fe8914583a288326ce3d918b3a8e648cb9fa9beaa98a908ab8dba0632eef5d",
+      "size_in_bytes": 15541
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/lancaster.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "10a09639a613b2cf314fe4063ea5d4a18a81fabf6f1a752cf212796b5afc4de7",
+      "size_in_bytes": 8608
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/porter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "29f809c68774508aeb0ba9b5fb19dc66631095583339f87d419b71d99e08b518",
+      "size_in_bytes": 29461
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/regexp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e3f311b625f19ab51dbe19f442c6c1a5146973eb0148de73f168e455e09b14d8",
+      "size_in_bytes": 2114
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/rslp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "850eff08e4ad5ce4ae6901c1a9307543df8863253cdde8a107bae9e177a149e2",
+      "size_in_bytes": 5753
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/snowball.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a933539a1c2fc62ea9a07246d0d43eccb00a882f95f237324ca39f79b5ca38e6",
+      "size_in_bytes": 166914
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "23406b441fbd906a187f46d40385aea9536717dc485337dfcff7858d448586ec",
+      "size_in_bytes": 801
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/__pycache__/wordnet.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "073fe04acff639b8ac4a5df320a909f3f974f129b0964ba75a6dd5092b389aa0",
+      "size_in_bytes": 2094
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/api.py",
+      "path_type": "hardlink",
+      "sha256": "7820e51adbab257aacd001beab400737a122a94ef2b46b38de5cbe7848a86fab",
+      "size_in_bytes": 741
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/arlstem.py",
+      "path_type": "hardlink",
+      "sha256": "dcb5bed9d49db0d3401a5425b8188e98747a57bc4e6917484f639d95981c2559",
+      "size_in_bytes": 13006
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/arlstem2.py",
+      "path_type": "hardlink",
+      "sha256": "d92ae158800d1b619df51c5bbe3f9421673bfb3af9fb3209181f070f2b33a96d",
+      "size_in_bytes": 16535
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/cistem.py",
+      "path_type": "hardlink",
+      "sha256": "e7d3a65874bf11614ef88f993750d51679f3d6b75c531282070338cfc0d1428a",
+      "size_in_bytes": 7259
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/isri.py",
+      "path_type": "hardlink",
+      "sha256": "dad39af3601b4675cfca6a4e34c24e55cebe0ac59dc9694c81c965170aab27e2",
+      "size_in_bytes": 14990
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/lancaster.py",
+      "path_type": "hardlink",
+      "sha256": "42bbd7cd01942dfc0832c5b567c072f0fcfc1316f53134f275ce59055e1d25aa",
+      "size_in_bytes": 12587
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/porter.py",
+      "path_type": "hardlink",
+      "sha256": "7398d8aedec81c4a55fa779e669eb31ce8cb5d887cdf1d2d92c13754fed89118",
+      "size_in_bytes": 28372
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/regexp.py",
+      "path_type": "hardlink",
+      "sha256": "e656ff14615ded28b117c872019a4d34b08278d0df4619e9ef9d167bd75b6490",
+      "size_in_bytes": 1578
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/rslp.py",
+      "path_type": "hardlink",
+      "sha256": "70ccaba374f57ac952743fac13756ae4d9e9e3224dae507a813433d3cb653b15",
+      "size_in_bytes": 5511
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/snowball.py",
+      "path_type": "hardlink",
+      "sha256": "eaca26c1747c12820df533662b6e7574f446459ef9a02e22e827cf57c8aac24f",
+      "size_in_bytes": 183890
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/util.py",
+      "path_type": "hardlink",
+      "sha256": "92dc060a555bde1f809dd4eeeb4c12eab7d301daee238d4cd736dc716b7bc26d",
+      "size_in_bytes": 644
+    },
+    {
+      "_path": "Lib/site-packages/nltk/stem/wordnet.py",
+      "path_type": "hardlink",
+      "sha256": "0288e1905511321a45f2f992eee4e47de24d2fe118aef19be36bfecab4d20fcc",
+      "size_in_bytes": 1655
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "bfb84f6ec5b796b6fa005488677ba1677de2c02295c7b46f047acd90dae8d4d6",
+      "size_in_bytes": 7298
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "dc3a4a90606396842bd095a0d70e86aa3ce4923af591361b54fc0192ccbd23b6",
+      "size_in_bytes": 8575
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "997385feac243399de11eff35cbde99dd6be85c78b19877e8b69e85680ca1002",
+      "size_in_bytes": 18710
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/brill.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "11691fed42f82cdd6fb561ee12f408cea0e67e1c9074e15b2a1bb1f65ce4e72b",
+      "size_in_bytes": 27178
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/brill_trainer.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0ff941967a39b278a47de944798603e7f524ee65dada97e84b126c6bab31fc74",
+      "size_in_bytes": 27846
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/crf.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b4dfd296b5c446efd5e76c77302ce82e1a938d5c998e9167d78c34b0ac0f8510",
+      "size_in_bytes": 10097
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/hmm.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e1ed04042f5cf640cf44cb15e7c49d43e1ef3af12cf3ed9a0a323f9d19b74723",
+      "size_in_bytes": 66564
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/hunpos.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "25adf0bd8a64986919ac683e1454c1980d8b19f1a40a8df3413923794f739be3",
+      "size_in_bytes": 6164
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/mapping.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "602e5e181ba061d57f161616637ec2d8d3a264020a3bdc20abb5c355a3d5b4bd",
+      "size_in_bytes": 4429
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/perceptron.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6cd400480aa679298be3401416ad6c5cfa460ecb393e4fd60cfbc09dda5a0d38",
+      "size_in_bytes": 19611
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/senna.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "d87e9fccd0b859248bab40c550c1aecb121d9c10be2e5f528b5503051f9d551f",
+      "size_in_bytes": 7149
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/sequential.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4f0f091b7db8e6eafd2f7a325574c097b9e5605bb33bfa41bfd2f35ac6b950b5",
+      "size_in_bytes": 35845
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/stanford.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "669acb8a1a595653f3642232d36af36628812593ff11ddc71772a1123c879787",
+      "size_in_bytes": 10879
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/tnt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0212a9cb3e321c436c30af038649608dd3ade95edd04d86c146a117f53999c8f",
+      "size_in_bytes": 21031
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4d0e48dcd3115508856b7c3503838808b06b101a162413bcc018f84c26b32659",
+      "size_in_bytes": 2756
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/api.py",
+      "path_type": "hardlink",
+      "sha256": "87119e2d58831c199c5d89d6b5803c377afb99e6323b35bc9f169f11a4971f47",
+      "size_in_bytes": 14810
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/brill.py",
+      "path_type": "hardlink",
+      "sha256": "3c0f1c3f6b57c1bc58b523b7defad5f11c0624d9b8654fd3e620a4a8a7f45b88",
+      "size_in_bytes": 16829
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/brill_trainer.py",
+      "path_type": "hardlink",
+      "sha256": "6dad00d9bdb9e71b45dcddf48a22d6cbca1acd0c9c27720ffa0058e9232e5f6c",
+      "size_in_bytes": 27900
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/crf.py",
+      "path_type": "hardlink",
+      "sha256": "79a534e61a5438f44ef53455b7a5577dfbc207d66c6a1903bb68108b5c7c1454",
+      "size_in_bytes": 7960
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/hmm.py",
+      "path_type": "hardlink",
+      "sha256": "9a40f4e8205e6c9c8167e96a5d5b3257008bd5b96a034b9c8a320d8f29d98894",
+      "size_in_bytes": 50349
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/hunpos.py",
+      "path_type": "hardlink",
+      "sha256": "b61fd311e8598b740895a14b261238d2d069aa7d519f7418cdfbff753d67d70f",
+      "size_in_bytes": 5195
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/mapping.py",
+      "path_type": "hardlink",
+      "sha256": "4df71198fb29f9c33b145c74dc494b99fd1962f5b8f0ddf948897fcbb33b4076",
+      "size_in_bytes": 4024
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/perceptron.py",
+      "path_type": "hardlink",
+      "sha256": "81ed384ffeacfaa224d849512c0e377ae312cdb6b142eaf62b1a2cb8b7eafd38",
+      "size_in_bytes": 13425
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/senna.py",
+      "path_type": "hardlink",
+      "sha256": "fd8fa6ad8bf5638487f3bdb4a4c2a25d8bcf167b8d24c783786e8f52ed53c879",
+      "size_in_bytes": 5903
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/sequential.py",
+      "path_type": "hardlink",
+      "sha256": "85648464062565af2e29de7ea3b35e008b046873a3da56556955f9179ca67682",
+      "size_in_bytes": 28621
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/stanford.py",
+      "path_type": "hardlink",
+      "sha256": "fc7b909ca3ef7079f4d6052daef85a608fc6a4e1b6b6576d8435e857775a0850",
+      "size_in_bytes": 8427
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/tnt.py",
+      "path_type": "hardlink",
+      "sha256": "80db1bbdb65816784f2e76c228200e770248b0aecec8dc408ded927d1725cb3f",
+      "size_in_bytes": 18432
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tag/util.py",
+      "path_type": "hardlink",
+      "sha256": "1440292662799696f59966df851bed29c7bdb11f7758f89125f53202f06873bf",
+      "size_in_bytes": 2353
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "ef0f3c561713bef091634ddc51fb6c9a82e47f961a9d1c8cdcf5d4f88936b767",
+      "size_in_bytes": 790
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "242db040e656b716b018b8f3edbedeb1b844a354b498781b542555be00e41c29",
+      "size_in_bytes": 589
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a2a9270d0c27cf73a51bf56a6d7b67c03d4397f5ee7fb385bc0a7108870e4939",
+      "size_in_bytes": 142
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/demo.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c0cb092fa99c39ac30daf814e30b1fbdc76fc2b29ec42881f67cc7cb39f19ef5",
+      "size_in_bytes": 19223
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/erroranalysis.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f8c95fd11d1515fc675508a6fdfeab835e880cfff98d90b06af9c3df6eccb93b",
+      "size_in_bytes": 2095
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/feature.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "55193951dd9cef6f1f091c6aed104ed2b66be386c022e88cacbb2541ef99e95f",
+      "size_in_bytes": 11857
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/rule.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4094755fca11f14f253fed117ec9ef4d7ede85fc6045986aed170618ca902982",
+      "size_in_bytes": 14417
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/__pycache__/template.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "240e8e06577fccd6b55d81ad266c011c8c571bcb005338ec9dd27bb17f97f2b3",
+      "size_in_bytes": 16471
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/api.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/demo.py",
+      "path_type": "hardlink",
+      "sha256": "569aa525075a5d4e70ae9245d9a48b853945eb67ce425e6c09888126b3d97195",
+      "size_in_bytes": 15338
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/erroranalysis.py",
+      "path_type": "hardlink",
+      "sha256": "a5abf6df3a749ce886c9da90e304896d70152668b1c42c20a1d4ad8422fea275",
+      "size_in_bytes": 1454
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/feature.py",
+      "path_type": "hardlink",
+      "sha256": "0ab70d049fc11aa9c45f316c869cff3067ba993075574acc581196ca7e4aba4c",
+      "size_in_bytes": 9690
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/rule.py",
+      "path_type": "hardlink",
+      "sha256": "93ed20455b193a280f5a4aa7fcdb99bce790e5b5f1e984d8b92440fa85125cfa",
+      "size_in_bytes": 11515
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tbl/template.py",
+      "path_type": "hardlink",
+      "sha256": "2de4da7c8c3fa1e85270683016097d7e495220e639b49bee24d160cda46c2475",
+      "size_in_bytes": 12892
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "efdb54c05f247964dd3ce59afa0a55c7456426be83001c26abd8f9f3d2050015",
+      "size_in_bytes": 487
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fd0c0d77e00675e593024d915dbd310c0ddd8ffcc3b5ccf3439c4308ebea9ae7",
+      "size_in_bytes": 437
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/all.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e71fdeeee2d99ad626e876166efe0133b76b4239085878747887813e135024ce",
+      "size_in_bytes": 1600
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/childes_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5e62d95c5835fa513ced95641812b03e1adad716ce63c89bec472693478c8b3f",
+      "size_in_bytes": 813
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/classify_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "27bc918183fb276a2db304f9f5de26ea80153c6a84aabb0060b28e6de48c8a51",
+      "size_in_bytes": 385
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/conftest.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ded81bc511267f0e39923bdfb164e90a14623153817a63715a5da75bbc2fdb51",
+      "size_in_bytes": 1636
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/gensim_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8054693d04372f1340055e35b254a85c93df2da7869ef4dc89e49691b834a7ce",
+      "size_in_bytes": 384
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/gluesemantics_malt_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "eabd10db9f626c0b32880b139291581daa9db292f7acfd7a50204cbfd20f1362",
+      "size_in_bytes": 697
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/portuguese_en_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bb3231935b43082a2dde3f5c46b0996c7e1efff74fd7d4ac66719d857af5b91d",
+      "size_in_bytes": 448
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/probability_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "016119e709046b3dced755ce751395bf5326ec2de9662d9d973489164e6827f6",
+      "size_in_bytes": 388
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/__pycache__/setup_fixt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "bdfa53d6ff275fbd08befd031232edb589c700236846dd73fc59e97b9490f178",
+      "size_in_bytes": 1529
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/all.py",
+      "path_type": "hardlink",
+      "sha256": "3a39796715a1ecb57b5ec74ec91f245843b1324ec4e26ed09c252b428002cd09",
+      "size_in_bytes": 819
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/bleu.doctest",
+      "path_type": "hardlink",
+      "sha256": "d8b9900e2ca0f81b9e071f0b6cb25a9d70aced4648f73b0b7b99eeaeb5c1541b",
+      "size_in_bytes": 862
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/bnc.doctest",
+      "path_type": "hardlink",
+      "sha256": "ffc318a58ebd89b05a52690d13796ed7ced60ce555fc01781a04efc52991b8b4",
+      "size_in_bytes": 2051
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/ccg.doctest",
+      "path_type": "hardlink",
+      "sha256": "607890b1f45d680b8e5eb9017c3d964d277dc966c05b227c2b6283b64016ca19",
+      "size_in_bytes": 19786
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/ccg_semantics.doctest",
+      "path_type": "hardlink",
+      "sha256": "bcf750a23250c00c4e5c9d767144172a71d39d4e483abd73f85b33c97d4c0004",
+      "size_in_bytes": 31066
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/chat80.doctest",
+      "path_type": "hardlink",
+      "sha256": "f9b635cca1615599ad29ff369ddc01b776a2347cbb49e49db978cb2a0832cb6a",
+      "size_in_bytes": 8735
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/childes.doctest",
+      "path_type": "hardlink",
+      "sha256": "15c2b3b97fd15d71d93610b253f4b607bc53378e91e789b18d8b35edb7a384dd",
+      "size_in_bytes": 9363
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/childes_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "034e20e83dd0cada826ad18e60083a7c25ea5d3f17ca320f6d14a4746d72b3ca",
+      "size_in_bytes": 372
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/chunk.doctest",
+      "path_type": "hardlink",
+      "sha256": "84355c5ad8093c464964b71e29b9bff3ce6c82969247a0c51d031eb05cf261e5",
+      "size_in_bytes": 11511
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/classify.doctest",
+      "path_type": "hardlink",
+      "sha256": "7b5304b0298741c2e4932e97a2631ce237b49a122637c620844cbe035dc87a1f",
+      "size_in_bytes": 7699
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/classify_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "cd48f6394361ca2dac24d99575285b427ba12d489e27b87f0302a6be3d469f3c",
+      "size_in_bytes": 119
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/collections.doctest",
+      "path_type": "hardlink",
+      "sha256": "ca04efd65fc76d77551c3c3dd6b8d4c49cba2859d2bdbbf3a645cbbd37e75545",
+      "size_in_bytes": 622
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/collocations.doctest",
+      "path_type": "hardlink",
+      "sha256": "7b34b06d46e8206f757db98a5fb9af168ddcf42fc195b80cf39b51adcb5900a5",
+      "size_in_bytes": 12506
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/concordance.doctest",
+      "path_type": "hardlink",
+      "sha256": "acf112a16ebeba0a608f62e005880285c8ce5afef9c747aedd8e00d8cb994ac4",
+      "size_in_bytes": 3544
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/conftest.py",
+      "path_type": "hardlink",
+      "sha256": "6a931f7bf5791075d91c25c233156a32dde0a47094c30c51f8cc444a2b3dfbe4",
+      "size_in_bytes": 804
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/corpus.doctest",
+      "path_type": "hardlink",
+      "sha256": "2b7bc89d824b8e89ee1d3cac642ac7bd9d72b60b1e444a6a64c733f55b289470",
+      "size_in_bytes": 99206
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/crubadan.doctest",
+      "path_type": "hardlink",
+      "sha256": "aa7eb7765353ed79b1500d66d8999cc2e5ff8b5dbf7160807c90d5c52a7d2a0b",
+      "size_in_bytes": 2060
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/data.doctest",
+      "path_type": "hardlink",
+      "sha256": "820997b994f51f2ec1779fdba6940f873eb894ef04f9d0c75edba1da14391d83",
+      "size_in_bytes": 14266
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/dependency.doctest",
+      "path_type": "hardlink",
+      "sha256": "a57c9a0230c4db7db1034436104bf190c36ef02392934979d842cc8b4ec2faa2",
+      "size_in_bytes": 7669
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/discourse.doctest",
+      "path_type": "hardlink",
+      "sha256": "03125eb568b40deb4c7e9b5e72b23d95769cee6378615adf0953ebdd55c30644",
+      "size_in_bytes": 17923
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/drt.doctest",
+      "path_type": "hardlink",
+      "sha256": "c13471a3c212a7072c17d469c251e7d0f2dfa5a2f9642671376a04a6a9461d88",
+      "size_in_bytes": 20076
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/featgram.doctest",
+      "path_type": "hardlink",
+      "sha256": "00f7ba39a32bb75530b8accb33eecd45721017498f9e9663e2f475c934a7cf4a",
+      "size_in_bytes": 28870
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/featstruct.doctest",
+      "path_type": "hardlink",
+      "sha256": "86308366cdcd3760c9772007f41ca07d752e5803fbdb7c50164dd831283ba7f4",
+      "size_in_bytes": 38894
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/framenet.doctest",
+      "path_type": "hardlink",
+      "sha256": "29c64892dfbcfc727680397b06f586faf7ce237348ec17b6553f6c73d85c0176",
+      "size_in_bytes": 10797
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/generate.doctest",
+      "path_type": "hardlink",
+      "sha256": "ef260027510ed6a007cbd39855ca047a13ece21a0486f4efb34547e47d3ca018",
+      "size_in_bytes": 2050
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/gensim.doctest",
+      "path_type": "hardlink",
+      "sha256": "926c1b1755dc819bf27eb7dda2d8cdc3e565933806155c7054e6d0d083dc0172",
+      "size_in_bytes": 5200
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/gensim_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "da9fb844e6c158153e6336c63d7023d3768f86298afa5fd12cd752fd1b8a1e1e",
+      "size_in_bytes": 77
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/gluesemantics.doctest",
+      "path_type": "hardlink",
+      "sha256": "41547f1e48b5d2cd42460846bf1243343036bb527cf6e8f53bf9cab74445f1ea",
+      "size_in_bytes": 12705
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/gluesemantics_malt.doctest",
+      "path_type": "hardlink",
+      "sha256": "e12e6eb17d814cf00fa4aeedd5221fc0719a6a3a555c0ba4e42b8052f49a8195",
+      "size_in_bytes": 2667
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/gluesemantics_malt_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "1fb614b13fcce4bb5e4c117dbad3e3a943fca726d4696df0d9f41d1943e24f77",
+      "size_in_bytes": 232
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/grammar.doctest",
+      "path_type": "hardlink",
+      "sha256": "cf6673a6a06337ae293c1ec9dd66d9708fd0b07e5ad5392074d28de46b0730b1",
+      "size_in_bytes": 1949
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/grammartestsuites.doctest",
+      "path_type": "hardlink",
+      "sha256": "e1e17d94c13b890a9a01432fa77217d2cf35e728bd3125206c3ad3fe1268bf67",
+      "size_in_bytes": 3309
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/index.doctest",
+      "path_type": "hardlink",
+      "sha256": "32e54ffb14720bd66efdb63b3d4f0165e911cedc9c9ab0f6f2782aeaae91a272",
+      "size_in_bytes": 2701
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/inference.doctest",
+      "path_type": "hardlink",
+      "sha256": "f1d001043cf9ef9110230d6a33055d0c21100a5466691c7130046a0b5087601c",
+      "size_in_bytes": 18365
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/internals.doctest",
+      "path_type": "hardlink",
+      "sha256": "7735c0a1f3db11f724fc16583b5647a79369a9077f39fcf79c62a33ff2a5cc71",
+      "size_in_bytes": 4283
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/japanese.doctest",
+      "path_type": "hardlink",
+      "sha256": "efd3bf0f8decdeb5424b4026d3aa46da10a2354913d80ec04f5529fc14fcdbf8",
+      "size_in_bytes": 1093
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/lm.doctest",
+      "path_type": "hardlink",
+      "sha256": "993a3dedafbfe70675b7f1b71eca3e2ee865b934ed1d9aec1396fcf5d8505df6",
+      "size_in_bytes": 3951
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/logic.doctest",
+      "path_type": "hardlink",
+      "sha256": "87c9ee9af29f45642e728100f473c9d36a71be249bf127426b4d8152f58f2f9a",
+      "size_in_bytes": 35183
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/meteor.doctest",
+      "path_type": "hardlink",
+      "sha256": "75cc62f1d7d6386e9f9beeff5651e4c67696f1ddef130e93062af4880b1fd90a",
+      "size_in_bytes": 1523
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/metrics.doctest",
+      "path_type": "hardlink",
+      "sha256": "87d3fe5ac3e4307985403430f7c4d1c1f441015864b8ba84dcc3929778596896",
+      "size_in_bytes": 11283
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/misc.doctest",
+      "path_type": "hardlink",
+      "sha256": "ba9b1e2dcaec5f38aac71174a42980d4dcb1f68bc602e525a46ef0e0f2bc6b59",
+      "size_in_bytes": 3464
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/nonmonotonic.doctest",
+      "path_type": "hardlink",
+      "sha256": "986d3f260b4885987da43fa3aa21801c3ee7b901c60a5c5684abdf7e204f1cd3",
+      "size_in_bytes": 10370
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/paice.doctest",
+      "path_type": "hardlink",
+      "sha256": "f4a3a852c77a3be00248c6eddd16ace334be144e794788d9eb187524aa296f77",
+      "size_in_bytes": 1273
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/parse.doctest",
+      "path_type": "hardlink",
+      "sha256": "7ca0ccb364c3dea85480d7705b7d024d87043a5d6895fdd34421ec7ff8b585e6",
+      "size_in_bytes": 34936
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/portuguese_en.doctest",
+      "path_type": "hardlink",
+      "sha256": "be832c1fdae1b1a236113b17608f13f3e657298bfa975fa086fe1331a103b7b7",
+      "size_in_bytes": 23121
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/portuguese_en_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "fbaea81d71416ef0ca1e4c2470e2e7a70727dbd894a705045ab27e2ea4a4e453",
+      "size_in_bytes": 130
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/probability.doctest",
+      "path_type": "hardlink",
+      "sha256": "e01b893f3772ea5f219515c824e10cc5fce52e5d686abbb67b34d5ea894dc745",
+      "size_in_bytes": 9244
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/probability_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "6afb33b3d3c73135581c770e5c0d7df84b136036a11f854f3cf32abf54241a91",
+      "size_in_bytes": 188
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/propbank.doctest",
+      "path_type": "hardlink",
+      "sha256": "8c30f45c41639b6fa10c0f20fd8ed4b377de34b78e82cc3c96f0e7fad0293b48",
+      "size_in_bytes": 6694
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/relextract.doctest",
+      "path_type": "hardlink",
+      "sha256": "2a57f5e69a03cb01894c99699a94c19cb179babfbfd2d2d90be4bddd2a31f790",
+      "size_in_bytes": 9520
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/resolution.doctest",
+      "path_type": "hardlink",
+      "sha256": "5c9c3a06ce02058484116adecaa5936a84e8d400c6c06c11a6d12c655f2a507f",
+      "size_in_bytes": 8010
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/semantics.doctest",
+      "path_type": "hardlink",
+      "sha256": "5e198cd2a4a901c9aa619bba755ed57ae81fdc5a6ec8cc5a1c4875b76504ab02",
+      "size_in_bytes": 25190
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/sentiment.doctest",
+      "path_type": "hardlink",
+      "sha256": "77001161f71b227ea868f5fb911028fd98e327f603a30c61df3020afed7a31a9",
+      "size_in_bytes": 12229
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/sentiwordnet.doctest",
+      "path_type": "hardlink",
+      "sha256": "ef0224ea022262d38dbe4a4d7c050aff193e8d73555732333e5409e21d944eb9",
+      "size_in_bytes": 1051
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/setup_fixt.py",
+      "path_type": "hardlink",
+      "sha256": "21053260cfa635a55b7ec185bdf39d25cd3298027ed2ee4e01977672a460174b",
+      "size_in_bytes": 912
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/simple.doctest",
+      "path_type": "hardlink",
+      "sha256": "645ff4499e6fa7ba4c7c5a7a88a7f766f2a44582c797105a982d1a69022d4a88",
+      "size_in_bytes": 2407
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/stem.doctest",
+      "path_type": "hardlink",
+      "sha256": "5c9bba0037a29f3bb8d4a825751e6956e88b7739260aca092172da490a1c4cfb",
+      "size_in_bytes": 2552
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/tag.doctest",
+      "path_type": "hardlink",
+      "sha256": "0e5dd0286662fb5b8943040a7a719384421f38b28a47b937c208492807f8182e",
+      "size_in_bytes": 34100
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/tokenize.doctest",
+      "path_type": "hardlink",
+      "sha256": "f5f64e832667c0e04d88f612d3144548f72bf1ab33d7c4dcdbd12df3f9f31ece",
+      "size_in_bytes": 20353
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/toolbox.doctest",
+      "path_type": "hardlink",
+      "sha256": "35f6d0ed0fd615a8c24ed8f170b4b362492fafc5559bc486b6a0deaefe4a049e",
+      "size_in_bytes": 10323
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/translate.doctest",
+      "path_type": "hardlink",
+      "sha256": "89ff7fbf3aa3216934c27a24e9049a2cef9daf2e65b770cb5824e3f7d55699fd",
+      "size_in_bytes": 8396
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/tree.doctest",
+      "path_type": "hardlink",
+      "sha256": "fcc61c964e7948b5c9e33191bbe6db2fea0f39386959cd86e1cd1cb8b9325d7a",
+      "size_in_bytes": 47273
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/treeprettyprinter.doctest",
+      "path_type": "hardlink",
+      "sha256": "cae00bfd6598555e630807b44e6cd0f63e0dd824990fdaf5dff83df760d4be43",
+      "size_in_bytes": 9376
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/treetransforms.doctest",
+      "path_type": "hardlink",
+      "sha256": "50349e2e16bab5f07e3cde3f78919078e3227d5853218f3db61a3fd9cb970f27",
+      "size_in_bytes": 5006
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "710d8e5c598e617ba91b1acaeb39cd362758add645c375a1f22eff68c74bbcce",
+      "size_in_bytes": 153
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_aline.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4a2e329ea02adc2a89995c5dc420559f83b952b51c368094e5a816a8fa70d325",
+      "size_in_bytes": 1591
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_bllip.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "341e275e9dbbfab6cec443130818bc2ed00185ae2f5c8c42f90fdd8df0632222",
+      "size_in_bytes": 2561
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_brill.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a518509b88ef957d5eef360b050df4d9bd9c4f0df6e202abede49fa64e716fd9",
+      "size_in_bytes": 2005
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_cfd_mutation.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "26dba49de9764a5c07a3480a416f4d663b3c3a91fe5502fe5adac5fa5f3cb7d9",
+      "size_in_bytes": 2824
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_cfg2chomsky.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "209f011651343767ab88c5ca913eed043b2bbdefb7a0fa12aea38478ae72664c",
+      "size_in_bytes": 3192
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_chunk.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "dda642daa3cf3d0e78d44ca7538c185bdbe232c57037f0146ea917237e283ae4",
+      "size_in_bytes": 2222
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_classify.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b4249ad121751fd02b15f22289108d0280d12bcabe33599be1df446d09b27dcb",
+      "size_in_bytes": 2837
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_collocations.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7240db581511a0704e3649b8113434718f5adfe5f4dfcde6a767343311f89493",
+      "size_in_bytes": 5319
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_concordance.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "016ffdfef49cfdf8ee769d3b6b10a8ecf91b72b5b5583810101fc2db61976617",
+      "size_in_bytes": 6936
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_corenlp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cbac3af3928983a786a4cf2f9a3d1d79ed176071622b01832152bf46cf2c1237",
+      "size_in_bytes": 17276
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_corpora.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0e09dc02d1cf2a65a925bd01be776cb4f4c5e3e4540ebb1aa9db65cd54255c6c",
+      "size_in_bytes": 13150
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_corpus_views.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7880bf6176b52d70e765e902b117e1ca0f2acb835a24d6b30a7e5148263570c4",
+      "size_in_bytes": 3190
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_data.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0a8999b6210c25a760181f572f5c0b5791f45cdf6dad11bcab6220cdf60d0a6d",
+      "size_in_bytes": 1337
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_disagreement.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "31964ce9fdc8dc48d5fe317ef10362199aab227bc7aa5952ce5fab1e114e6c0b",
+      "size_in_bytes": 3374
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_distance.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "04211529b05e2d3c072884168edae86a4da1a3a8058a98e0a43174630884e857",
+      "size_in_bytes": 2629
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_downloader.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a2eb56d3fb2dce10f0f9899e080142df41f6c57588299b9fc1bb7349c2c6857c",
+      "size_in_bytes": 1224
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_freqdist.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7a0084f98ab0ad4e8ca29ddb3d40fa094f8ade32245569bc049a760ef1e26377",
+      "size_in_bytes": 564
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_hmm.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "15f9990ebef2bcc5c7502f4af2ff278914aca625b8259e6991737a2c73b8066f",
+      "size_in_bytes": 3203
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_json2csv_corpus.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "51c403274d630abf0285f59ac64e76a4608c1659f45c1f59e57330bff80063ea",
+      "size_in_bytes": 7899
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_json_serialization.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "10c10371bd642bd2fd35877067ede2d128615c8862e59f139c02826c7cde9649",
+      "size_in_bytes": 7483
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_metrics.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "910e2007b1591f098b4fa01f5cf78b1042cf719be2651da9edf0bf5fb0e949e5",
+      "size_in_bytes": 2843
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_naivebayes.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a10c3d400b2e18e2c92ec6270562bfc44d97185730d3aa5ac9b4142f15b60690",
+      "size_in_bytes": 1692
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_nombank.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f591b16505168d736f9073c0bce5050fe80724ecc12915479a5856acd3ad4dbf",
+      "size_in_bytes": 2379
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_pl196x.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "412fda5540722b742db2af4a4d1ff593bd3113b4a0245dff4d88b4e753f33966",
+      "size_in_bytes": 1155
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_pos_tag.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b58cba47762742e039156fe4078597636ec4cb56fad806723de541a5d68ef1cd",
+      "size_in_bytes": 3432
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_ribes.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f7ef0b25c4d2e8cb625f4a639e499aa7ff3f8519f1f365e4a9df145bcf57b5e7",
+      "size_in_bytes": 3497
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_rte_classify.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a4cbe1adfaf75dede3723a7790580af6b5b87089ba9205d1455488deca63c46e",
+      "size_in_bytes": 4464
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_seekable_unicode_stream_reader.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7845c294a8122b2df35664eae842a1029a006dd3b48d61e75228209e887976fd",
+      "size_in_bytes": 3262
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_senna.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0ad9e9f8411613920941d3b761cf0a165e4b148399a4867809a9e543add7e7fe",
+      "size_in_bytes": 5142
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_stem.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "d5256cf2c4753de33e15c4d1071ad56c3e8ed7e5c52fa1bc4f79032f6616dbeb",
+      "size_in_bytes": 10490
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_tag.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "74a676e3e29a9afc268d294a29e85104f295dea77d9144b7d4f8f88fa3f9edae",
+      "size_in_bytes": 939
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_tgrep.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1049f6cf39437b87d031a56a4222997bfa509dc364bb3f049cf5787c15e74878",
+      "size_in_bytes": 46415
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_tokenize.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "44d56d366920ba76a68b4ab97c4deda5c4663871c649f9cf7cdf03606a62e45a",
+      "size_in_bytes": 24702
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_twitter_auth.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e7006f65b1a1a75f30ca89cacb6ee6ae6bf66e637912caafa5710e8c899884b7",
+      "size_in_bytes": 3613
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e324158cb57f51cfefb08f9bc7e4b0e3a6e24842a64aad10a0c8187b4148e0f4",
+      "size_in_bytes": 2280
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/__pycache__/test_wordnet.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b7f43f8014e577f190b1865af6f749a6e93f347085557ff379eebc3eb72e3889",
+      "size_in_bytes": 19158
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f3d1b631e72690e50d064c31e87ec807f4ec66dd333752298099a3ef052238cc",
+      "size_in_bytes": 156
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/__pycache__/test_counter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "656cc621f1b3bc31e5381af534b21117d02bfa532ddfbcddd9375860c9f9c3d4",
+      "size_in_bytes": 8836
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/__pycache__/test_models.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0f51a111906992a8bc85dd480fdb7ea0ce47d6be5fd507895974c44f2af1a112",
+      "size_in_bytes": 17757
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/__pycache__/test_preprocessing.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ff5e7fb6305d4aefc847bffbfe2646df6ae5bb2b045e767ea517c8f9fd745f1c",
+      "size_in_bytes": 1502
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/__pycache__/test_vocabulary.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e151a8507b14fef2fe99fa553fa41aaed7de07ffadfed35299748902ee3e4d8d",
+      "size_in_bytes": 13041
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/test_counter.py",
+      "path_type": "hardlink",
+      "sha256": "b750e077a6fa245aed920800ce84574867d9d60c0d2a20f868cfdc04fa05b043",
+      "size_in_bytes": 3891
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/test_models.py",
+      "path_type": "hardlink",
+      "sha256": "df2545354b150b6fd55097b1a9c9674a3227a507b5e0cb8f56adeab1896bda57",
+      "size_in_bytes": 20160
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/test_preprocessing.py",
+      "path_type": "hardlink",
+      "sha256": "d3994c84e7648251a2a6232e274813270686c1e61e774a9519a75ee95635b97c",
+      "size_in_bytes": 999
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/lm/test_vocabulary.py",
+      "path_type": "hardlink",
+      "sha256": "d4f779adf9e21340bf3eae6fda4dc828676e83a66e038c9c6cd64a7d1a427ee2",
+      "size_in_bytes": 5917
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_aline.py",
+      "path_type": "hardlink",
+      "sha256": "bbdcb70f5f6c24663f544f6748e38e37918c6324c8446557332aaf79e332a725",
+      "size_in_bytes": 1130
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_bllip.py",
+      "path_type": "hardlink",
+      "sha256": "ae6dcaacbf45e85e3d59f5c3578d86a6e3e5bdbbec5e26d36d45d4d2959afa9c",
+      "size_in_bytes": 1115
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_brill.py",
+      "path_type": "hardlink",
+      "sha256": "6530c2377cb699367e74b78bd06c2f3b7c8ce8b95c4e6210d4b68d301b576721",
+      "size_in_bytes": 1024
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_cfd_mutation.py",
+      "path_type": "hardlink",
+      "sha256": "62eb4e9851818b3a54cd9eb5975703c487a025a8769edbb028bf3c0b8f7e5810",
+      "size_in_bytes": 1373
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_cfg2chomsky.py",
+      "path_type": "hardlink",
+      "sha256": "836c0a2a39a8809a4069188bc40d3fc70e0a2f065ae33be303e80132df73d65d",
+      "size_in_bytes": 1726
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_chunk.py",
+      "path_type": "hardlink",
+      "sha256": "c68f88b41b49741b1122dfab5f5ad862457fb9f00180f2b87ba1e5a20453bd68",
+      "size_in_bytes": 2219
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_classify.py",
+      "path_type": "hardlink",
+      "sha256": "e01bf9fab0f2ae30c676644763faa1e11abfe55768821ce52443c1fcf088cd0a",
+      "size_in_bytes": 1337
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_collocations.py",
+      "path_type": "hardlink",
+      "sha256": "bda8817889abe5d0833a114f00df10e020145688c94f0347a687689722329825",
+      "size_in_bytes": 3690
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_concordance.py",
+      "path_type": "hardlink",
+      "sha256": "f75c7d2d3fbcef99fb38e8b78ade4ed6aaf5c4a74e035b9f658dca2c7d7421ac",
+      "size_in_bytes": 4108
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_corenlp.py",
+      "path_type": "hardlink",
+      "sha256": "7683287370eb9e5ddf0c5c536992953caabeef94535ce1923aa908f4affbe054",
+      "size_in_bytes": 58632
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_corpora.py",
+      "path_type": "hardlink",
+      "sha256": "e3a200daffe8c4344541019aea21931e24c700fb03663228bc3486db8df651b7",
+      "size_in_bytes": 9923
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_corpus_views.py",
+      "path_type": "hardlink",
+      "sha256": "988c680afa9649f22711090848fc1f66f4c6e9d4f1621ec1c74902182e95b280",
+      "size_in_bytes": 1600
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_data.py",
+      "path_type": "hardlink",
+      "sha256": "cb57d75a7232951adf7fd7c124151867ac70dd3eaec0c83fe9589ec3e8ca71ab",
+      "size_in_bytes": 390
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_disagreement.py",
+      "path_type": "hardlink",
+      "sha256": "7b62485eb36a0a0d584d287a3f69671acf5837c2a69167050fecdc64fb0d9239",
+      "size_in_bytes": 4461
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_distance.py",
+      "path_type": "hardlink",
+      "sha256": "0c832191f9f6cba5afb22251cb0d72fd3e5bff838723ac06d3578402df0277d4",
+      "size_in_bytes": 5839
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_downloader.py",
+      "path_type": "hardlink",
+      "sha256": "42fa674557a139f2d9549fa2507f26e661071bcc3875e2b146117b20e9e30193",
+      "size_in_bytes": 741
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_freqdist.py",
+      "path_type": "hardlink",
+      "sha256": "23aaa473cce579331e8af196074367b415500f1fed571b61591c1c381f93d22e",
+      "size_in_bytes": 210
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_hmm.py",
+      "path_type": "hardlink",
+      "sha256": "6d7edf48577b93cf490abf55345af56409e0e26d8a91fb932ff3364cdbc0d675",
+      "size_in_bytes": 2285
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_json2csv_corpus.py",
+      "path_type": "hardlink",
+      "sha256": "f815197f31470287f8ba628600bfbd58a1940623c5c8accb5593829b35be6be8",
+      "size_in_bytes": 5888
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_json_serialization.py",
+      "path_type": "hardlink",
+      "sha256": "09fa47913bd8d2517cacc41742cbffd274958437e1c5592a0f04cbab6ea9bf94",
+      "size_in_bytes": 3634
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_metrics.py",
+      "path_type": "hardlink",
+      "sha256": "88ae9b2f1562d5f56597ed9e0a683313eb9b5a742515e4233f4efda9d8913fe0",
+      "size_in_bytes": 1949
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_naivebayes.py",
+      "path_type": "hardlink",
+      "sha256": "6bfb63b10b32bcf22c3b79abb6637a927682f411703c4ecf0cd1c148d76160c7",
+      "size_in_bytes": 764
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_nombank.py",
+      "path_type": "hardlink",
+      "sha256": "80882ceaf94423636178087c73ac2525d93a6a91e600c99a0d990ff25688bca6",
+      "size_in_bytes": 760
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_pl196x.py",
+      "path_type": "hardlink",
+      "sha256": "0b8d6a85b965341aad549f6d08533c991790ab3b1d6cceeea0ca3d84554728b8",
+      "size_in_bytes": 410
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_pos_tag.py",
+      "path_type": "hardlink",
+      "sha256": "e47916ee1a6365ddb6ef44554855c408bc5783c8c26368815620e80c0f0ed90b",
+      "size_in_bytes": 2782
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_ribes.py",
+      "path_type": "hardlink",
+      "sha256": "0c8b64c9d3b9779e3791115888079b9eab9d885d871131eb3009ed1b71fbe630",
+      "size_in_bytes": 5204
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_rte_classify.py",
+      "path_type": "hardlink",
+      "sha256": "a0d1b0efca1e75cb7f569c1e96c31515beefddb4457a99d05966c780aa771814",
+      "size_in_bytes": 2765
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_seekable_unicode_stream_reader.py",
+      "path_type": "hardlink",
+      "sha256": "5c1c6489cd8771fab17d36345f1041051344a39150ad8610ce4835bf2c30500d",
+      "size_in_bytes": 2265
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_senna.py",
+      "path_type": "hardlink",
+      "sha256": "7ee2dda503bb906fb5dab5a91a9ac83a21fd7f0c61bf5cac78dc4ab697149acb",
+      "size_in_bytes": 3712
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_stem.py",
+      "path_type": "hardlink",
+      "sha256": "923b686652a482d099617f24c7255020f7f97fa4123f35022e40892c3bc35850",
+      "size_in_bytes": 6347
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_tag.py",
+      "path_type": "hardlink",
+      "sha256": "87b633b4dc6f61cc76d7becc910acfa8f81847680bd6c765f5807764c2ae722c",
+      "size_in_bytes": 535
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_tgrep.py",
+      "path_type": "hardlink",
+      "sha256": "7a5c74ae81b064910e272efe8fb72ac005efcef95d973624c68f251c3a0a7fc1",
+      "size_in_bytes": 31708
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_tokenize.py",
+      "path_type": "hardlink",
+      "sha256": "f6e431db556ce48bf998198dca21ea4da3a621e712943d67f63518f5d1759813",
+      "size_in_bytes": 30921
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_twitter_auth.py",
+      "path_type": "hardlink",
+      "sha256": "6e6b3d0d0d3b0f012be7722a32be3da862fdae26bfd6b11fdda03bc6df2847e0",
+      "size_in_bytes": 2509
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_util.py",
+      "path_type": "hardlink",
+      "sha256": "50c513cc125149201d170a7bb59906ee0ca043d80772b9362048aeaba5ef4d10",
+      "size_in_bytes": 1888
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/test_wordnet.py",
+      "path_type": "hardlink",
+      "sha256": "b590a7fe565527c3ceb9e84c6c021c815d34d2f08cc1714951b761b8f10e4a6c",
+      "size_in_bytes": 9260
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5c668ec3e0cd1d1ab106af4c0b599a4dfe480a712469aa64b76854c0012b3560",
+      "size_in_bytes": 163
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_bleu.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6cda29c0b67bd0ccecfe20b0db4cf0ccacce3a3bf9f3f8740acdaff2c821fe5b",
+      "size_in_bytes": 17105
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_gdfa.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5c59dc76918d2591b19a2033da7de1c3547dd1bd38953fa4fb6182c2484365f0",
+      "size_in_bytes": 3638
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_ibm1.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c6c03b2c9e5784fae64dcaa7155b1009322f44caf777418a90c197342f7d27cf",
+      "size_in_bytes": 3867
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_ibm2.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "906c4f09da071603a560ff87c14ab248dddc584853b3f16f5ea8ba3db91b80d8",
+      "size_in_bytes": 5372
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_ibm3.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0138f4a5f2d3addc0f6bb50cc5d16229d6d5153aee35fe254c0fa3adf883ba7e",
+      "size_in_bytes": 6335
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_ibm4.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "71616be4c6ee62d5be610fa49bb74d635c932a39e3a6988e60641d7493e24c3b",
+      "size_in_bytes": 6939
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_ibm5.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5acdb8d7ef0c51185603fbc9b7518e934cd3c0230254b67b8c464354b6951a15",
+      "size_in_bytes": 9055
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_ibm_model.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a16efc37af4d08e4c3fdf0daa7ffd5ad7063b85b668608897458c7674ed682ee",
+      "size_in_bytes": 14100
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_meteor.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "11671419bd3753103b9034dbec04039268d22e24fa7d7c09d6c80ed9d2b307a2",
+      "size_in_bytes": 2034
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_nist.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "05916bdb9423d5e6fb2fc4ed696b6ce0f3ef94f394bfd7b672ea054df5f8b85c",
+      "size_in_bytes": 2944
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/__pycache__/test_stack_decoder.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6f295ff3d54aa3c6c6d8674f317610bf6698119f491a17c1b5d26a035759828b",
+      "size_in_bytes": 15681
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_bleu.py",
+      "path_type": "hardlink",
+      "sha256": "629607ab3cde6c5a85f0cfb1d808d461e23760d9914ac7899807f8c684f5dd76",
+      "size_in_bytes": 15874
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_gdfa.py",
+      "path_type": "hardlink",
+      "sha256": "138afaa344b6af9af32bb34f153c830366bb2007d8ce6221094e165c1d16bdda",
+      "size_in_bytes": 4770
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_ibm1.py",
+      "path_type": "hardlink",
+      "sha256": "edd1ad3cafd3f6a5c64e607cb2439e27f98d2761bc55aa183a5a8c9213f47c1b",
+      "size_in_bytes": 2669
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_ibm2.py",
+      "path_type": "hardlink",
+      "sha256": "7c08e0832c8c1d1ccf9a9b85768bfb7567f0b0d33b84af59f29fea6a50a7fe56",
+      "size_in_bytes": 3377
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_ibm3.py",
+      "path_type": "hardlink",
+      "sha256": "f4f51034def9213c3f4e0cd66b2c50acc651352ea9772353852c3eb1376c70fe",
+      "size_in_bytes": 4189
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_ibm4.py",
+      "path_type": "hardlink",
+      "sha256": "af581f24299794fd1466165daddcdcd027092d93429f4ceb9ff048307d1d5439",
+      "size_in_bytes": 5209
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_ibm5.py",
+      "path_type": "hardlink",
+      "sha256": "db46a0693a40ae17cc731f80772d01517cb16b2054fe2a4f8834ef6fcb3fd68a",
+      "size_in_bytes": 6761
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_ibm_model.py",
+      "path_type": "hardlink",
+      "sha256": "a9330547869c4a410fe7e92d6bef41e91ca6a2cc04222b55de58e7f3aae2342a",
+      "size_in_bytes": 9676
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_meteor.py",
+      "path_type": "hardlink",
+      "sha256": "b2575e3230e44ada0c9f1067c7530a0d13411a672ce0776ef5598c4b3a65d49a",
+      "size_in_bytes": 750
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_nist.py",
+      "path_type": "hardlink",
+      "sha256": "1c57dcb391aafe0a32626f8d4aa75bfc47adea40a589b28dbdcaf781d6ac3269",
+      "size_in_bytes": 1645
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/unit/translate/test_stack_decoder.py",
+      "path_type": "hardlink",
+      "sha256": "dfba66f5c55473e234efcf58b7ec9464c13dc06e97adc773aacd1ade507ff268",
+      "size_in_bytes": 10000
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/util.doctest",
+      "path_type": "hardlink",
+      "sha256": "058b5351bbefbca5e5339ecd7d5b3e4067b662a48ddccfc0778d1f24d234828d",
+      "size_in_bytes": 1058
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/wordnet.doctest",
+      "path_type": "hardlink",
+      "sha256": "e55236b65f85c49f8d0b0a4c6efe4032fcbcbef128a9a2d6d6150dbb69b357d0",
+      "size_in_bytes": 30528
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/wordnet_lch.doctest",
+      "path_type": "hardlink",
+      "sha256": "e5af347a7d4352650a8fd45ea466eba4998fb20bd848509ece562a87f75af4c1",
+      "size_in_bytes": 2361
+    },
+    {
+      "_path": "Lib/site-packages/nltk/test/wsd.doctest",
+      "path_type": "hardlink",
+      "sha256": "c1ad1e01d13482568eaf3918ed59f121bdbdeed980e3a4ecb8da9d7b21d4351e",
+      "size_in_bytes": 3014
+    },
+    {
+      "_path": "Lib/site-packages/nltk/text.py",
+      "path_type": "hardlink",
+      "sha256": "4d5992f57f7078bae874ddb2fd5947a9261a262e8b3a1f54ea5a4bb72009534a",
+      "size_in_bytes": 28909
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tgrep.py",
+      "path_type": "hardlink",
+      "sha256": "83704d8cb182708aca527c1746831ddf67fe97ef09a85ea652b25fc4528b3942",
+      "size_in_bytes": 37911
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "d2a994a487ba3c4c6013357d9579f37a249f1a41d52e823156b719220045dc50",
+      "size_in_bytes": 5243
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b18b4ebfaddffc626c1ef71e55969b8702bd3a75fffcc6e8e4f2e9920d54de1a",
+      "size_in_bytes": 6095
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8520908517878fe03e60ad50f64340234d76abf223f5df47ceef2e93983ba360",
+      "size_in_bytes": 4208
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/casual.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1e825cf0e5594273e45609262270df79d34d6b2a9194f4b8ac797f129a8274a0",
+      "size_in_bytes": 14148
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/destructive.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8ddef34997ad376df7081b90ff0179b9c492f95b1a1e36e175795a9a5b9b3518",
+      "size_in_bytes": 9780
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/legality_principle.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "897b267320782ad55f7881e4c08cfbbf863ada015eca0d014198697fa519a6c5",
+      "size_in_bytes": 7484
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/mwe.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "cfb332bc6cb06fd5dfa76ce4bab88b756f454fe422fc1dfcf3104e3fb2eafc2b",
+      "size_in_bytes": 4617
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/nist.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c0a97d7ddabdf47c37605eab943b6e6a10acbf8a9d1b12f392e96338f1d4b495",
+      "size_in_bytes": 7306
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/punkt.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b78205776136400401771ee95e09df6d6dec455dd44670968b3e3bd2585207c9",
+      "size_in_bytes": 65923
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/regexp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1e5bcb349b33d4d26a5ed720d8d429621ad18e607d3a6723a43559e79170b93a",
+      "size_in_bytes": 10213
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/repp.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "72bd39618a24d02ed414908e6fd9a9eee4be4477cb636c0e8a53977ff35f4929",
+      "size_in_bytes": 10140
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/sexpr.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6d1cf76279800ec31a6fa739f4adecf85f3ae473f1297de033d90f90187f472c",
+      "size_in_bytes": 6290
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/simple.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2452e66800dcc2cd2c90ee59f4e3b3056061fd84e590b70343f8db0d32ffd3d3",
+      "size_in_bytes": 6929
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/sonority_sequencing.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a6d34b041ee63e8fd067166f9cc847f19b0b4f1c43f233ba2ecead1e4605430c",
+      "size_in_bytes": 8175
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/stanford.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "8efe57c81b5f22dd2f49cc0f39996a2a898ec52f45a65f24f6aaeffc75a7ba9e",
+      "size_in_bytes": 5182
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/stanford_segmenter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "9807f049c2fc7bc4b5609a34fb5c2ca33872cd18ccb9b83262cb74f85b01b42a",
+      "size_in_bytes": 10376
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/texttiling.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "457a79a0622a3d20ff956dd50c2433363cc5a65eb589832c54f8ce0d35130228",
+      "size_in_bytes": 21796
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/toktok.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2dc0d3b4cf07a7a7026e5484c57db9b8b93e49e02e4b93e9b368769b52788f0c",
+      "size_in_bytes": 5880
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/treebank.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "853a2b1d4b4910b444b31ae08db130d11ea9567506490c2e63b87db38bca55c6",
+      "size_in_bytes": 17424
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "03107557fd1698acc9f55d8157ccb5d2197fe73c8e3cd282fc78233d16d26033",
+      "size_in_bytes": 9831
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/api.py",
+      "path_type": "hardlink",
+      "sha256": "812b2e6e3cb8c2f09ea0bcf62c84e85d5edf11b1fe658b94d5940a8990140137",
+      "size_in_bytes": 2357
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/casual.py",
+      "path_type": "hardlink",
+      "sha256": "dfc916db58e30c89803cba02b2fa0220757dd54e92a8a60aae8233b6cf367f7a",
+      "size_in_bytes": 16101
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/destructive.py",
+      "path_type": "hardlink",
+      "sha256": "264caf809e2f6ca43b3ca786e7f4acdcb5af6158422f3ae7b8d0bd9a65ceeba5",
+      "size_in_bytes": 9447
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/legality_principle.py",
+      "path_type": "hardlink",
+      "sha256": "0086d40422adb80bde8703a40b401ae251a673cbc9a11acd379866ef00a97f28",
+      "size_in_bytes": 6236
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/mwe.py",
+      "path_type": "hardlink",
+      "sha256": "94a1cb43ee25c07ba10de837389bd39ead713e4d87f92a7bf1560bd56468bd0d",
+      "size_in_bytes": 4181
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/nist.py",
+      "path_type": "hardlink",
+      "sha256": "f845dff20290385426bb29a622cb25af54489e9e254b6d2b8179440913566dd0",
+      "size_in_bytes": 7720
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/punkt.py",
+      "path_type": "hardlink",
+      "sha256": "29529a80fa6c3cd60acc673a6bdb0f9013149478f0e4bc19c56affaf8cfa869c",
+      "size_in_bytes": 68804
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/regexp.py",
+      "path_type": "hardlink",
+      "sha256": "e281675c20586301db97d3cb54845d2c8b0ca050cabe152f5d44c1d0dfd8bb5d",
+      "size_in_bytes": 8331
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/repp.py",
+      "path_type": "hardlink",
+      "sha256": "d1cf6ccaee1d72f163945b7e6f020894cdaeba786d9c0734adc47f42a7e3609e",
+      "size_in_bytes": 8245
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/sexpr.py",
+      "path_type": "hardlink",
+      "sha256": "3596b3574303e95247df480769fe1497836524c679af94bd651f313913a77b3c",
+      "size_in_bytes": 5302
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/simple.py",
+      "path_type": "hardlink",
+      "sha256": "21eec586cf79b9b2074f36fed4a7e77e6d318d134db11f49a65bbd122f2fef6f",
+      "size_in_bytes": 5379
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/sonority_sequencing.py",
+      "path_type": "hardlink",
+      "sha256": "5c1895540a7d7f69025ff6e0f34af4408f37e6e1748ed4cc52e0948a6b2a58f4",
+      "size_in_bytes": 7739
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/stanford.py",
+      "path_type": "hardlink",
+      "sha256": "fe9f747e9931ea1988c01b5962c2ac5d16b48b43ad854676909aa05c09072d16",
+      "size_in_bytes": 3875
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/stanford_segmenter.py",
+      "path_type": "hardlink",
+      "sha256": "1376351d2e18dbdf03a4a16fa2d96959fd9831c3bbcc2b3b26b6a386e8097f54",
+      "size_in_bytes": 9857
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/texttiling.py",
+      "path_type": "hardlink",
+      "sha256": "4180c44e71aa9b845d8a65c164d2278402e3cedd1671af0cde61fc69a5f59455",
+      "size_in_bytes": 16943
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/toktok.py",
+      "path_type": "hardlink",
+      "sha256": "475796f15a3312dc6ec036233559f67964864930efb532ad0123210ef76b7489",
+      "size_in_bytes": 7679
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/treebank.py",
+      "path_type": "hardlink",
+      "sha256": "6a10798ec42b15e5d2f87d58d829b976490913dd43bdae67588f48a3e51ca363",
+      "size_in_bytes": 16669
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tokenize/util.py",
+      "path_type": "hardlink",
+      "sha256": "8b0f613c5b43fe864e55eb637028e1d0feacf7cbbf7e36cc0e0a711b19f84466",
+      "size_in_bytes": 10339
+    },
+    {
+      "_path": "Lib/site-packages/nltk/toolbox.py",
+      "path_type": "hardlink",
+      "sha256": "6cc5ecae41db806acff8ab60d8c04b0ebfba309ba922591346d0612d4c08eed6",
+      "size_in_bytes": 18337
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "6bd48e1a7434e7b9bdea6e5863c24e3f93885a2df9dcc6a759a965f84225c42a",
+      "size_in_bytes": 1331
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "12cffa337eaf92009d1eab22218a1cb5fc4e6f4880eda7e91905dcdc4afdf802",
+      "size_in_bytes": 1730
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "b39a6ad53ddbc2b43500931f0da2f7a5a9e6884d067a6781b70d67b34386d1f4",
+      "size_in_bytes": 18718
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/bleu_score.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5c719f3bd42ad4a28eccf9d54c12c1ad5da2392ce4d9e8171bd66607cb001a82",
+      "size_in_bytes": 32066
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/chrf_score.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "a550cbf6379a9c29207535c860b89974c172f78d7c485134e57d04b6c0e11a38",
+      "size_in_bytes": 9504
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/gale_church.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "85fff8fe3616ee6987b5c402af8f004d8666e205fa06d96d242e43ecda444b73",
+      "size_in_bytes": 11922
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/gdfa.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "aa87d452b8db0a5b55a63ebcf3324e379f97e6030d556afbdc47862459707cb2",
+      "size_in_bytes": 7196
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/gleu_score.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "0240bab3b6b60175a3d0985f7deacee63b47eabd36d791c1a248a7231a8ea71b",
+      "size_in_bytes": 8572
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ibm1.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "654a7387c4ed4eef832ae3bdf717bd6117e173487a18ba65df446e73ba864568",
+      "size_in_bytes": 10745
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ibm2.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ca8e6846f71cccc915452351c198c3d629c0b4bed21e296bcb1be483559056b8",
+      "size_in_bytes": 16510
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ibm3.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f2d7698df369b08ccb0d65ab368f5362afa3941fad6c970a7931fc321f581d00",
+      "size_in_bytes": 18378
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ibm4.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1a865a7259901db7a1e249d7be69ee4cde79f6c2944df098b0e0009638e565b0",
+      "size_in_bytes": 24304
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ibm5.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "ac4c77263c54811865f6e0463c5b0976e2c454bbb8b4d5706bc7361bcca5d06e",
+      "size_in_bytes": 32551
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ibm_model.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "1fdc07134d322704c9d9c86d3f76d6e741bd5e647372a83786b8b708b13cc2dd",
+      "size_in_bytes": 24417
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/meteor_score.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "3bc567bf6bb550ceea7810c454ef80126d1145353e24f31839d6f22d265014e6",
+      "size_in_bytes": 21481
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/metrics.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2d290e095f277f6f76827d109f3b69d300504168483851baf604c15948b4cdf4",
+      "size_in_bytes": 1535
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/nist_score.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "157c3caae4dce5114de0d6a5e81d4d0200810da70c111b470792e4ed85be7bca",
+      "size_in_bytes": 7790
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/phrase_based.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "94572660f0f2bbafb3dc656e372558db62d274c475479bc0272c5324c59d0c4b",
+      "size_in_bytes": 7450
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/ribes_score.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "46e070a5bd4fd91f5cbee409776bdac0177354208e52fdeb59fb3d209e701219",
+      "size_in_bytes": 14023
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/__pycache__/stack_decoder.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "d1cc71ac75216ae56d6c9636a7257cbd394614555f97d79c977be2e9f6e60a5e",
+      "size_in_bytes": 23282
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/api.py",
+      "path_type": "hardlink",
+      "sha256": "48cdec229cea84c6121719ce1e8d46df4cbd864c4aad0b44d94822d50967d37a",
+      "size_in_bytes": 11109
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/bleu_score.py",
+      "path_type": "hardlink",
+      "sha256": "62914d9fcd327485a0f2228780027b8e014590fae4b84324bba9b5ac2f57fe40",
+      "size_in_bytes": 30415
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/chrf_score.py",
+      "path_type": "hardlink",
+      "sha256": "0bb9841c2934267ed0766c5cb502261236be1e8be6be93ce09fa2cfd48541fcd",
+      "size_in_bytes": 8978
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/gale_church.py",
+      "path_type": "hardlink",
+      "sha256": "7f2e2321b269666889ca354473fdacd6783a04e469eb7bc6f7f1db113a0533a1",
+      "size_in_bytes": 8732
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/gdfa.py",
+      "path_type": "hardlink",
+      "sha256": "74c58538cef615987c7778ae261ca1419f0ac4c7dbbac4b347436bef89727ca4",
+      "size_in_bytes": 6246
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/gleu_score.py",
+      "path_type": "hardlink",
+      "sha256": "b32998f08eb0e12c500ca50df44c892faff50dafb86d54ffcbe29dda79c57b7f",
+      "size_in_bytes": 8831
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ibm1.py",
+      "path_type": "hardlink",
+      "sha256": "32747697dbe9932c42032a8677a6a3314915c6ca7943a9bc1f3fbe94bcd654cb",
+      "size_in_bytes": 9522
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ibm2.py",
+      "path_type": "hardlink",
+      "sha256": "91a18b4c97c8aeccb72988f5fbbdaf15830db430fca6d26cb7bde64b8347da79",
+      "size_in_bytes": 12561
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ibm3.py",
+      "path_type": "hardlink",
+      "sha256": "13d68d4f694a915d08f70c060af8593d65e4ec5525e55c2a576a8f78351b4dc9",
+      "size_in_bytes": 14154
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ibm4.py",
+      "path_type": "hardlink",
+      "sha256": "d6451dcb02aade494db6621ddc01eb758864fb7a6dcd895a470f421fb2727739",
+      "size_in_bytes": 20765
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ibm5.py",
+      "path_type": "hardlink",
+      "sha256": "1fa57efa2078ea39bd6ed532bd149a274f4bd9f3c275af313616cd5bd01bb4a4",
+      "size_in_bytes": 27957
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ibm_model.py",
+      "path_type": "hardlink",
+      "sha256": "017cb672072d77c08157bee58a1f98bf0d86df6c7208ef1830b206a53ba05c75",
+      "size_in_bytes": 20504
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/meteor_score.py",
+      "path_type": "hardlink",
+      "sha256": "f992ae0ae5f199ec71dd4f86929501bdbc4dc8513229950bd7a64890d9ce5586",
+      "size_in_bytes": 17301
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/metrics.py",
+      "path_type": "hardlink",
+      "sha256": "ab23380d791dc9163a39888747433d6a74c6975dbd96c1f2288ceeb5f27e2e8c",
+      "size_in_bytes": 1513
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/nist_score.py",
+      "path_type": "hardlink",
+      "sha256": "e67f0ac852bff7d3dc18f184fe5fb090a3db6e3f54cbaf2213831989610a6b16",
+      "size_in_bytes": 8148
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/phrase_based.py",
+      "path_type": "hardlink",
+      "sha256": "2817cda913a1122badd4dd02fa71430a2be595e8c0e0e51e67a04bcae30d6130",
+      "size_in_bytes": 7860
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/ribes_score.py",
+      "path_type": "hardlink",
+      "sha256": "3863ce87e6f209fd11ee2d9a418591f95876d5126d97d9f140a1c41ff62e06da",
+      "size_in_bytes": 14027
+    },
+    {
+      "_path": "Lib/site-packages/nltk/translate/stack_decoder.py",
+      "path_type": "hardlink",
+      "sha256": "32e44f7b3246e20ab64d0b00ac5d029b7c67d97e84f0500a4a0f410f8431e1c2",
+      "size_in_bytes": 20516
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "9abb8b4c395d8d1b5cdef899795c6e529fd06965b8f5a46b0922251548259fd2",
+      "size_in_bytes": 1466
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "c8d667c0704e08cb759eb1034dd2321b59f1c13035f0a7677ef6377571470039",
+      "size_in_bytes": 1238
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/immutable.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "4255fb18994d9565a88ecb020870803a1263a728d5a2b5027a17cd5f8ac22d7a",
+      "size_in_bytes": 7928
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/parented.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "d80d642629ba47be1107616931949f4edbe20add6609c08368c3666e75ea6b02",
+      "size_in_bytes": 27631
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/parsing.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "5cdc5c60d1fe5c89af1a5f14306b44fb1412eaad9c777e85655cad40205b9df3",
+      "size_in_bytes": 2050
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/prettyprinter.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "6ee7e7f8c857721017e2e9b7c8759dfb02a1f997d52842ba84b78e76fe59f6a1",
+      "size_in_bytes": 38633
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/probabilistic.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "7c76113bdb0fea16f0597c65768cef89260ce5a8a8ef9b2b74a7b659f87ee14d",
+      "size_in_bytes": 4139
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/transforms.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "80d64041639f40ede97d73c94af27e6e1d741f225f82d1394037d51e60a9429b",
+      "size_in_bytes": 13677
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/__pycache__/tree.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "47ed70da0fe0f8288c41d3795bab2f8f91de152d08b0529a8d18444c142a3be4",
+      "size_in_bytes": 44606
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/immutable.py",
+      "path_type": "hardlink",
+      "sha256": "34e993ff15cd52b93772dd26ed930d86a8ff90bfbdd6545d3ff6704dce9b6447",
+      "size_in_bytes": 4178
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/parented.py",
+      "path_type": "hardlink",
+      "sha256": "d15aeb0b48bb78142e8f44371f86c6ae15975f396abc85feede7e76665ed3532",
+      "size_in_bytes": 23192
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/parsing.py",
+      "path_type": "hardlink",
+      "sha256": "229607613043fd5664a789b435b0bcaa6863f59890548ffcc788899a87b61e9e",
+      "size_in_bytes": 2083
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/prettyprinter.py",
+      "path_type": "hardlink",
+      "sha256": "d67c9b5e9dc618ff0017f1711bfbfac6b5e2431caf4c0b7bcac78b2d9d102dd2",
+      "size_in_bytes": 25586
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/probabilistic.py",
+      "path_type": "hardlink",
+      "sha256": "98e9ce7d72b013f39e22ce259404ad334bed9b80cea836d680c3ab478d8d8ba5",
+      "size_in_bytes": 2492
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/transforms.py",
+      "path_type": "hardlink",
+      "sha256": "3e6a6b2ae3bfd2962c4b140f7619cd9c9b1199934eb43624226c193283957ef6",
+      "size_in_bytes": 13689
+    },
+    {
+      "_path": "Lib/site-packages/nltk/tree/tree.py",
+      "path_type": "hardlink",
+      "sha256": "7ae4cf0620aef6a55edbff9a9aeef8130e1276ac6b7c80b48ad459921febd394",
+      "size_in_bytes": 36500
+    },
+    {
+      "_path": "Lib/site-packages/nltk/treeprettyprinter.py",
+      "path_type": "hardlink",
+      "sha256": "4c953a507bde9a8d82ffd6b42dd4d84ba9f8112e108d57f8b10717abc1daa50a",
+      "size_in_bytes": 975
+    },
+    {
+      "_path": "Lib/site-packages/nltk/treetransforms.py",
+      "path_type": "hardlink",
+      "sha256": "07fd3e6cd8788244eed9d63c1399adf1741d37dec82852fb2ebb4e31e012469b",
+      "size_in_bytes": 5288
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "9e93a127358deb70457fb68f0df50089aefaafcb95815cb7965ea884b292f1f5",
+      "size_in_bytes": 819
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__pycache__/__init__.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "fc1e11aac19a413f7b245f49ec3b1846aa0b04daeef13f9a82c4947b065dedc3",
+      "size_in_bytes": 990
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__pycache__/api.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "2f2e0454f63fcc1ae7f38243302608048f0626ff605e70882fb7d3768f3784dc",
+      "size_in_bytes": 5692
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__pycache__/common.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "16156225b9ec652a41fa55dc292f5f7a8b07d5ccfbd6030ed14fe53eb2b82e93",
+      "size_in_bytes": 11338
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__pycache__/twitter_demo.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "f87ccebefd6dfe5034c571e16b3479e08a262ce03bb00b607177a7bc0db2990e",
+      "size_in_bytes": 12567
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__pycache__/twitterclient.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "22a713b24f78dee3df718218a5f898ce6b0822b0f9cf5312a0daf3f72194d531",
+      "size_in_bytes": 24033
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/__pycache__/util.cpython-311.pyc",
+      "path_type": "hardlink",
+      "sha256": "e65c58b20c9b4b6937d7bf3a0c4c820cef5e1e6a14e3dd07585e9c254a5b630d",
+      "size_in_bytes": 6853
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/api.py",
+      "path_type": "hardlink",
+      "sha256": "c801d2c3425e55100a24e1ef586aa6977537b7b198690c213d4dca7f5b1162ac",
+      "size_in_bytes": 4692
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/common.py",
+      "path_type": "hardlink",
+      "sha256": "4496dcc375afafa6139d0e18a9f5900cde3de2f2804c4fd1131fb9fbd60be508",
+      "size_in_bytes": 10120
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/twitter_demo.py",
+      "path_type": "hardlink",
+      "sha256": "742a658251462e6f48e4d812b7750754cf8d5444b6cd65a30e754f44550e3484",
+      "size_in_bytes": 8309
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/twitterclient.py",
+      "path_type": "hardlink",
+      "sha256": "5658b2cfb4e8f73d8826651483a0167300d2fa0348205d988b97ee3df24dd331",
+      "size_in_bytes": 19927
+    },
+    {
+      "_path": "Lib/site-packages/nltk/twitter/util.py",
+      "path_type": "hardlink",
+      "sha256": "223ed35f7ca9b75b9871fa3a9d2c026f2814a4aebfe7d3a134dde5d593de7d2d",
+      "size_in_bytes": 4546
+    },
+    {
+      "_path": "Lib/site-packages/nltk/util.py",
+      "path_type": "hardlink",
+      "sha256": "5628db619629339c23584b20234baef869d1fb324cba57c1a0381e248f50a46c",
+      "size_in_bytes": 42026
+    },
+    {
+      "_path": "Lib/site-packages/nltk/wsd.py",
+      "path_type": "hardlink",
+      "sha256": "e487b757f46d590191b0878bd2b32718603ff4a1060fff65f4691b905c984280",
+      "size_in_bytes": 1789
+    },
+    {
+      "_path": "Scripts/nltk-script.py",
+      "path_type": "hardlink",
+      "sha256": "e16b945af1b886a83b06adfafb2fa6500c09069f63a72268b0aaced97bd45e05",
+      "size_in_bytes": 200
+    },
+    {
+      "_path": "Scripts/nltk.exe",
+      "path_type": "hardlink",
+      "sha256": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+      "size_in_bytes": 41984
+    }
+  ],
+  "paths_version": 1
+}

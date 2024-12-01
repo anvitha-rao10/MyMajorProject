@@ -22,7 +22,7 @@ import nltk
 import os
 
 # Specify the local directory to store NLTK resources
-nltk_data_dir = "C:/Users/anvit/AppData/Roaming/nltk_data"  # Define the correct path for your environment
+nltk_data_dir = "C:\Users\anvit\Downloads\MyMajorProject\NLTK"  # Define the correct path for your environment
 if not os.path.exists(nltk_data_dir):
     os.makedirs(nltk_data_dir)
 
