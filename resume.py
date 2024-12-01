@@ -349,23 +349,34 @@ elif page == "Resume Analyzer":
                 </div>
                 """, unsafe_allow_html=True)
         else:
+            # If the uploaded file is invalid or empty
             st.error("The uploaded file does not seem to contain a meaningful resume. Please upload a valid resume.")
-            # Box styling with neutral background
-            st.markdown(f"""
-            <div style="
-                background-color: #f9f9f9;  /* Light gray background */
-                color: #333;  /* Dark text for contrast */
-                padding: 20px;
-                margin: 10px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                font-size: 1.1em;
-            ">
-                <strong>Job Title:</strong> {job_row['Job Title']}<br>
-                <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                <strong>Accuracy:</strong> {score:.2f}
-            </div>
-            """, unsafe_allow_html=True)
+
+# Make sure job_row and job_row fields exist before displaying
+if 'Job Title' in job_row and 'Skills' in job_row:
+    job_title = job_row['Job Title']
+    skills = job_row['Skills']
+else:
+    job_title = "N/A"  # Default value if 'Job Title' or 'Skills' is missing
+    skills = "N/A"
+
+# Box styling with neutral background
+st.markdown(f"""
+<div style="
+    background-color: #f9f9f9;  /* Light gray background */
+    color: #333;  /* Dark text for contrast */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+">
+    <strong>Job Title:</strong> {job_title}<br>
+    <strong>Matched Skills:</strong> {skills}<br>
+    <strong>Accuracy:</strong> {score:.2f}
+</div>
+""", unsafe_allow_html=True)
+
 
         # Pie chart visualization for the top job accuracy scores
         labels = top_5_jobs['Job Title']
