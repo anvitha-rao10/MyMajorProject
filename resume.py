@@ -302,7 +302,7 @@ if page == "About Us":
 
 
 # Resume Analyzer Page
-elif page == "Resume Analyzer":
+if page == "Resume Analyzer":
     st.markdown("<div class='subtitle'>Resume Analyzer</div>", unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Upload your resume PDF", type="pdf")
 
@@ -349,51 +349,9 @@ elif page == "Resume Analyzer":
                 </div>
                 """, unsafe_allow_html=True)
         else:
-            # If the uploaded file is invalid or empty
             st.error("The uploaded file does not seem to contain a meaningful resume. Please upload a valid resume.")
-
-# Make sure job_row and job_row fields exist before displaying
-if 'Job Title' in job_row and 'Skills' in job_row:
-    job_title = job_row['Job Title']
-    skills = job_row['Skills']
-else:
-    job_title = "N/A"  # Default value if 'Job Title' or 'Skills' is missing
-    skills = "N/A"
-
-# Box styling with neutral background
-st.markdown(f"""
-<div style="
-    background-color: #f9f9f9;  /* Light gray background */
-    color: #333;  /* Dark text for contrast */
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
-">
-    <strong>Job Title:</strong> {job_title}<br>
-    <strong>Matched Skills:</strong> {skills}<br>
-    <strong>Accuracy:</strong> {score:.2f}
-</div>
-""", unsafe_allow_html=True)
-
-
-        # Pie chart visualization for the top job accuracy scores
-labels = top_5_jobs['Job Title']
-sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
-colors = plt.cm.Paired.colors  # Color palette
-
-fig, ax = plt.subplots()
-ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-st.pyplot(fig)
-
-        # Highlight and animate the top job's name
-top_job_name = top_5_jobs.iloc[0]['Job Title']
-
         # CSS animation and styling for highlighting
-st.markdown(f"""
+        st.markdown(f"""
         <div style="
             font-size: 2em;
             font-weight: bold;
@@ -414,7 +372,7 @@ st.markdown(f"""
         """, unsafe_allow_html=True)
 
         # Add encouraging message
-st.markdown("""
+        st.markdown("""
         <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
         <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
         """, unsafe_allow_html=True)
