@@ -46,7 +46,18 @@ X = vectorizer.fit_transform(job_descriptions)
 
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
+def is_meaningful_resume(resume_text):
+    # Define some keywords that are typical in resumes
+    keywords = ["experience", "education", "skills", "projects", "professional", "achievements", "certifications"]
+    return any(keyword in resume_text for keyword in keywords)
 
+# Initialize TF-IDF Vectorizer and KNN Model
+vectorizer = TfidfVectorizer(max_features=5000)
+job_descriptions = df['Skills'].apply(clean_text).tolist()
+X = vectorizer.fit_transform(job_descriptions)
+
+knn = NearestNeighbors(n_neighbors=5, metric='cosine')
+knn.fit(X)
 
 st.markdown("""<style>
     body {
@@ -300,29 +311,45 @@ elif page == "Resume Analyzer":
             resume_text = extract_text_from_pdf(uploaded_file)
             cleaned_resume = clean_text(resume_text)
 
-        # Vectorize resume text
-        resume_vector = vectorizer.transform([cleaned_resume])
+        # Check if the resume contains meaningful content
+        if is_meaningful_resume(cleaned_resume):
+            # Vectorize resume text
+            resume_vector = vectorizer.transform([cleaned_resume])
 
-        # Find the Top 5 Matching Jobs
-        distances, indices = knn.kneighbors(resume_vector)
+            # Find the Top 5 Matching Jobs
+            distances, indices = knn.kneighbors(resume_vector)
 
-        # Ensure we're always getting the top 5 jobs, even if fewer are found
-        num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+            # Ensure we're always getting the top 5 jobs, even if fewer are found
+            num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
 
-        # Check if the number of indices is less than expected
-        top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
-        accuracy_scores = []
+            # Check if the number of indices is less than expected
+            top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
+            accuracy_scores = []
 
-        # Display the top jobs and calculate accuracy
-        st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
+            # Display the top jobs and calculate accuracy
+            st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
 
-        # Use neutral style for boxes
-        for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
-            job_index = indices[0][i]  # Get the job index
-            score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
-            accuracy_scores.append(score)
-            job_row = df.iloc[job_index]  # Get the job details using the index
+            # Use neutral style for boxes
+            for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
+                job_index = indices[0][i]  # Get the job index
+                score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
+                accuracy_scores.append(score)
+                job_row = df.iloc[job_index]  # Get the job details using the index
 
+                # Box styling with neutral background
+                st.markdown(f"""
+                <div style="
+                    background-color: #f9f9f9;  /* Light gray background */
+                    color: #333;  /* Dark text for contrast */
+                    padding: 20px;
+                    margin: 10px;">
+                    <b>{job_row['Job Title']}</b><br>
+                    Skills: {job_row['Skills']}<br>
+                    Accuracy: {score:.2f}
+                </div>
+                """, unsafe_allow_html=True)
+        else:
+            st.error("The uploaded file does not seem to contain a meaningful resume. Please upload a valid resume.")
             # Box styling with neutral background
             st.markdown(f"""
             <div style="
