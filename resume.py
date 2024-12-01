@@ -18,6 +18,17 @@ from sklearn.neighbors import NearestNeighbors
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
+import nltk
+import os
+
+# Set NLTK data path to a local directory
+nltk.data.path.append(os.path.join(os.getcwd(), 'nltk_data'))
+
+# Check if punkt is already downloaded, if not, download it
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
