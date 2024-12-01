@@ -379,21 +379,21 @@ st.markdown(f"""
 
 
         # Pie chart visualization for the top job accuracy scores
-        labels = top_5_jobs['Job Title']
-        sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
-        colors = plt.cm.Paired.colors  # Color palette
+labels = top_5_jobs['Job Title']
+sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
+colors = plt.cm.Paired.colors  # Color palette
 
-        fig, ax = plt.subplots()
-        ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+fig, ax = plt.subplots()
+ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-        st.pyplot(fig)
+st.pyplot(fig)
 
         # Highlight and animate the top job's name
-        top_job_name = top_5_jobs.iloc[0]['Job Title']
+top_job_name = top_5_jobs.iloc[0]['Job Title']
 
         # CSS animation and styling for highlighting
-        st.markdown(f"""
+st.markdown(f"""
         <div style="
             font-size: 2em;
             font-weight: bold;
@@ -414,7 +414,7 @@ st.markdown(f"""
         """, unsafe_allow_html=True)
 
         # Add encouraging message
-        st.markdown("""
+st.markdown("""
         <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
         <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
         """, unsafe_allow_html=True)
