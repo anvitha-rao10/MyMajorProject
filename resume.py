@@ -1,40 +1,16 @@
 import streamlit as st
 import pandas as pd
 import re
-import nltk
 import numpy as np
 import matplotlib.pyplot as plt
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 import fitz  # PyMuPDF for PDF handling
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
-
-# Download NLTK data
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
-import nltk
-import os
-
-# Specify the local directory to store NLTK resources
-nltk_data_dir = "C:\\Users\\anvit\\Downloads\\MyMajorProject\\NLTK"
- # Define the correct path for your environment
-if not os.path.exists(nltk_data_dir):
-    os.makedirs(nltk_data_dir)
-
-# Set NLTK data path to this local directory
-nltk.data.path.append(nltk_data_dir)
-
-# Download required resources
-nltk.download('punkt', download_dir=nltk_data_dir)
-nltk.download('stopwords', download_dir=nltk_data_dir)
-nltk.download('wordnet', download_dir=nltk_data_dir)
-
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
@@ -46,8 +22,10 @@ def clean_text(txt):
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
-    tokens = word_tokenize(clean_text)
-    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words and word.isalpha()]
+    
+    # Tokenization using regex (simpler approach)
+    tokens = re.findall(r'\b\w+\b', clean_text)
+    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
     return ' '.join(tokens)
 
 # Extract text from PDF using PyMuPDF
@@ -68,6 +46,7 @@ X = vectorizer.fit_transform(job_descriptions)
 
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
+
 
 st.markdown("""<style>
     body {
