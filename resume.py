@@ -21,12 +21,18 @@ nltk.download('wordnet')
 import nltk
 import os
 
-# Set the NLTK data path to the folder you confirmed
-nltk.data.path.append('C:\\Users\\anvit\\AppData\\Roaming\\nltk_data')
+# Specify the local directory to store NLTK resources
+nltk_data_dir = "/tmp/nltk_data"  # This is a directory accessible in the Streamlit environment
+if not os.path.exists(nltk_data_dir):
+    os.makedirs(nltk_data_dir)
 
-# Now try to download any additional resources if needed
-nltk.download('stopwords')
-nltk.download('wordnet')
+# Set NLTK data path to this local directory
+nltk.data.path.append(nltk_data_dir)
+
+# Download required resources
+nltk.download('punkt', download_dir=nltk_data_dir)
+nltk.download('stopwords', download_dir=nltk_data_dir)
+nltk.download('wordnet', download_dir=nltk_data_dir)
 
 
 # Load the Dataset
