@@ -22,7 +22,7 @@ import nltk
 import os
 
 # Specify the local directory to store NLTK resources
-nltk.data.path.append("C:/Users/anvit/AppData/Roaming/nltk_data")  # This is a directory accessible in the Streamlit environment
+nltk_data_dir = "C:/Users/anvit/AppData/Roaming/nltk_data"  # Define the correct path for your environment
 if not os.path.exists(nltk_data_dir):
     os.makedirs(nltk_data_dir)
 
