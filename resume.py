@@ -599,37 +599,37 @@ if page == "Enhance Skills":
 
 
 # Contact Us Page
-import mysql.connector
-import streamlit as st
+# import mysql.connector
+# import streamlit as st
 
-# Page selection
+# # Page selection
 
 
-# Function to save data to MySQL
-def save_to_mysql(name, email, message, phone, rating):
-    try:
-        # Connect to MySQL
-        conn = mysql.connector.connect(
-            host="localhost",    # MySQL server host
-            user="root",         # MySQL username
-            password="AnvithaGRao8181",  # MySQL password
-            database="contact_form"    # Database name
-        )
+# # Function to save data to MySQL
+# def save_to_mysql(name, email, message, phone, rating):
+#     try:
+#         # Connect to MySQL
+#         conn = mysql.connector.connect(
+#             host="localhost",    # MySQL server host
+#             user="root",         # MySQL username
+#             password="AnvithaGRao8181",  # MySQL password
+#             database="contact_form"    # Database name
+#         )
         
-        cursor = conn.cursor()
+#         cursor = conn.cursor()
 
-        # Insert data into "messages" table
-        cursor.execute('''
-            INSERT INTO messages (name, email, message, phone, rating)
-            VALUES (%s, %s, %s, %s, %s)
-        ''', (name, email, message, phone, rating))
+#         # Insert data into "messages" table
+#         cursor.execute('''
+#             INSERT INTO messages (name, email, message, phone, rating)
+#             VALUES (%s, %s, %s, %s, %s)
+#         ''', (name, email, message, phone, rating))
 
-        conn.commit()  # Commit the transaction
-        cursor.close()
-        conn.close()
+#         conn.commit()  # Commit the transaction
+#         cursor.close()
+#         conn.close()
 
-    except mysql.connector.Error as err:
-        st.error(f"Error occurred: {err}")
+#     except mysql.connector.Error as err:
+#         st.error(f"Error occurred: {err}")
 
 # Streamlit page for Contact Us
 if page == "Contact Us":
@@ -646,28 +646,28 @@ if page == "Contact Us":
     """)
 
     # Contact Form (Improved design)
-    with st.form(key="contact_form", clear_on_submit=True):
-        # Fields for Name, Email, Phone, and Message
-        contact_name = st.text_input("Your Name", max_chars=50)
-        contact_email = st.text_input("Your Email", max_chars=100)
-        contact_phone = st.text_input("Your Phone Number", max_chars=15)
-        contact_message = st.text_area("Your Message", max_chars=500, height=150)
+    # with st.form(key="contact_form", clear_on_submit=True):
+    #     # Fields for Name, Email, Phone, and Message
+    #     contact_name = st.text_input("Your Name", max_chars=50)
+    #     contact_email = st.text_input("Your Email", max_chars=100)
+    #     contact_phone = st.text_input("Your Phone Number", max_chars=15)
+    #     contact_message = st.text_area("Your Message", max_chars=500, height=150)
 
-        # Star Rating using custom HTML (can be customized further)
-        emojis = ["😡", "😞", "😐", "😊", "😍"]
-        rating = st.radio("Rate Us", emojis, index=2, horizontal=True)
+    #     # Star Rating using custom HTML (can be customized further)
+    #     emojis = ["😡", "😞", "😐", "😊", "😍"]
+    #     rating = st.radio("Rate Us", emojis, index=2, horizontal=True)
 
-        # Submit button
-        submit_button = st.form_submit_button("Submit")
+    #     # Submit button
+    #     submit_button = st.form_submit_button("Submit")
 
-        if submit_button:
-            # Check if all fields are filled
-            if contact_name.strip() and contact_email.strip() and contact_message.strip() and contact_phone.strip():
-                # Save to MySQL
-                save_to_mysql(contact_name.strip(), contact_email.strip(), contact_message.strip(), contact_phone.strip(), rating)
-                st.success("Thank you for your feedback! We'll get back to you shortly.")
-            else:
-                st.error("Please fill out all fields before submitting.")
+    #     if submit_button:
+    #         # Check if all fields are filled
+    #         if contact_name.strip() and contact_email.strip() and contact_message.strip() and contact_phone.strip():
+    #             # Save to MySQL
+    #             save_to_mysql(contact_name.strip(), contact_email.strip(), contact_message.strip(), contact_phone.strip(), rating)
+    #             st.success("Thank you for your feedback! We'll get back to you shortly.")
+    #         else:
+    #             st.error("Please fill out all fields before submitting.")
 
     # Custom CSS for better design and layout
     st.markdown("""
