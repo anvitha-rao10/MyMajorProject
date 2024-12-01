@@ -320,7 +320,7 @@ elif page == "Resume Analyzer":
                 # Check if the resume contains meaningful content
                 if not is_meaningful_resume(cleaned_resume):
                     st.error("The uploaded file does not seem to contain meaningful resume content. Please upload a valid resume.")
-                    st.stop
+                    st.stop()
 
                 # Vectorize the resume text
                 resume_vector = vectorizer.transform([cleaned_resume])
