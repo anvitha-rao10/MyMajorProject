@@ -47,6 +47,19 @@ X = vectorizer.fit_transform(job_descriptions)
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
 
+def is_meaningful_resume(resume_text):
+    # Define some keywords that are typical in resumes
+    keywords = ["experience", "education", "skills", "projects", "professional", "achievements", "certifications"]
+    return any(keyword in resume_text for keyword in keywords)
+
+# Initialize TF-IDF Vectorizer and KNN Model
+vectorizer = TfidfVectorizer(max_features=5000)
+job_descriptions = df['Skills'].apply(clean_text).tolist()
+X = vectorizer.fit_transform(job_descriptions)
+
+knn = NearestNeighbors(n_neighbors=5, metric='cosine')
+knn.fit(X)
+
 # Now you can proceed with the rest of your code to run the Streamlit app
 
 
@@ -299,92 +312,98 @@ elif page == "Resume Analyzer":
 
     if uploaded_file:
         with st.spinner("Processing resume..."):
-            resume_text = extract_text_from_pdf(uploaded_file)
-            cleaned_resume = clean_text(resume_text)
+            try:
+                # Extract and clean the resume text
+                resume_text = extract_text_from_pdf(uploaded_file)
+                cleaned_resume = clean_text(resume_text)
 
-        # Vectorize resume text
-        resume_vector = vectorizer.transform([cleaned_resume])
+                # Check if the resume contains meaningful content
+                if not is_meaningful_resume(cleaned_resume):
+                    st.error("The uploaded file does not seem to contain meaningful resume content. Please upload a valid resume.")
+                    st.stop
 
-        # Find the Top 5 Matching Jobs
-        distances, indices = knn.kneighbors(resume_vector)
+                # Vectorize the resume text
+                resume_vector = vectorizer.transform([cleaned_resume])
 
-        # Ensure we're always getting the top 5 jobs, even if fewer are found
-        num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+                # Find the Top 5 Matching Jobs using KNN
+                distances, indices = knn.kneighbors(resume_vector)
 
-        # Check if the number of indices is less than expected
-        top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
-        accuracy_scores = []
+                # Ensure we're always getting the top 5 jobs, even if fewer are found
+                num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
 
-        # Display the top jobs and calculate accuracy
-        st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
+                # Get the top job rows based on the indices
+                top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
+                accuracy_scores = []
 
-        # Use neutral style for boxes
-        for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
-            job_index = indices[0][i]  # Get the job index
-            score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
-            accuracy_scores.append(score)
-            job_row = df.iloc[job_index]  # Get the job details using the index
+                # Display the top job titles and calculate accuracy
+                st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
 
-            # Box styling with neutral background
-            st.markdown(f"""
-            <div style="
-                background-color: #f9f9f9;  /* Light gray background */
-                color: #333;  /* Dark text for contrast */
-                padding: 20px;
-                margin: 10px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                font-size: 1.1em;
-            ">
-                <strong>Job Title:</strong> {job_row['Job Title']}<br>
-                <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                <strong>Accuracy:</strong> {score:.2f}
-            </div>
-            """, unsafe_allow_html=True)
+                for i in range(num_jobs):  # Iterate over the top jobs
+                    job_index = indices[0][i]  # Get the job index
+                    score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
+                    accuracy_scores.append(score)
+                    job_row = df.iloc[job_index]  # Get the job details
 
-        # Pie chart visualization for the top job accuracy scores
-        labels = top_5_jobs['Job Title']
-        sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
-        colors = plt.cm.Paired.colors  # Color palette
+                    # Box styling with neutral background
+                    st.markdown(f"""
+                    <div style="
+                        background-color: #f9f9f9;  /* Light gray background */
+                        color: #333;  /* Dark text for contrast */
+                        padding: 20px;
+                        margin: 10px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        font-size: 1.1em;
+                    ">
+                        <strong>Job Title:</strong> {job_row['Job Title']}<br>
+                        <strong>Matched Skills:</strong> {job_row['Skills']}<br>
+                        <strong>Accuracy:</strong> {score:.2f}
+                    </div>
+                    """, unsafe_allow_html=True)
 
-        fig, ax = plt.subplots()
-        ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+                # Pie chart visualization for the top job accuracy scores
+                labels = top_5_jobs['Job Title']
+                sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
+                colors = plt.cm.Paired.colors  # Color palette
 
-        st.pyplot(fig)
+                fig, ax = plt.subplots()
+                ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+                ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-        # Highlight and animate the top job's name
-        top_job_name = top_5_jobs.iloc[0]['Job Title']
+                st.pyplot(fig)
 
-        # CSS animation and styling for highlighting
-        st.markdown(f"""
-        <div style="
-            font-size: 2em;
-            font-weight: bold;
-            color: #ff6347;  /* Tomato color for emphasis */
-            text-align: center;
-            animation: pulse 2s infinite;
-        ">
-            Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
-        </div>
+                # Highlight and animate the top job's name
+                top_job_name = top_5_jobs.iloc[0]['Job Title']
 
-        <style>
-            @keyframes pulse {{
-                0% {{ transform: scale(1); }}
-                50% {{ transform: scale(1.1); }}
-                100% {{ transform: scale(1); }}
-            }}
-        </style>
-        """, unsafe_allow_html=True)
+                # CSS animation and styling for highlighting
+                st.markdown(f"""
+                <div style="
+                    font-size: 2em;
+                    font-weight: bold;
+                    color: #ff6347;  /* Tomato color for emphasis */
+                    text-align: center;
+                    animation: pulse 2s infinite;
+                ">
+                    Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
+                </div>
 
-        # Add encouraging message
-        st.markdown("""
-        <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
-        <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
-        """, unsafe_allow_html=True)
+                <style>
+                    @keyframes pulse {{
+                        0% {{ transform: scale(1); }}
+                        50% {{ transform: scale(1.1); }}
+                        100% {{ transform: scale(1); }}
+                    }}
+                </style>
+                """, unsafe_allow_html=True)
 
+                # Add encouraging message
+                st.markdown("""
+                <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
+                <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
+                """, unsafe_allow_html=True)
 
-
+            except Exception as e:
+                st.error(f"Error processing the resume: {e}")
 # Find Jobs Section
 if page == "Find Jobs":
     
