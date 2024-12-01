@@ -21,15 +21,15 @@ nltk.download('wordnet')
 import nltk
 import os
 
-# Set NLTK data path to a local directory
+# Set the NLTK data path to a local directory
 nltk.data.path.append(os.path.join(os.getcwd(), 'nltk_data'))
 
-# Check if punkt is already downloaded, if not, download it
+# Try downloading punkt if not available
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt')
-nltk.data.path.append(os.path.join(os.getcwd(), 'nltk_data'))
+    nltk.download('punkt', download_dir=os.path.join(os.getcwd(), 'nltk_data'))
+
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
