@@ -21,7 +21,7 @@ nltk.download('wordnet')
 import nltk
 import os
 
-# Check if running on a Windows system
+# Ensure the correct NLTK data path for your environment
 if os.name == 'nt':  # Windows system
     user_profile = os.getenv('USERPROFILE')
     if user_profile:  # Only proceed if the user profile is available
@@ -29,12 +29,16 @@ if os.name == 'nt':  # Windows system
 else:  # Non-Windows (Linux/Cloud environment)
     nltk.data.path.append('/root/nltk_data')  # Adjust the path for cloud or non-Windows systems
 
+# Explicitly download the required resources
+nltk.download('punkt', download_dir=nltk.data.path[-1])
+nltk.download('stopwords', download_dir=nltk.data.path[-1])
+nltk.download('wordnet', download_dir=nltk.data.path[-1])
+
 # Check if 'punkt' is available, if not, download it
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt', download_dir=nltk.data.path[-1])  # Download to the last added path
-
+    nltk.download('punkt', download_dir=nltk.data.path[-1]) 
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
