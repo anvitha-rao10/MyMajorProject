@@ -49,7 +49,13 @@ knn.fit(X)
 
 def is_meaningful_resume(resume_text):
     # Define some keywords that are typical in resumes
-    keywords = ["experience", "education", "skills", "projects", "professional", "achievements", "certifications"]
+    keywords = ["experience", "education", "skills", "projects", "professional", "achievements", 
+        "certifications", "qualifications", "awards", "work history", "career", "summary", 
+        "references", "contact", "portfolio", "expertise", "profile", "objective", "employment", 
+        "languages", "leadership", "teamwork", "internship", "competencies", "skills summary", 
+        "responsibilities", "training", "accomplishments", "degree", "university", "college", 
+        "research", "development", "volunteer", "publications", "skills set", "job responsibilities", 
+        "technical skills", "soft skills", "hard skills", "professional experience", "education history"]
     return any(keyword in resume_text for keyword in keywords)
 
 # Initialize TF-IDF Vectorizer and KNN Model
