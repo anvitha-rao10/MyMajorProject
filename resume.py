@@ -21,14 +21,19 @@ nltk.download('wordnet')
 import nltk
 import os
 
-# Add local nltk_data folder to the nltk data path
-nltk.data.path.append(os.path.join(os.getenv('USERPROFILE'), 'AppData', 'Roaming', 'nltk_data'))
+# Check if running on a Windows system
+if os.name == 'nt':  # Windows system
+    user_profile = os.getenv('USERPROFILE')
+    if user_profile:  # Only proceed if the user profile is available
+        nltk.data.path.append(os.path.join(user_profile, 'AppData', 'Roaming', 'nltk_data'))
+else:  # Non-Windows (Linux/Cloud environment)
+    nltk.data.path.append('/root/nltk_data')  # Adjust the path for cloud or non-Windows systems
 
-# Check if punkt is available, if not, download it
+# Check if 'punkt' is available, if not, download it
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt', download_dir=os.path.join(os.getenv('USERPROFILE'), 'AppData', 'Roaming', 'nltk_data'))
+    nltk.download('punkt', download_dir=nltk.data.path[-1])  # Download to the last added path
 
 
 # Load the Dataset
