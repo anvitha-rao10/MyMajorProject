@@ -47,6 +47,8 @@ X = vectorizer.fit_transform(job_descriptions)
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
 
+# Now you can proceed with the rest of your code to run the Streamlit app
+
 
 st.markdown("""<style>
     body {
