@@ -33,6 +33,14 @@ stop_words = set([
     'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 
     'weren', 'won', 'wouldn'
 ])
+lemmatizer_dict = {
+    'running': 'run', 'ran': 'run', 'runs': 'run', 
+    'better': 'good', 'best': 'good', 'worse': 'bad', 'worst': 'bad',
+    'happier': 'happy', 'happiest': 'happy', 'sadder': 'sad', 'saddest': 'sad',
+    'more': 'much', 'most': 'much', 'less': 'little', 'least': 'little',
+    'doing': 'do', 'did': 'do', 'does': 'do', 'done': 'do'
+    # Add more words as needed for lemmatization
+}
 # from nltk.corpus import stopwords
 # from nltk.stem import WordNetLemmatizer
 
@@ -54,6 +62,7 @@ def clean_text(txt):
     
     # Remove stopwords and lemmatize
     tokens = [word for word in tokens if word not in stop_words]
+    tokens = [lemmatizer_dict.get(word, word) for word in tokens]
     return ' '.join(tokens)
 
 # Simple function to check if the resume has sufficient meaningful content
