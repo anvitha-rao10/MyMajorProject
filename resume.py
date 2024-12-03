@@ -16,14 +16,13 @@ df = pd.read_csv('cleaned_file.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
-    lemmatizer = WordNetLemmatizer()
+    # Remove unwanted characters and whitespace
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
-    # Tokenization using regex (simpler approach)
+    # Tokenization using regex (simplified approach)
     tokens = re.findall(r'\b\w+\b', clean_text)
-    tokens = [lemmatizer.lemmatize(word) for word in tokens]  # Lemmatization only
     return ' '.join(tokens)
 
 # Extract text from PDF using PyMuPDF
