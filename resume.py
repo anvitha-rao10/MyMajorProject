@@ -33,16 +33,16 @@ stop_words = set([
     'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 
     'weren', 'won', 'wouldn'
 ])
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
+# from nltk.corpus import stopwords
+# from nltk.stem import WordNetLemmatizer
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
-    stop_words = set(stopwords.words('english'))
-    lemmatizer = WordNetLemmatizer()
+    # stop_words = set(stopwords.words('english'))
+    # lemmatizer = WordNetLemmatizer()
     
     # Remove unwanted characters and whitespace
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
