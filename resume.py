@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import fitz  # PyMuPDF for PDF handling
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -24,6 +25,7 @@ def clean_text(txt):
     # Tokenization using regex (simplified approach)
     tokens = re.findall(r'\b\w+\b', clean_text)
     return ' '.join(tokens)
+
 
 # Extract text from PDF using PyMuPDF
 def extract_text_from_pdf(uploaded_file):
@@ -44,8 +46,47 @@ X = vectorizer.fit_transform(job_descriptions)
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
 
-# Now you can proceed with the rest of your code to run the Streamlit app
+def is_meaningful_resume(resume_text):
+    """Check if the resume contains meaningful content based on compulsory and optional keywords."""
+    
+    # Define some compulsory keywords that must be present in the resume
+    compulsory_keywords = [
+        "experience", "education", "skills", "career", "contact"
+    ]
+    
+    # Define some optional keywords that are typical in resumes
+    optional_keywords = [
+        "projects", "professional", "achievements", "certifications", "qualifications", 
+        "awards", "work history", "summary", "references", "portfolio", "expertise", 
+        "profile", "objective", "employment", "languages", "leadership", "teamwork", 
+        "internship", "competencies", "responsibilities", "training", "accomplishments", 
+        
+        "degree", "university", "college", "research", "development", "volunteer", 
+        "publications", "skills set", "job responsibilities", "technical skills", 
+        "soft skills", "hard skills", "professional experience", "education history"
+    ]
+    
+    # Check if all compulsory keywords are present in the resume text (case-insensitive)
+    if not all(keyword.lower() in resume_text.lower() for keyword in compulsory_keywords):
+        return False  # If any compulsory keyword is missing, return False
+    
+    # Check if any of the optional keywords exist in the resume text (case-insensitive)
+    if any(keyword.lower() in resume_text.lower() for keyword in optional_keywords):
+        return True  # Resume has relevant content
+    
+    # If no optional keywords are found, check for minimum length
+    if len(resume_text.split()) > 100:
+        return True  # Resume has sufficient length and may still be meaningful
+    
+    return False  # Resume is likely invalid if it doesn't meet criteria
 
+# Initialize TF-IDF Vectorizer and KNN Model
+vectorizer = TfidfVectorizer(max_features=5000)
+job_descriptions = df['Skills'].apply(clean_text).tolist()  # Assuming df['Skills'] is the job descriptions
+X = vectorizer.fit_transform(job_descriptions)
+
+knn = NearestNeighbors(n_neighbors=5, metric='cosine')
+knn.fit(X)
 
 # Now you can proceed with the rest of your code to run the Streamlit app
 
