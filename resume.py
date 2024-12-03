@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import fitz  # PyMuPDF for PDF handling
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -17,7 +16,6 @@ df = pd.read_csv('cleaned_file.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
-    stop_words = set(stopwords.words('english'))
     lemmatizer = WordNetLemmatizer()
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
@@ -25,7 +23,7 @@ def clean_text(txt):
     
     # Tokenization using regex (simpler approach)
     tokens = re.findall(r'\b\w+\b', clean_text)
-    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
+    tokens = [lemmatizer.lemmatize(word) for word in tokens]
     return ' '.join(tokens)
 
 # Extract text from PDF using PyMuPDF
@@ -87,6 +85,7 @@ X = vectorizer.fit_transform(job_descriptions)
 
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
+
 
 # Now you can proceed with the rest of your code to run the Streamlit app
 
