@@ -13,9 +13,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # Load the Dataset
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('wordnet')
+df = pd.read_csv('cleaned_file.csv')
 stop_words = set([
     'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours', 
     'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers', 
@@ -33,6 +31,8 @@ stop_words = set([
     'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 
     'weren', 'won', 'wouldn'
 ])
+
+# Manually define lemmatization (basic implementation using word forms)
 lemmatizer_dict = {
     'running': 'run', 'ran': 'run', 'runs': 'run', 
     'better': 'good', 'best': 'good', 'worse': 'bad', 'worst': 'bad',
@@ -41,34 +41,24 @@ lemmatizer_dict = {
     'doing': 'do', 'did': 'do', 'does': 'do', 'done': 'do'
     # Add more words as needed for lemmatization
 }
-# from nltk.corpus import stopwords
-# from nltk.stem import WordNetLemmatizer
 
-# Load the Dataset
-df = pd.read_csv('cleaned_file.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
     # stop_words = set(stopwords.words('english'))
     # lemmatizer = WordNetLemmatizer()
-    
-    # Remove unwanted characters and whitespace
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
-    # Tokenization
+    # Tokenization using regex (simpler approach)
     tokens = re.findall(r'\b\w+\b', clean_text)
-    
-    # Remove stopwords and lemmatize
+    # tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
     tokens = [word for word in tokens if word not in stop_words]
+    
+    # Lemmatize using the manually defined lemmatizer_dict
     tokens = [lemmatizer_dict.get(word, word) for word in tokens]
     return ' '.join(tokens)
-
-# Simple function to check if the resume has sufficient meaningful content
-def is_meaningful_resume(text):
-    # Check if the cleaned text has more than a certain number of words
-    return len(text.split()) > 10 
 
 # Extract text from PDF using PyMuPDF
 def extract_text_from_pdf(uploaded_file):
