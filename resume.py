@@ -17,15 +17,16 @@ df = pd.read_csv('cleaned_file.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
-    # Remove unwanted characters and whitespace
+    stop_words = set(stopwords.words('english'))
+    lemmatizer = WordNetLemmatizer()
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
-    # Tokenization using regex (simplified approach)
+    # Tokenization using regex (simpler approach)
     tokens = re.findall(r'\b\w+\b', clean_text)
+    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
     return ' '.join(tokens)
-
 
 # Extract text from PDF using PyMuPDF
 def extract_text_from_pdf(uploaded_file):
@@ -60,7 +61,6 @@ def is_meaningful_resume(resume_text):
         "awards", "work history", "summary", "references", "portfolio", "expertise", 
         "profile", "objective", "employment", "languages", "leadership", "teamwork", 
         "internship", "competencies", "responsibilities", "training", "accomplishments", 
-        
         "degree", "university", "college", "research", "development", "volunteer", 
         "publications", "skills set", "job responsibilities", "technical skills", 
         "soft skills", "hard skills", "professional experience", "education history"
