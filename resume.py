@@ -1,16 +1,19 @@
 import streamlit as st
 import pandas as pd
 import re
+import nltk
 import numpy as np
 import matplotlib.pyplot as plt
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 import fitz  # PyMuPDF for PDF handling
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
+
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
@@ -42,18 +45,14 @@ lemmatizer_dict = {
     # Add more words as needed for lemmatization
 }
 
-
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
-    # stop_words = set(stopwords.words('english'))
-    # lemmatizer = WordNetLemmatizer()
+    
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
-    
-    # Tokenization using regex (simpler approach)
-    tokens = re.findall(r'\b\w+\b', clean_text)
-    # tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
+    tokens = word_tokenize(clean_text)
+
     tokens = [word for word in tokens if word not in stop_words]
     
     # Lemmatize using the manually defined lemmatizer_dict
@@ -78,50 +77,6 @@ X = vectorizer.fit_transform(job_descriptions)
 
 knn = NearestNeighbors(n_neighbors=5, metric='cosine')
 knn.fit(X)
-
-# def is_meaningful_resume(resume_text):
-#     """Check if the resume contains meaningful content based on compulsory and optional keywords."""
-    
-    # Define some compulsory keywords that must be present in the resume
-    # compulsory_keywords = [
-    #     "experience", "education", "skills", "career", "contact"
-    # ]
-    
-    # # Define some optional keywords that are typical in resumes
-    # optional_keywords = [
-    #     "projects", "professional", "achievements", "certifications", "qualifications", 
-    #     "awards", "work history", "summary", "references", "portfolio", "expertise", 
-    #     "profile", "objective", "employment", "languages", "leadership", "teamwork", 
-    #     "internship", "competencies", "responsibilities", "training", "accomplishments", 
-    #     "degree", "university", "college", "research", "development", "volunteer", 
-    #     "publications", "skills set", "job responsibilities", "technical skills", 
-    #     "soft skills", "hard skills", "professional experience", "education history"
-    # ]
-    
-    # Check if all compulsory keywords are present in the resume text (case-insensitive)
-    # if not all(keyword.lower() in resume_text.lower() for keyword in compulsory_keywords):
-    #     return False  # If any compulsory keyword is missing, return False
-    
-    # # Check if any of the optional keywords exist in the resume text (case-insensitive)
-    # if any(keyword.lower() in resume_text.lower() for keyword in optional_keywords):
-    #     return True  # Resume has relevant content
-    
-    # # If no optional keywords are found, check for minimum length
-    # if len(resume_text.split()) > 100:
-    #     return True  # Resume has sufficient length and may still be meaningful
-    
-    # return False  # Resume is likely invalid if it doesn't meet criteria
-
-# Initialize TF-IDF Vectorizer and KNN Model
-vectorizer = TfidfVectorizer(max_features=5000)
-job_descriptions = df['Skills'].apply(clean_text).tolist()  # Assuming df['Skills'] is the job descriptions
-X = vectorizer.fit_transform(job_descriptions)
-
-knn = NearestNeighbors(n_neighbors=5, metric='cosine')
-knn.fit(X)
-
-# Now you can proceed with the rest of your code to run the Streamlit app
-
 
 st.markdown("""<style>
     body {
@@ -372,93 +327,92 @@ elif page == "Resume Analyzer":
 
     if uploaded_file:
         with st.spinner("Processing resume..."):
-            try:
-                # Extract and clean the resume text
-                resume_text = extract_text_from_pdf(uploaded_file)
-                cleaned_resume = clean_text(resume_text)
+            resume_text = extract_text_from_pdf(uploaded_file)
+            cleaned_resume = clean_text(resume_text)
 
-                # Vectorize the resume text
-                resume_vector = vectorizer.transform([cleaned_resume])
+        # Vectorize resume text
+        resume_vector = vectorizer.transform([cleaned_resume])
 
-                # Find the Top 5 Matching Jobs using KNN
-                distances, indices = knn.kneighbors(resume_vector)
+        # Find the Top 5 Matching Jobs
+        distances, indices = knn.kneighbors(resume_vector)
 
-                # Ensure we're always getting the top 5 jobs, even if fewer are found
-                num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+        # Ensure we're always getting the top 5 jobs, even if fewer are found
+        num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
 
-                # Get the top job rows based on the indices
-                top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
-                accuracy_scores = []
+        # Check if the number of indices is less than expected
+        top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
+        accuracy_scores = []
 
-                # Display the top job titles and calculate accuracy
-                st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
+        # Display the top jobs and calculate accuracy
+        st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
 
-                for i in range(num_jobs):  # Iterate over the top jobs
-                    job_index = indices[0][i]  # Get the job index
-                    score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
-                    accuracy_scores.append(score)
-                    job_row = df.iloc[job_index]  # Get the job details
+        # Use neutral style for boxes
+        for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
+            job_index = indices[0][i]  # Get the job index
+            score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
+            accuracy_scores.append(score)
+            job_row = df.iloc[job_index]  # Get the job details using the index
 
-                    # Box styling with neutral background
-                    st.markdown(f"""
-                    <div style="
-                        background-color: #f9f9f9;  /* Light gray background */
-                        color: #333;  /* Dark text for contrast */
-                        padding: 20px;
-                        margin: 10px;
-                        border-radius: 10px;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                        font-size: 1.1em;
-                    ">
-                        <strong>Job Title:</strong> {job_row['Job Title']}<br>
-                        <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                        <strong>Accuracy:</strong> {score:.2f}
-                    </div>
-                    """, unsafe_allow_html=True)
+            # Box styling with neutral background
+            st.markdown(f"""
+            <div style="
+                background-color: #f9f9f9;  /* Light gray background */
+                color: #333;  /* Dark text for contrast */
+                padding: 20px;
+                margin: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                font-size: 1.1em;
+            ">
+                <strong>Job Title:</strong> {job_row['Job Title']}<br>
+                <strong>Matched Skills:</strong> {job_row['Skills']}<br>
+                <strong>Accuracy:</strong> {score:.2f}
+            </div>
+            """, unsafe_allow_html=True)
 
-                # Pie chart visualization for the top job accuracy scores
-                labels = top_5_jobs['Job Title']
-                sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
-                colors = plt.cm.Paired.colors  # Color palette
+        # Pie chart visualization for the top job accuracy scores
+        labels = top_5_jobs['Job Title']
+        sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
+        colors = plt.cm.Paired.colors  # Color palette
 
-                fig, ax = plt.subplots()
-                ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-                ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+        fig, ax = plt.subplots()
+        ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-                st.pyplot(fig)
+        st.pyplot(fig)
 
-                # Highlight and animate the top job's name
-                top_job_name = top_5_jobs.iloc[0]['Job Title']
+        # Highlight and animate the top job's name
+        top_job_name = top_5_jobs.iloc[0]['Job Title']
 
-                # CSS animation and styling for highlighting
-                st.markdown(f"""
-                <div style="
-                    font-size: 2em;
-                    font-weight: bold;
-                    color: #ff6347;  /* Tomato color for emphasis */
-                    text-align: center;
-                    animation: pulse 2s infinite;
-                ">
-                    Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
-                </div>
+        # CSS animation and styling for highlighting
+        st.markdown(f"""
+        <div style="
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff6347;  /* Tomato color for emphasis */
+            text-align: center;
+            animation: pulse 2s infinite;
+        ">
+            Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
+        </div>
 
-                <style>
-                    @keyframes pulse {{
-                        0% {{ transform: scale(1); }}
-                        50% {{ transform: scale(1.1); }}
-                        100% {{ transform: scale(1); }}
-                    }}
-                </style>
-                """, unsafe_allow_html=True)
+        <style>
+            @keyframes pulse {{
+                0% {{ transform: scale(1); }}
+                50% {{ transform: scale(1.1); }}
+                100% {{ transform: scale(1); }}
+            }}
+        </style>
+        """, unsafe_allow_html=True)
 
-                # Add encouraging message
-                st.markdown(""" 
-                <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
-                <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
-                """, unsafe_allow_html=True)
+        # Add encouraging message
+        st.markdown("""
+        <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
+        <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
+        """, unsafe_allow_html=True)
 
-            except Exception as e:
-                st.error(f"Error processing the resume: {e}")
+
+
 # Find Jobs Section
 if page == "Find Jobs":
     
@@ -674,38 +628,8 @@ if page == "Enhance Skills":
     """, unsafe_allow_html=True)
 
 
-# Contact Us Page
-# import mysql.connector
-# import streamlit as st
 
-# # Page selection
-
-
-# # Function to save data to MySQL
-# def save_to_mysql(name, email, message, phone, rating):
-#     try:
-#         # Connect to MySQL
-#         conn = mysql.connector.connect(
-#             host="localhost",    # MySQL server host
-#             user="root",         # MySQL username
-#             password="AnvithaGRao8181",  # MySQL password
-#             database="contact_form"    # Database name
-#         )
         
-#         cursor = conn.cursor()
-
-#         # Insert data into "messages" table
-#         cursor.execute('''
-#             INSERT INTO messages (name, email, message, phone, rating)
-#             VALUES (%s, %s, %s, %s, %s)
-#         ''', (name, email, message, phone, rating))
-
-#         conn.commit()  # Commit the transaction
-#         cursor.close()
-#         conn.close()
-
-#     except mysql.connector.Error as err:
-#         st.error(f"Error occurred: {err}")
 
 # Streamlit page for Contact Us
 if page == "Contact Us":
@@ -721,29 +645,7 @@ if page == "Contact Us":
     - **Phone**: +91 9480199605
     """)
 
-    # Contact Form (Improved design)
-    # with st.form(key="contact_form", clear_on_submit=True):
-    #     # Fields for Name, Email, Phone, and Message
-    #     contact_name = st.text_input("Your Name", max_chars=50)
-    #     contact_email = st.text_input("Your Email", max_chars=100)
-    #     contact_phone = st.text_input("Your Phone Number", max_chars=15)
-    #     contact_message = st.text_area("Your Message", max_chars=500, height=150)
-
-    #     # Star Rating using custom HTML (can be customized further)
-    #     emojis = ["😡", "😞", "😐", "😊", "😍"]
-    #     rating = st.radio("Rate Us", emojis, index=2, horizontal=True)
-
-    #     # Submit button
-    #     submit_button = st.form_submit_button("Submit")
-
-    #     if submit_button:
-    #         # Check if all fields are filled
-    #         if contact_name.strip() and contact_email.strip() and contact_message.strip() and contact_phone.strip():
-    #             # Save to MySQL
-    #             save_to_mysql(contact_name.strip(), contact_email.strip(), contact_message.strip(), contact_phone.strip(), rating)
-    #             st.success("Thank you for your feedback! We'll get back to you shortly.")
-    #         else:
-    #             st.error("Please fill out all fields before submitting.")
+    
 
     # Custom CSS for better design and layout
     st.markdown("""
