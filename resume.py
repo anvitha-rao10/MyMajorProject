@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # Load the Dataset
-df = pd.read_csv('cleaned_file.csv')
+df = pd.read_csv('resume.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
