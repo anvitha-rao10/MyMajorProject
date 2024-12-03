@@ -13,20 +13,37 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # Load the Dataset
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+# Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
     stop_words = set(stopwords.words('english'))
     lemmatizer = WordNetLemmatizer()
+    
+    # Remove unwanted characters and whitespace
     clean_text = re.sub(r'http\S+\s|RT|cc|#\S+\s|@\S+|[^\x00-\x7f]', ' ', txt)
     clean_text = re.sub(r'[%s]' % re.escape("""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""), ' ', clean_text)
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
-    # Tokenization using regex (simpler approach)
+    # Tokenization
     tokens = re.findall(r'\b\w+\b', clean_text)
+    
+    # Remove stopwords and lemmatize
     tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
     return ' '.join(tokens)
+
+# Simple function to check if the resume has sufficient meaningful content
+def is_meaningful_resume(text):
+    # Check if the cleaned text has more than a certain number of words
+    return len(text.split()) > 10 
 
 # Extract text from PDF using PyMuPDF
 def extract_text_from_pdf(uploaded_file):
