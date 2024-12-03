@@ -36,7 +36,7 @@ stop_words = set([
 ])
 
 # Manually define lemmatization (basic implementation using word forms)
-lemmatizer = {
+lemmatizer_dict = {
     'running': 'run', 'ran': 'run', 'runs': 'run', 
     'better': 'good', 'best': 'good', 'worse': 'bad', 'worst': 'bad',
     'happier': 'happy', 'happiest': 'happy', 'sadder': 'sad', 'saddest': 'sad',
@@ -56,7 +56,10 @@ def clean_text(txt):
     tokens = re.findall(r'\b\w+\b', clean_text)
 
     
-    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words and word.isalpha()]
+    tokens = [word for word in tokens if word not in stop_words]
+    
+    # Lemmatize using the manually defined lemmatizer_dict
+    tokens = [lemmatizer_dict.get(word, word) for word in tokens]
     return ' '.join(tokens)
 
 # Extract text from PDF using PyMuPDF
