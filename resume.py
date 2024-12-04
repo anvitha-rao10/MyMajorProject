@@ -611,26 +611,32 @@ if page == "Enhance Skills":
     # Add CSS Styling for Hover Effects and Button Styling
     st.markdown("""
     <style>
-    .skill-button {
-        background-color: #b0bec5;
-        color: blue;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
-    }
-    .skill-button:hover {
-        background-color: white;
-    }
-    
-    .content {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-    
+   /* Style for the skill button */
+.skill-button {
+    background-color: #b0bec5;  /* Light grey background */
+    color: #1e3a8a;  /* Dark blue text for good contrast */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover effects */
+    border: 2px solid #b0bec5;  /* Border to match background */
+}
+
+.skill-button:hover {
+    background-color: #ffffff;  /* White background on hover */
+    color: #1e3a8a;  /* Dark blue text color on hover */
+    border: 2px solid #1e3a8a;  /* Dark blue border on hover */
+}
+
+/* Style for content text */
+.content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;  /* Dark color for better readability */
+}
     .content h3 {
         color: #333;
         font-size: 24px;
