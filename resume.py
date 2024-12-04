@@ -461,7 +461,8 @@ if page == "Find Jobs":
    
     
     .job-portal-link {
-       
+        background-color: #b0bec5;
+        color: black;
         padding: 12px 20px;
         border-radius: 8px;
         font-size: 18px;
@@ -490,7 +491,7 @@ if page == "Find Jobs":
     .encouragement {
         font-size: 20px;
         font-weight: bold;
-        color: blue;
+        
         padding: 20px;
         border-radius: 10px;
         margin-top: 30px;
