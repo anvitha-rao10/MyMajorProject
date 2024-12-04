@@ -365,7 +365,6 @@ elif page == "Resume Analyzer":
                     # Box styling with neutral background
                     st.markdown(f"""
                     <div style="
-                        background-color: #f9f9f9;  /* Light gray background */
                         color: #333;  /* Dark text for contrast */
                         padding: 20px;
                         margin: 10px;
