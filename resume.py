@@ -491,7 +491,7 @@ if page == "Find Jobs":
     .encouragement {
         font-size: 20px;
         font-weight: bold;
-        
+        color: blue;
         padding: 20px;
         border-radius: 10px;
         margin-top: 30px;
