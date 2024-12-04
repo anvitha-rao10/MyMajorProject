@@ -335,7 +335,7 @@ elif page == "Resume Analyzer":
             cleaned_resume = clean_text(resume_text)
 
             # Check for compulsory resume words
-            compulsory_words = ["experience", "education", "skills", "contact", "qualification", "profile"]
+            compulsory_words = ["skill"",skills"]
             if not any(word.lower() in cleaned_resume for word in compulsory_words):
                 st.error("This does not appear to be a valid resume. Please upload a valid resume PDF.")
             else:
