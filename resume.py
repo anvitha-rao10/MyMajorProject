@@ -462,7 +462,7 @@ if page == "Find Jobs":
     
     .job-portal-link {
         background-color: pink;
-        color: black;
+        color: darkblue;
         padding: 12px 20px;
         border-radius: 8px;
         font-size: 18px;
