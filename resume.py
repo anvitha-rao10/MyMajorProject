@@ -375,7 +375,7 @@ elif page == "Resume Analyzer":
                     ">
                         <strong>Job Title:</strong> {job_row['Job Title']}<br>
                         <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                        # <strong>Accuracy:</strong> {score:.2f}
+                        <strong>Accuracy:</strong> {score:.2f}
                     </div>
                     """, unsafe_allow_html=True)
 
