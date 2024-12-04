@@ -460,22 +460,26 @@ if page == "Find Jobs":
     
    
     
-    .job-portal-link {
-        background-color: pink;
-        color: darkblue;
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-size: 18px;
-        display: inline-block;
-        text-decoration: none;
-        margin: 10px 0;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .job-portal-link:hover {
-        background-color: white;
-    }
+    .j.job-portal-link {
+    background-color: #ff1493;  /* Pink color */
+    color: #fff;  /* White text for contrast */
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transitions */
+}
+
+/* Hover effect for the job portal link */
+.job-portal-link:hover {
+    background-color: #fff;  /* White background on hover */
+    color: #ff1493;  /* Pink text color on hover */
+    border: 1px solid #ff1493;  /* Pink border on hover */
+}
     
     .columns {
         display: flex;
