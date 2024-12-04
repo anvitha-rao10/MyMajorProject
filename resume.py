@@ -365,7 +365,7 @@ elif page == "Resume Analyzer":
                     # Box styling with neutral background
                     st.markdown(f"""
                     <div style="
-                        background-color: #f9f9f9;  /* Light gray background */
+                         /* Light gray background */
                         color: #333;  /* Dark text for contrast */
                         padding: 20px;
                         margin: 10px;
@@ -375,7 +375,7 @@ elif page == "Resume Analyzer":
                     ">
                         <strong>Job Title:</strong> {job_row['Job Title']}<br>
                         <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                        <strong>Accuracy:</strong> {score:.2f}
+                        # <strong>Accuracy:</strong> {score:.2f}
                     </div>
                     """, unsafe_allow_html=True)
 
