@@ -324,6 +324,7 @@ if page == "About Us":
 
 
 # Resume Analyzer Page
+# Resume Analyzer Page
 elif page == "Resume Analyzer":
     st.markdown("<div class='subtitle'>Resume Analyzer</div>", unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Upload your resume PDF", type="pdf")
@@ -333,87 +334,91 @@ elif page == "Resume Analyzer":
             resume_text = extract_text_from_pdf(uploaded_file)
             cleaned_resume = clean_text(resume_text)
 
-        # Vectorize resume text
-        resume_vector = vectorizer.transform([cleaned_resume])
+            # Check for compulsory resume words
+            compulsory_words = ["experience", "education", "skills", "contact", "qualification", "profile"]
+            if not any(word.lower() in cleaned_resume for word in compulsory_words):
+                st.error("This does not appear to be a valid resume. Please upload a valid resume PDF.")
+            else:
+                # Vectorize resume text
+                resume_vector = vectorizer.transform([cleaned_resume])
 
-        # Find the Top 5 Matching Jobs
-        distances, indices = knn.kneighbors(resume_vector)
+                # Find the Top 5 Matching Jobs
+                distances, indices = knn.kneighbors(resume_vector)
 
-        # Ensure we're always getting the top 5 jobs, even if fewer are found
-        num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+                # Ensure we're always getting the top 5 jobs, even if fewer are found
+                num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
 
-        # Check if the number of indices is less than expected
-        top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
-        accuracy_scores = []
+                # Check if the number of indices is less than expected
+                top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
+                accuracy_scores = []
 
-        # Display the top jobs and calculate accuracy
-        st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
+                # Display the top jobs and calculate accuracy
+                st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
 
-        # Use neutral style for boxes
-        for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
-            job_index = indices[0][i]  # Get the job index
-            score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
-            accuracy_scores.append(score)
-            job_row = df.iloc[job_index]  # Get the job details using the index
+                # Use neutral style for boxes
+                for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
+                    job_index = indices[0][i]  # Get the job index
+                    score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
+                    accuracy_scores.append(score)
+                    job_row = df.iloc[job_index]  # Get the job details using the index
 
-            # Box styling with neutral background
-            st.markdown(f"""
-            <div style="
-                background-color: #f9f9f9;  /* Light gray background */
-                color: #333;  /* Dark text for contrast */
-                padding: 20px;
-                margin: 10px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                font-size: 1.1em;
-            ">
-                <strong>Job Title:</strong> {job_row['Job Title']}<br>
-                <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                <strong>Accuracy:</strong> {score:.2f}
-            </div>
-            """, unsafe_allow_html=True)
+                    # Box styling with neutral background
+                    st.markdown(f"""
+                    <div style="
+                        background-color: #f9f9f9;  /* Light gray background */
+                        color: #333;  /* Dark text for contrast */
+                        padding: 20px;
+                        margin: 10px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        font-size: 1.1em;
+                    ">
+                        <strong>Job Title:</strong> {job_row['Job Title']}<br>
+                        <strong>Matched Skills:</strong> {job_row['Skills']}<br>
+                        <strong>Accuracy:</strong> {score:.2f}
+                    </div>
+                    """, unsafe_allow_html=True)
 
-        # Pie chart visualization for the top job accuracy scores
-        labels = top_5_jobs['Job Title']
-        sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
-        colors = plt.cm.Paired.colors  # Color palette
+                # Pie chart visualization for the top job accuracy scores
+                labels = top_5_jobs['Job Title']
+                sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
+                colors = plt.cm.Paired.colors  # Color palette
 
-        fig, ax = plt.subplots()
-        ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+                fig, ax = plt.subplots()
+                ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+                ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-        st.pyplot(fig)
+                st.pyplot(fig)
 
-        # Highlight and animate the top job's name
-        top_job_name = top_5_jobs.iloc[0]['Job Title']
+                # Highlight and animate the top job's name
+                top_job_name = top_5_jobs.iloc[0]['Job Title']
 
-        # CSS animation and styling for highlighting
-        st.markdown(f"""
-        <div style="
-            font-size: 2em;
-            font-weight: bold;
-            color: #ff6347;  /* Tomato color for emphasis */
-            text-align: center;
-            animation: pulse 2s infinite;
-        ">
-            Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
-        </div>
+                # CSS animation and styling for highlighting
+                st.markdown(f"""
+                <div style="
+                    font-size: 2em;
+                    font-weight: bold;
+                    color: #ff6347;  /* Tomato color for emphasis */
+                    text-align: center;
+                    animation: pulse 2s infinite;
+                ">
+                    Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
+                </div>
 
-        <style>
-            @keyframes pulse {{
-                0% {{ transform: scale(1); }}
-                50% {{ transform: scale(1.1); }}
-                100% {{ transform: scale(1); }}
-            }}
-        </style>
-        """, unsafe_allow_html=True)
+                <style>
+                    @keyframes pulse {{
+                        0% {{ transform: scale(1); }}
+                        50% {{ transform: scale(1.1); }}
+                        100% {{ transform: scale(1); }}
+                    }}
+                </style>
+                """, unsafe_allow_html=True)
 
-        # Add encouraging message
-        st.markdown("""
-        <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
-        <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
-        """, unsafe_allow_html=True)
-
+                # Add encouraging message
+                st.markdown("""
+                <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
+                <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
+                """, unsafe_allow_html=True)
 
 
 # Find Jobs Section
