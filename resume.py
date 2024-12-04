@@ -613,7 +613,7 @@ if page == "Enhance Skills":
     <style>
    /* Style for the skill button */
 .skill-button {
-    background-color: #b0bec5;  /* Light grey background */
+  /* Light grey background */
     color: #1e3a8a;  /* Dark blue text for good contrast */
     padding: 15px 32px;
     text-align: center;
