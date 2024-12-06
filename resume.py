@@ -260,12 +260,65 @@ skills_dict = dict(zip(df['Job Title'], df['Skills']))
 
 # Sidebar Navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.selectbox("Go to", ["About Us", "Resume Analyzer", "Find Jobs", "Enhance Skills", "Contact Us"])
+page = st.sidebar.selectbox("Go to", ["Home","About Us", "Resume Analyzer", "Find Jobs", "Enhance Skills", "Contact Us"])
 
 
 # Header (no line breaks, ensures single-line heading)
 st.markdown("<div class='title'>Intelligent Resume Analysis And Job Fit Assessment System</div>", unsafe_allow_html=True)
 
+if page == "Home":
+    st.markdown("""
+    Your Journey to a Perfect Job Starts Here! 🚀
+    This platform isn't just about finding a job—it's about **unlocking your full potential**.
+    
+    Here's how we can help you:
+    - **Analyze your resume** and match it with the best job roles 📝
+    - **Discover exciting career opportunities** across top platforms 🌐
+    - **Enhance your skills** with curated learning resources to level up 🔥
+    """)
+    st.markdown("---")
+    st.subheader("🎯 **How to Explore the App**")
+    st.write("""
+    👉 **Go to the left sidebar** (click the arrow in the top-left corner) to explore all the amazing features we offer.  
+    The sidebar is your gateway to:
+    - **Resume Analyzer** – Upload and analyze your resume
+    - **Find Jobs** – Search for job opportunities
+    - **Enhance Skills** – Discover courses and tutorials
+    """)
+    
+    # Animated Section (text or image)
+    st.markdown("---")
+    st.subheader("Why This Platform is a Game Changer:")
+    st.markdown("""
+    ➡️ **Smart Resume Matching**: Upload your resume and let us analyze it for the best job matches!  
+    ➡️ **Top Job Platforms**: Explore job opportunities on the most popular platforms.  
+    ➡️ **Skill Enhancement**: Discover courses that empower you to stay ahead in the job market.  
+    """)
+    
+
+    # Call-to-Action
+    st.markdown("---")
+    st.subheader("🌱 Ready to Grow Your Career?")
+    st.write("Let's begin this journey. Use the sidebar to start exploring the platform, and take the first step toward your dream job!")
+
+    # Fun Engaging Quote
+    st.markdown("""
+    > **"The best way to predict your future is to create it."** – Abraham Lincoln  
+    *Start building your future today!*
+    """)
+    
+    # Final Motivational Section with Icons
+    st.markdown("---")
+    st.subheader("🔥 What’s Waiting for You:")
+    st.write("💡 **Resume Analyzer** – Quickly see which jobs match your experience and skills.")
+    st.write("🔍 **Find Jobs** – Explore new opportunities from LinkedIn, Indeed, Naukri, and more.")
+    st.write("📚 **Enhance Skills** – Skill-building resources from top platforms like Coursera and edX.")
+
+    # Fun and Engaging Closing
+    st.markdown("""
+    🌟 It's time to take control of your career and make your mark in the world! 
+    Use the sidebar to get started on your exciting journey to success! 🎯
+    """)
 
 
 
