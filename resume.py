@@ -281,9 +281,11 @@ if page == "Home":
     st.write("""
     👉 **Go to the left sidebar** (click the arrow in the top-left corner) to explore all the amazing features we offer.  
     The sidebar is your gateway to:
+    - **About us** - List of Jobs and Skills
     - **Resume Analyzer** – Upload and analyze your resume
     - **Find Jobs** – Search for job opportunities
     - **Enhance Skills** – Discover courses and tutorials
+    - **Contact us** - Feel free to contact us anytime
     """)
     
     # Animated Section (text or image)
