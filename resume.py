@@ -15,8 +15,14 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 
+
+
+
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
+
+
+
 stop_words = set([
     'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours', 
     'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers', 
@@ -42,7 +48,6 @@ lemmatizer_dict = {
     'happier': 'happy', 'happiest': 'happy', 'sadder': 'sad', 'saddest': 'sad',
     'more': 'much', 'most': 'much', 'less': 'little', 'least': 'little',
     'doing': 'do', 'did': 'do', 'does': 'do', 'done': 'do'
-    # Add more words as needed for lemmatization
 }
 
 # Preprocessing and Cleaning Functions
@@ -270,6 +275,11 @@ page = st.sidebar.selectbox("Go to", ["About Us", "Resume Analyzer", "Find Jobs"
 # Header (no line breaks, ensures single-line heading)
 st.markdown("<div class='title'>Intelligent Resume Analysis And Job Fit Assessment System</div>", unsafe_allow_html=True)
 
+
+
+
+
+
 # About Us Page
 if page == "About Us":
     st.markdown("<div class='subtitle'>About Us</div>", unsafe_allow_html=True)
@@ -323,7 +333,12 @@ if page == "About Us":
             st.session_state.job_index = end_index  # Update to load the next set of jobs
 
 
-# Resume Analyzer Page
+
+
+
+
+
+
 # Resume Analyzer Page
 elif page == "Resume Analyzer":
     st.markdown("<div class='subtitle'>Resume Analyzer</div>", unsafe_allow_html=True)
@@ -418,6 +433,12 @@ elif page == "Resume Analyzer":
                 <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
                 <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
                 """, unsafe_allow_html=True)
+
+
+
+
+
+
 
 
 # Find Jobs Section
@@ -535,6 +556,13 @@ if page == "Find Jobs":
 
     st.markdown("<div class='encouragement'>Keep improving your skills and learning new ones. The right job is just around the corner!</div>", unsafe_allow_html=True)
 
+
+
+
+
+
+
+
 # Enhance Skills Page
 if page == "Enhance Skills":
     # Introduction Section
@@ -643,6 +671,14 @@ if page == "Enhance Skills":
     }
     </style>
     """, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
 
 
 
