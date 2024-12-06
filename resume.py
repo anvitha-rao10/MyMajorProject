@@ -269,7 +269,7 @@ st.markdown("<div class='title'>Intelligent Resume Analysis And Job Fit Assessme
 if page == "Home":
     st.markdown("""
     Your Journey to a Perfect Job Starts Here! 🚀
-    **This platform isn't just about finding a job—it's about **unlocking your full potential**.
+    This platform isn't just about finding a job—it's about **unlocking your full potential**.
     
     Here's how we can help you:
     - **Analyze your resume** and match it with the best job roles 📝
