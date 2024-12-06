@@ -686,7 +686,6 @@ if page == "Contact Us":
     You can contact us using the following methods:
 
     - **Email**: [resumeanalyzerr@gmail.com](mailto:resumeanalyzerr@gmail.com)
-    - **Phone**: +91 9480199605
     """)
 
     
