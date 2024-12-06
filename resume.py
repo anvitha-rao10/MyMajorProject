@@ -649,24 +649,68 @@ if page == "Enhance Skills":
         
 
 # Streamlit page for Contact Us
-if page == "Contact Us":
-    st.markdown("<div class='subtitle'>Contact Us</div>", unsafe_allow_html=True)
+import streamlit as st
+import csv
 
-    # Description for the form
+# Function to save data to a CSV file
+def save_to_csv(name, email, message, rating):
+    with open('contact_form_data.csv', mode='a', newline='', encoding='utf-8') as file:  # Specify UTF-8 encoding
+        writer = csv.writer(file)
+        writer.writerow([name, email, message, rating])
+
+# Streamlit page for "Contact Us"
+if "Contact Us" not in st.session_state:
+    st.session_state.page = "Contact Us"
+
+if st.session_state.page == "Contact Us":
+    # Title and description
+    st.markdown("<div class='subtitle'>Contact Us</div>", unsafe_allow_html=True)
     st.write("""
     **We'd love to hear from you!**
     If you have any questions, feedback, or need assistance, feel free to reach out to us.
     You can contact us using the following methods:
-
     - **Email**: [resumeanalyzerr@gmail.com](mailto:resumeanalyzerr@gmail.com)
     - **Phone**: +91 9480199605
     """)
 
-    
+    # Form for user input
+    with st.form(key='contact_form'):
+        name = st.text_input("Name")
+        email = st.text_input("Email")
+        message = st.text_area("Message")
+        
+        # Add a rating option
+        rating = st.radio(
+            "How would you rate your experience with us?",
+            options=["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"],
+            horizontal=True
+        )
 
-    # Custom CSS for better design and layout
+        # Submit button
+        submitted = st.form_submit_button("Submit")
+
+    # On form submission
+    if submitted:
+        if name and email and message:
+            # Save to CSV
+            save_to_csv(name, email, message, rating)
+            st.success("Your message has been submitted successfully!")
+        else:
+            st.error("Please fill out all fields.")
+
+    # Footer section
+    st.markdown("<div class='footer'>© 2024 Resume Analyzer (ARKK)</div>", unsafe_allow_html=True)
+
+    # Custom CSS for styling
     st.markdown("""
-    <style>    
+    <style>
+    .subtitle {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     .stButton>button {
         background-color: #4CAF50;
         color: white;
@@ -682,40 +726,23 @@ if page == "Contact Us":
         background-color: #45a049;
     }
 
-    /* Input fields */
-    .stTextInput>div>input {
+    .stTextInput>div>input, .stTextArea>div>textarea {
         font-size: 16px;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
     }
 
-    .stTextArea>div>textarea {
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
+    .stRadio>div>label {
+        font-size: 20px;
+        color: #FFD700;
     }
 
-    /* Text alignment */
-    .stTextInput, .stTextArea {
-        margin-bottom: 20px;
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: gray;
     }
-
-    /* Rating Style (Stars) */
-    .stRadio>div>label>div {
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-        color: #FFD700;  /* Gold color for stars */
-    }
-
-    .stRadio>div>label>div>input {
-        cursor: pointer;
-    }
-    
     </style>
     """, unsafe_allow_html=True)
-
-# Footer
-st.markdown("<div class='footer'>© 2024 Resume Analyzer (ARKK)</div>", unsafe_allow_html=True)
