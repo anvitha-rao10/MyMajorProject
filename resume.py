@@ -1,18 +1,20 @@
-import streamlit as st
-import pandas as pd
-import re
-import nltk
-import numpy as np
-import matplotlib.pyplot as plt
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-import fitz  # PyMuPDF for PDF handling
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import NearestNeighbors
+# Importing required libraries
+import streamlit as st  # Streamlit is used for building interactive web apps
+import pandas as pd  # Pandas is used for data manipulation and analysis
+import re  # Regular expressions for text processing
+import nltk  # Natural Language Toolkit for NLP tasks
+import numpy as np  # NumPy is used for numerical computations
+import matplotlib.pyplot as plt  # Matplotlib for data visualization
+import smtplib  # Simple Mail Transfer Protocol library for sending emails
+from email.mime.text import MIMEText  # To create plain text email content
+from email.mime.multipart import MIMEMultipart  # To create multipart email content
+from nltk.corpus import stopwords  # Predefined stop words list for filtering text
+from nltk.tokenize import word_tokenize  # Tokenizer for breaking text into words
+from nltk.stem import WordNetLemmatizer  # Lemmatizer for reducing words to their base forms
+import fitz  # PyMuPDF for handling PDF files
+from sklearn.feature_extraction.text import TfidfVectorizer  # Converts text to numerical feature vectors
+from sklearn.neighbors import NearestNeighbors  # For finding nearest neighbors, used in recommendation or classification systems
+
 
 
 
@@ -40,8 +42,6 @@ stop_words = set([
     'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 
     'weren', 'won', 'wouldn'
 ])
-
-# Manually define lemmatization (basic implementation using word forms)
 lemmatizer_dict = {
     'running': 'run', 'ran': 'run', 'runs': 'run', 
     'better': 'good', 'best': 'good', 'worse': 'bad', 'worst': 'bad',
@@ -49,6 +49,9 @@ lemmatizer_dict = {
     'more': 'much', 'most': 'much', 'less': 'little', 'least': 'little',
     'doing': 'do', 'did': 'do', 'does': 'do', 'done': 'do'
 }
+
+
+
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
@@ -58,9 +61,7 @@ def clean_text(txt):
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
     # Tokenization
-    tokens = re.findall(r'\b\w+\b', clean_text)
-
-    
+    tokens = re.findall(r'\b\w+\b', clean_text)  
     tokens = [word for word in tokens if word not in stop_words]
     
     # Lemmatize using the manually defined lemmatizer_dict
@@ -93,9 +94,6 @@ st.markdown("""<style>
         font-family: Georgia, 'Times New Roman', Times, serif;
 
     }
-
-   
-
     .title {
         text-align: center;
         color: blue;  /* Bright Blue */
@@ -103,10 +101,7 @@ st.markdown("""<style>
         font-weight: 700;
         text-transform: uppercase;
    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
     }
-
     .subtitle {
         text-align: left;
         font-size: 20px;
@@ -115,7 +110,6 @@ st.markdown("""<style>
         font-family: Arial, Helvetica, sans-serif;
 
     }
-
     .footer {
         text-align: center;
         padding: 20px;
@@ -129,8 +123,6 @@ st.markdown("""<style>
         gap: 20px;
         margin-top: 20px;
     }
-
-    /* Job Item Style */
     .job-item {
         background-color: #ff6f61;  /* Bright Coral */
         color: white;
@@ -202,7 +194,6 @@ st.markdown("""<style>
         color: white;
     }
 
-    /* Explore More Button */
     .explore-more-btn {
         background-color: #ff9800;  /* Bright Orange */
         color: white;
@@ -703,53 +694,10 @@ if page == "Contact Us":
     # Custom CSS for better design and layout
     st.markdown("""
     <style>    
-    .stButton>button {
-        background-color: #4CAF50;
-        color: white;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        border-radius: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .stButton>button:hover {
-        background-color: #45a049;
-    }
-
-    /* Input fields */
-    .stTextInput>div>input {
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-    .stTextArea>div>textarea {
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-    /* Text alignment */
-    .stTextInput, .stTextArea {
+        .stTextInput, .stTextArea {
         margin-bottom: 20px;
     }
 
-    /* Rating Style (Stars) */
-    .stRadio>div>label>div {
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-        color: #FFD700;  /* Gold color for stars */
-    }
-
-    .stRadio>div>label>div>input {
-        cursor: pointer;
-    }
-    
     </style>
     """, unsafe_allow_html=True)
 
