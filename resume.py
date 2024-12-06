@@ -330,7 +330,7 @@ if page == "Home":
 if page == "About Us":
     st.markdown("<div class='subtitle'>About Us</div>", unsafe_allow_html=True)
     st.write("""
-    Welcome to the **Intelligent Resume Analysis and Job Fit Assessment System**! 
+   **Intelligent Resume Analysis and Job Fit Assessment System**! 
     Our platform is designed to leverage **Artificial Intelligence** to:
     - Match your resumes with the most relevant job descriptions.
     - Help you discover job opportunities tailored to your skillset.
