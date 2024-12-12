@@ -72,12 +72,21 @@ def clean_text(txt):
 def extract_text_from_pdf(uploaded_file):
     text = ""
     try:
+        # Open the PDF file as a stream
         with fitz.open(stream=uploaded_file.read(), filetype="pdf") as doc:
+            # Check the page limit
+            if len(doc) > 3:
+                st.error("The uploaded PDF has more than 3 pages. Please upload a valid PDF.")
+                return None  # Stop further processing
+            
+            # Extract text from each page
             for page in doc:
                 text += page.get_text()
     except Exception as e:
         st.error(f"Failed to extract text from the PDF: {e}")
+        return None  # Return None on failure
     return text
+
 
 # Initialize TF-IDF Vectorizer and KNN Model
 vectorizer = TfidfVectorizer(max_features=5000)
