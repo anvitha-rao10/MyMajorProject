@@ -69,22 +69,43 @@ def clean_text(txt):
     return ' '.join(tokens)
 
 # Extract text from PDF using PyMuPDF
-def extract_text_from_pdf(uploaded_file):
+def extract_text_from_pdf(uploaded_file, max_pages=3):
+    """
+    Extracts text from a PDF file. Only extracts text from the first `max_pages` pages.
+    If the PDF has more than `max_pages` pages, an error is returned.
+
+    Args:
+        uploaded_file (file): The uploaded PDF file.
+        max_pages (int): Maximum number of pages to extract text from.
+
+    Returns:
+        str: Extracted text or error message.
+    """
     text = ""
+    
     try:
-        # Open the PDF file as a stream
+        # Open PDF file from the uploaded file stream
         with fitz.open(stream=uploaded_file.read(), filetype="pdf") as doc:
-            # Check the page limit
-            if len(doc) > 3:
-                st.error("The uploaded PDF has more than 3 pages. Please upload a valid PDF.")
-                return None  # Stop further processing
+            
+            # Check if the PDF has more than the allowed number of pages
+            if len(doc) > max_pages:
+                st.error(f"The PDF has more than {max_pages} pages, which is not allowed.")
+                return ""
             
             # Extract text from each page
             for page in doc:
-                text += page.get_text()
+                page_text = page.get_text("text")  # Extract text (not images)
+                text += page_text
+        
+        # If no text is found, return an appropriate message
+        if not text:
+            st.warning("No text found in the PDF.")
+            return ""
+        
     except Exception as e:
         st.error(f"Failed to extract text from the PDF: {e}")
-        return None  # Return None on failure
+        return ""
+    
     return text
 
 
