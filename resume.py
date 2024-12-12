@@ -428,7 +428,7 @@ elif page == "Resume Analyzer":
             # Check for compulsory resume words
             compulsory_words = ["skill"]
             if not any(word.lower() in cleaned_resume for word in compulsory_words):
-                st.error("This does not appear to be a valid resume. Please upload a valid resume PDF.")
+                st.error(" Please upload a valid resume PDF.")
             else:
                 # Vectorize resume text
                 resume_vector = vectorizer.transform([cleaned_resume])
