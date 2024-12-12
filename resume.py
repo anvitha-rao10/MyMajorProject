@@ -522,11 +522,7 @@ if page == "Find Jobs":
     """, unsafe_allow_html=True)
     # Custom CSS for styling the page
     st.markdown("""
-    <style>
-   
-    
-   
-    
+    <style>  
     .j.job-portal-link {
     background-color: #ff1493;  /* Pink color */
     color: #fff;  /* White text for contrast */
@@ -742,9 +738,6 @@ if page == "Contact Us":
 
     - **Email**: [resumeanalyzerr@gmail.com](mailto:resumeanalyzerr@gmail.com)
     """)
-
-    
-
     # Custom CSS for better design and layout
     st.markdown("""
     <style>    
