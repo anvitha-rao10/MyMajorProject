@@ -1,3 +1,6 @@
+from sklearn.metrics import accuracy_score
+from PyPDF2 import PdfReader
+import PyPDF2
 import streamlit as st
 import pandas as pd
 import re
@@ -13,7 +16,6 @@ from nltk.stem import WordNetLemmatizer
 import fitz  # PyMuPDF for PDF handling
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
-
 
 
 # Load the Dataset
