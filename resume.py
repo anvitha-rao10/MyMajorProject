@@ -125,17 +125,7 @@ def process_resumes(uploaded_files):
             })
 
     return resume_data
-    uploaded_files = st.file_uploader("Upload your resumes", type="pdf", accept_multiple_files=True)
-
-if uploaded_files:
-    # Process multiple resumes at once
-    resume_data = process_resumes(uploaded_files)
     
-    # Display results
-    if resume_data:
-        st.write("Processed Resumes:")
-        resume_df = pd.DataFrame(resume_data)
-        st.dataframe(resume_df) 
 
 # Initialize TF-IDF Vectorizer and KNN Model
 vectorizer = TfidfVectorizer(max_features=5000)
