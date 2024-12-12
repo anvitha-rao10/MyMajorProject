@@ -68,42 +68,16 @@ def clean_text(txt):
     tokens = [lemmatizer_dict.get(word, word) for word in tokens]
     return ' '.join(tokens)
 
-# Function to extract text from a PDF file
+# Extract text from PDF using PyMuPDF
 def extract_text_from_pdf(uploaded_file):
     text = ""
-    with fitz.open(stream=uploaded_file.read(), filetype="pdf") as pdf:  # Open the PDF from the uploaded file stream
-        for page_num in range(len(pdf)):  # Iterate through all pages
-            text += pdf[page_num].get_text()  # Extract text from each page
+    try:
+        with fitz.open(stream=uploaded_file.read(), filetype="pdf") as doc:
+            for page in doc:
+                text += page.get_text()
+    except Exception as e:
+        st.error(f"Failed to extract text from the PDF: {e}")
     return text
-
-# Function to check if content exists in the resume
-def is_valid_resume(content):
-    """
-    Validates if the resume content contains essential words.
-    Args:
-        content (str): Text content extracted from the resume.
-    Returns:
-        bool: True if essential words are present, False otherwise.
-    """
-    compulsory_words = ["skill", "resume"]  # Words that must be in the resume
-    return any(word.lower() in content.lower() for word in compulsory_words)
-
-# Function to check if the number of pages exceeds the limit
-def check_page_limit(uploaded_file, max_pages=2):
-    """
-    Checks if the PDF exceeds the allowed number of pages.
-    Args:
-        uploaded_file (File): Uploaded PDF file.
-        max_pages (int): Maximum allowed pages.
-    Returns:
-        tuple: (bool, int) where bool indicates validity and int is the page count.
-    """
-    with fitz.open(stream=uploaded_file.read(), filetype="pdf") as pdf:
-        num_pages = len(pdf)  # Get the total number of pages
-        if num_pages > max_pages:
-            return False, num_pages  # Resume has more pages than allowed
-        return True, num_pages  # Resume has a valid number of pages
-
 
 # Initialize TF-IDF Vectorizer and KNN Model
 vectorizer = TfidfVectorizer(max_features=5000)
