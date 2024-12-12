@@ -1,22 +1,18 @@
-# Import necessary libraries
-from sklearn.metrics import accuracy_score  # For evaluating ML models
-# from PyPDF2 import PdfReader  # For reading PDF files
-# import PyPDF2  # Additional PDF handling
-import streamlit as st  # For building web applications
-import pandas as pd  # For data analysis and manipulation
-import re  # For regular expressions in text processing
-import nltk  # Natural Language Toolkit for NLP tasks
-from nltk.corpus import stopwords  # For removing common words
-from nltk.tokenize import word_tokenize  # For tokenizing text
-from nltk.stem import WordNetLemmatizer  # For lemmatizing words
-import numpy as np  # For numerical computations
-import matplotlib.pyplot as plt  # For data visualization
-import smtplib  # For sending emails
-from email.mime.text import MIMEText  # For plain text emails
-from email.mime.multipart import MIMEMultipart  # For multipart emails
-import fitz  # PyMuPDF for advanced PDF handling
-from sklearn.feature_extraction.text import TfidfVectorizer  # For text feature extraction
-from sklearn.neighbors import NearestNeighbors  # For similarity matching (KNN)
+import streamlit as st
+import pandas as pd
+import re
+import nltk
+import numpy as np
+import matplotlib.pyplot as plt
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+import fitz  # PyMuPDF for PDF handling
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.neighbors import NearestNeighbors
 
 
 
