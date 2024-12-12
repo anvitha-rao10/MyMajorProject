@@ -1,22 +1,30 @@
-import streamlit as st
-import pandas as pd
-import re
-import nltk
-import numpy as np
-import matplotlib.pyplot as plt
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-import fitz  # PyMuPDF for PDF handling
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import NearestNeighbors
+# Importing required libraries
+import streamlit as st  # Streamlit is used for building interactive web apps
+import pandas as pd  # Pandas is used for data manipulation and analysis
+import re  # Regular expressions for text processing
+import nltk  # Natural Language Toolkit for NLP tasks
+import numpy as np  # NumPy is used for numerical computations
+import matplotlib.pyplot as plt  # Matplotlib for data visualization
+import smtplib  # Simple Mail Transfer Protocol library for sending emails
+from email.mime.text import MIMEText  # To create plain text email content
+from email.mime.multipart import MIMEMultipart  # To create multipart email content
+from nltk.corpus import stopwords  # Predefined stop words list for filtering text
+from nltk.tokenize import word_tokenize  # Tokenizer for breaking text into words
+from nltk.stem import WordNetLemmatizer  # Lemmatizer for reducing words to their base forms
+import fitz  # PyMuPDF for handling PDF files
+from sklearn.feature_extraction.text import TfidfVectorizer  # Converts text to numerical feature vectors
+from sklearn.neighbors import NearestNeighbors  # For finding nearest neighbors, used in recommendation or classification systems
+
+
+
+
 
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
+
+
+
 stop_words = set([
     'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours', 
     'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers', 
@@ -34,16 +42,16 @@ stop_words = set([
     'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 
     'weren', 'won', 'wouldn'
 ])
-
-# Manually define lemmatization (basic implementation using word forms)
 lemmatizer_dict = {
     'running': 'run', 'ran': 'run', 'runs': 'run', 
     'better': 'good', 'best': 'good', 'worse': 'bad', 'worst': 'bad',
     'happier': 'happy', 'happiest': 'happy', 'sadder': 'sad', 'saddest': 'sad',
     'more': 'much', 'most': 'much', 'less': 'little', 'least': 'little',
     'doing': 'do', 'did': 'do', 'does': 'do', 'done': 'do'
-    # Add more words as needed for lemmatization
 }
+
+
+
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
@@ -53,9 +61,7 @@ def clean_text(txt):
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
     # Tokenization
-    tokens = re.findall(r'\b\w+\b', clean_text)
-
-    
+    tokens = re.findall(r'\b\w+\b', clean_text)  
     tokens = [word for word in tokens if word not in stop_words]
     
     # Lemmatize using the manually defined lemmatizer_dict
@@ -88,9 +94,6 @@ st.markdown("""<style>
         font-family: Georgia, 'Times New Roman', Times, serif;
 
     }
-
-   
-
     .title {
         text-align: center;
         color: blue;  /* Bright Blue */
@@ -98,10 +101,7 @@ st.markdown("""<style>
         font-weight: 700;
         text-transform: uppercase;
    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
     }
-
     .subtitle {
         text-align: left;
         font-size: 20px;
@@ -110,7 +110,6 @@ st.markdown("""<style>
         font-family: Arial, Helvetica, sans-serif;
 
     }
-
     .footer {
         text-align: center;
         padding: 20px;
@@ -124,8 +123,6 @@ st.markdown("""<style>
         gap: 20px;
         margin-top: 20px;
     }
-
-    /* Job Item Style */
     .job-item {
         background-color: #ff6f61;  /* Bright Coral */
         color: white;
@@ -197,7 +194,6 @@ st.markdown("""<style>
         color: white;
     }
 
-    /* Explore More Button */
     .explore-more-btn {
         background-color: #ff9800;  /* Bright Orange */
         color: white;
@@ -264,17 +260,77 @@ skills_dict = dict(zip(df['Job Title'], df['Skills']))
 
 # Sidebar Navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.selectbox("Go to", ["About Us", "Resume Analyzer", "Find Jobs", "Enhance Skills", "Contact Us"])
+page = st.sidebar.selectbox("Go to", ["Home","About Us", "Resume Analyzer", "Find Jobs", "Enhance Skills", "Contact Us"])
 
 
 # Header (no line breaks, ensures single-line heading)
 st.markdown("<div class='title'>Intelligent Resume Analysis And Job Fit Assessment System</div>", unsafe_allow_html=True)
 
+if page == "Home":
+    st.markdown("""
+    - Your Journey to a Perfect Job Starts Here! 🚀
+    - This platform isn't just about finding a job it's about **unlocking your full potential**.
+    
+    Here's how we can help you:
+    - **Analyze your resume** and match it with the best job roles 📝
+    - **Discover exciting career opportunities** across top platforms 🌐
+    - **Enhance your skills** with curated learning resources to level up 🔥
+    """)
+    st.markdown("---")
+    st.subheader("🎯 **How to Explore the App**")
+    st.write("""
+    👉 **Go to the left sidebar** (click the arrow in the top-left corner) to explore all the amazing features we offer.  
+    The sidebar is your gateway to:
+    - **About us** - List of Jobs and Skills
+    - **Resume Analyzer** – Upload and analyze your resume
+    - **Find Jobs** – Search for job opportunities
+    - **Enhance Skills** – Discover courses and tutorials
+    - **Contact us** - Feel free to contact us anytime
+    """)
+    
+    # Animated Section (text or image)
+    st.markdown("---")
+    st.subheader("Why This Platform is a Game Changer:")
+    st.markdown("""
+    ➡️ **Smart Resume Matching**: Upload your resume and let us analyze it for the best job matches!  
+    ➡️ **Top Job Platforms**: Explore job opportunities on the most popular platforms.  
+    ➡️ **Skill Enhancement**: Discover courses that empower you to stay ahead in the job market.  
+    """)
+    
+
+    # Call-to-Action
+    st.markdown("---")
+    st.subheader("🌱 Ready to Grow Your Career?")
+    st.write("Let's begin this journey. Use the sidebar to start exploring the platform, and take the first step toward your dream job!")
+
+    # Fun Engaging Quote
+    st.markdown("""
+    > **"The best way to predict your future is to create it."** – Abraham Lincoln  
+    *Start building your future today!*
+    """)
+    
+    # Final Motivational Section with Icons
+    st.markdown("---")
+    st.subheader("🔥 What’s Waiting for You:")
+    st.write("💡 **Resume Analyzer** – Quickly see which jobs match your experience and skills.")
+    st.write("🔍 **Find Jobs** – Explore new opportunities from LinkedIn, Indeed, Naukri, and more.")
+    st.write("📚 **Enhance Skills** – Skill-building resources from top platforms like Coursera and edX.")
+
+    # Fun and Engaging Closing
+    st.markdown("""
+    🌟 It's time to take control of your career and make your mark in the world! 
+    Use the sidebar to get started on your exciting journey to success! 🎯
+    """)
+
+
+
+
+
 # About Us Page
 if page == "About Us":
     st.markdown("<div class='subtitle'>About Us</div>", unsafe_allow_html=True)
     st.write("""
-    Welcome to the **Intelligent Resume Analysis and Job Fit Assessment System**! 
+   **Intelligent Resume Analysis and Job Fit Assessment System**! 
     Our platform is designed to leverage **Artificial Intelligence** to:
     - Match your resumes with the most relevant job descriptions.
     - Help you discover job opportunities tailored to your skillset.
@@ -323,7 +379,12 @@ if page == "About Us":
             st.session_state.job_index = end_index  # Update to load the next set of jobs
 
 
-# Resume Analyzer Page
+
+
+
+
+
+
 # Resume Analyzer Page
 elif page == "Resume Analyzer":
     st.markdown("<div class='subtitle'>Resume Analyzer</div>", unsafe_allow_html=True)
@@ -374,7 +435,7 @@ elif page == "Resume Analyzer":
                     ">
                         <strong>Job Title:</strong> {job_row['Job Title']}<br>
                         <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                        <strong>Accuracy:</strong> {score:.2f}
+                       
                     </div>
                     """, unsafe_allow_html=True)
 
@@ -420,6 +481,12 @@ elif page == "Resume Analyzer":
                 """, unsafe_allow_html=True)
 
 
+
+
+
+
+
+
 # Find Jobs Section
 if page == "Find Jobs":
     
@@ -455,11 +522,7 @@ if page == "Find Jobs":
     """, unsafe_allow_html=True)
     # Custom CSS for styling the page
     st.markdown("""
-    <style>
-   
-    
-   
-    
+    <style>  
     .j.job-portal-link {
     background-color: #ff1493;  /* Pink color */
     color: #fff;  /* White text for contrast */
@@ -534,6 +597,13 @@ if page == "Find Jobs":
     st.markdown("<div class='encouragement'>Pro Tip: While applying, make sure to tailor your resume for each job. Highlight relevant skills, experiences, and achievements that align with the job description.</div>", unsafe_allow_html=True)
 
     st.markdown("<div class='encouragement'>Keep improving your skills and learning new ones. The right job is just around the corner!</div>", unsafe_allow_html=True)
+
+
+
+
+
+
+
 
 # Enhance Skills Page
 if page == "Enhance Skills":
@@ -646,6 +716,14 @@ if page == "Enhance Skills":
 
 
 
+
+
+
+
+
+
+
+
         
 
 # Streamlit page for Contact Us
@@ -659,61 +737,14 @@ if page == "Contact Us":
     You can contact us using the following methods:
 
     - **Email**: [resumeanalyzerr@gmail.com](mailto:resumeanalyzerr@gmail.com)
-    - **Phone**: +91 9480199605
     """)
-
-    
-
     # Custom CSS for better design and layout
     st.markdown("""
     <style>    
-    .stButton>button {
-        background-color: #4CAF50;
-        color: white;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        border-radius: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .stButton>button:hover {
-        background-color: #45a049;
-    }
-
-    /* Input fields */
-    .stTextInput>div>input {
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-    .stTextArea>div>textarea {
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-    /* Text alignment */
-    .stTextInput, .stTextArea {
+        .stTextInput, .stTextArea {
         margin-bottom: 20px;
     }
 
-    /* Rating Style (Stars) */
-    .stRadio>div>label>div {
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-        color: #FFD700;  /* Gold color for stars */
-    }
-
-    .stRadio>div>label>div>input {
-        cursor: pointer;
-    }
-    
     </style>
     """, unsafe_allow_html=True)
 
