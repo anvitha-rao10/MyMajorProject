@@ -108,25 +108,6 @@ def extract_text_from_pdf(uploaded_file, max_pages=3):
     
     return text
 
-
-def process_resumes(uploaded_files):
-    resume_data = []
-
-    for uploaded_file in uploaded_files:
-        # Extract text from each PDF
-        text = extract_text_from_pdf(uploaded_file)
-
-        if text:
-            # Perform your resume processing here (e.g., clean text, match job titles)
-            cleaned_text = clean_text(text)
-            resume_data.append({
-                'Filename': uploaded_file.name,
-                'Extracted Text': cleaned_text
-            })
-
-    return resume_data
-    
-
 # Initialize TF-IDF Vectorizer and KNN Model
 vectorizer = TfidfVectorizer(max_features=5000)
 job_descriptions = df['Skills'].apply(clean_text).tolist()
