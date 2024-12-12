@@ -1,30 +1,27 @@
-# Importing required libraries
-import streamlit as st  # Streamlit is used for building interactive web apps
-import pandas as pd  # Pandas is used for data manipulation and analysis
-import re  # Regular expressions for text processing
+# Import necessary libraries
+from sklearn.metrics import accuracy_score  # For evaluating ML models
+from PyPDF2 import PdfReader  # For reading PDF files
+import PyPDF2  # Additional PDF handling
+import streamlit as st  # For building web applications
+import pandas as pd  # For data analysis and manipulation
+import re  # For regular expressions in text processing
 import nltk  # Natural Language Toolkit for NLP tasks
-import numpy as np  # NumPy is used for numerical computations
-import matplotlib.pyplot as plt  # Matplotlib for data visualization
-import smtplib  # Simple Mail Transfer Protocol library for sending emails
-from email.mime.text import MIMEText  # To create plain text email content
-from email.mime.multipart import MIMEMultipart  # To create multipart email content
-from nltk.corpus import stopwords  # Predefined stop words list for filtering text
-from nltk.tokenize import word_tokenize  # Tokenizer for breaking text into words
-from nltk.stem import WordNetLemmatizer  # Lemmatizer for reducing words to their base forms
-import fitz  # PyMuPDF for handling PDF files
-from sklearn.feature_extraction.text import TfidfVectorizer  # Converts text to numerical feature vectors
-from sklearn.neighbors import NearestNeighbors  # For finding nearest neighbors, used in recommendation or classification systems
-
-
-
+from nltk.corpus import stopwords  # For removing common words
+from nltk.tokenize import word_tokenize  # For tokenizing text
+from nltk.stem import WordNetLemmatizer  # For lemmatizing words
+import numpy as np  # For numerical computations
+import matplotlib.pyplot as plt  # For data visualization
+import smtplib  # For sending emails
+from email.mime.text import MIMEText  # For plain text emails
+from email.mime.multipart import MIMEMultipart  # For multipart emails
+import fitz  # PyMuPDF for advanced PDF handling
+from sklearn.feature_extraction.text import TfidfVectorizer  # For text feature extraction
+from sklearn.neighbors import NearestNeighbors  # For similarity matching (KNN)
 
 
 
 # Load the Dataset
 df = pd.read_csv('cleaned_file.csv')
-
-
-
 stop_words = set([
     'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours', 
     'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers', 
@@ -42,6 +39,8 @@ stop_words = set([
     'hasn', 'haven', 'isn', 'ma', 'mightn', 'mustn', 'needn', 'shan', 'shouldn', 'wasn', 
     'weren', 'won', 'wouldn'
 ])
+
+# Manually define lemmatization (basic implementation using word forms)
 lemmatizer_dict = {
     'running': 'run', 'ran': 'run', 'runs': 'run', 
     'better': 'good', 'best': 'good', 'worse': 'bad', 'worst': 'bad',
@@ -49,9 +48,6 @@ lemmatizer_dict = {
     'more': 'much', 'most': 'much', 'less': 'little', 'least': 'little',
     'doing': 'do', 'did': 'do', 'does': 'do', 'done': 'do'
 }
-
-
-
 
 # Preprocessing and Cleaning Functions
 def clean_text(txt):
@@ -61,23 +57,40 @@ def clean_text(txt):
     clean_text = re.sub(r'\s+', ' ', clean_text).strip().lower()
     
     # Tokenization
-    tokens = re.findall(r'\b\w+\b', clean_text)  
+    tokens = re.findall(r'\b\w+\b', clean_text)
+    
     tokens = [word for word in tokens if word not in stop_words]
     
     # Lemmatize using the manually defined lemmatizer_dict
     tokens = [lemmatizer_dict.get(word, word) for word in tokens]
     return ' '.join(tokens)
 
-# Extract text from PDF using PyMuPDF
 def extract_text_from_pdf(uploaded_file):
+    pdf_reader = PyPDF2.PdfReader(uploaded_file)
     text = ""
-    try:
-        with fitz.open(stream=uploaded_file.read(), filetype="pdf") as doc:
-            for page in doc:
-                text += page.get_text()
-    except Exception as e:
-        st.error(f"Failed to extract text from the PDF: {e}")
+    
+    # Iterate through all pages and extract text
+    for page_num in range(len(pdf_reader.pages)):
+        page = pdf_reader.pages[page_num]
+        text += page.extract_text()
+        
     return text
+
+# Function to check if content exists in the resume
+def is_valid_resume(content):
+    # Check if the content contains essential words (e.g., "skill")
+    compulsory_words = ["skill","Resume"]
+    return any(word.lower() in content for word in compulsory_words)
+
+
+# Function to check if the number of pages exceeds the limit
+def check_page_limit(uploaded_file, max_pages=2):
+    pdf_reader = PyPDF2.PdfReader(uploaded_file)
+    num_pages = len(pdf_reader.pages)
+    if num_pages > max_pages:
+        return False, num_pages  # Resume has more pages than allowed
+    return True, num_pages  # Resume has valid number of pages
+
 
 # Initialize TF-IDF Vectorizer and KNN Model
 vectorizer = TfidfVectorizer(max_features=5000)
@@ -92,7 +105,6 @@ st.markdown("""<style>
         background-color: grey;  /* Light, clean background */
         color: pink;
         font-family: Georgia, 'Times New Roman', Times, serif;
-
     }
     .title {
         text-align: center;
@@ -102,13 +114,13 @@ st.markdown("""<style>
         text-transform: uppercase;
    font-family: Georgia, 'Times New Roman', Times, serif;
     }
+
     .subtitle {
         text-align: left;
         font-size: 20px;
         color: red;
         font-weight: 650;
         font-family: Arial, Helvetica, sans-serif;
-
     }
     .footer {
         text-align: center;
@@ -123,6 +135,8 @@ st.markdown("""<style>
         gap: 20px;
         margin-top: 20px;
     }
+
+    /* Job Item Style */
     .job-item {
         background-color: #ff6f61;  /* Bright Coral */
         color: white;
@@ -194,6 +208,7 @@ st.markdown("""<style>
         color: white;
     }
 
+    /* Explore More Button */
     .explore-more-btn {
         background-color: #ff9800;  /* Bright Orange */
         color: white;
@@ -265,11 +280,31 @@ page = st.sidebar.selectbox("Go to", ["Home","About Us", "Resume Analyzer", "Fin
 
 # Header (no line breaks, ensures single-line heading)
 st.markdown("<div class='title'>Intelligent Resume Analysis And Job Fit Assessment System</div>", unsafe_allow_html=True)
+st.markdown(
+     """
+     <div style="text-align: center; color: #3498db; font-size: 15px; ">
+         "Align. Review. Know. Keep Growing."
+     </div>
+     """, 
+     unsafe_allow_html=True
+ )
+
+
+
+
 
 if page == "Home":
+    st.markdown(
+        """
+        <div style="text-align: center; color: #9b59b6; font-size: 36px; font-weight: bold;">
+            Welcome To Our Platform
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
     st.markdown("""
-    - Your Journey to a Perfect Job Starts Here! 🚀
-    - This platform isn't just about finding a job it's about **unlocking your full potential**.
+    Your Journey to a Perfect Job Starts Here! 🚀
+    This platform isn't just about finding a job—it's about **unlocking your full potential**.
     
     Here's how we can help you:
     - **Analyze your resume** and match it with the best job roles 📝
@@ -313,7 +348,7 @@ if page == "Home":
     st.markdown("---")
     st.subheader("🔥 What’s Waiting for You:")
     st.write("💡 **Resume Analyzer** – Quickly see which jobs match your experience and skills.")
-    st.write("🔍 **Find Jobs** – Explore new opportunities from LinkedIn, Indeed, Naukri, and more.")
+    st.write("🧐 **Find Jobs** – Explore new opportunities from LinkedIn, Indeed, Naukri, and more.")
     st.write("📚 **Enhance Skills** – Skill-building resources from top platforms like Coursera and edX.")
 
     # Fun and Engaging Closing
@@ -326,11 +361,13 @@ if page == "Home":
 
 
 
+
+
 # About Us Page
-if page == "About Us":
+elif page == "About Us":
     st.markdown("<div class='subtitle'>About Us</div>", unsafe_allow_html=True)
     st.write("""
-   **Intelligent Resume Analysis and Job Fit Assessment System**! 
+    Welcome to the **Intelligent Resume Analysis and Job Fit Assessment System**! 
     Our platform is designed to leverage **Artificial Intelligence** to:
     - Match your resumes with the most relevant job descriptions.
     - Help you discover job opportunities tailored to your skillset.
@@ -386,61 +423,80 @@ if page == "About Us":
 
 
 # Resume Analyzer Page
-elif page == "Resume Analyzer":
+if page == "Resume Analyzer":
     st.markdown("<div class='subtitle'>Resume Analyzer</div>", unsafe_allow_html=True)
-    uploaded_file = st.file_uploader("Upload your resume PDF", type="pdf")
 
-    if uploaded_file:
-        with st.spinner("Processing resume..."):
-            resume_text = extract_text_from_pdf(uploaded_file)
-            cleaned_resume = clean_text(resume_text)
+    # Allow users to upload multiple files
+    uploaded_files = st.file_uploader("Upload multiple resume PDFs", type="pdf", accept_multiple_files=True)
 
-            # Check for compulsory resume words
-            compulsory_words = ["skill"]
-            if not any(word.lower() in cleaned_resume for word in compulsory_words):
-                st.error("This does not appear to be a valid resume. Please upload a valid resume PDF.")
-            else:
-                # Vectorize resume text
-                resume_vector = vectorizer.transform([cleaned_resume])
+    # Check if any files are uploaded
+    if uploaded_files:
+        for uploaded_file in uploaded_files:
+            try:
+                st.write(f"Processing: {uploaded_file.name}")
 
-                # Find the Top 5 Matching Jobs
-                distances, indices = knn.kneighbors(resume_vector)
+                # Process each uploaded resume
+                with st.spinner(f"Processing {uploaded_file.name}..."):
+                    pdf_reader = PdfReader(uploaded_file)
+                    num_pages = len(pdf_reader.pages)
 
-                # Ensure we're always getting the top 5 jobs, even if fewer are found
-                num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+                    if num_pages > 2:
+                        st.error(f"The file {uploaded_file.name} has {num_pages} pages, which exceeds the maximum allowed limit of 2 pages, Please upload a resume with 1 or 2 pages.")
+                        continue  # Skip processing if the resume exceeds the page limit
+                        
+                    resume_text = extract_text_from_pdf(uploaded_file)
+                    cleaned_resume = clean_text(resume_text)
+                    compulsory_words = ["skill"]
+                    
+                    # Check if skills are mentioned in the resume
+                    if not any(word.lower() in cleaned_resume for word in compulsory_words):
+                        st.error("This does not appear to be a valid resume. Please upload a valid resume PDF.")
+                        continue  # Skip processing if skills are not found
+                    else:
+                        # Vectorizing resume text
+                        resume_vector = vectorizer.transform([cleaned_resume])
 
-                # Check if the number of indices is less than expected
-                top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
-                accuracy_scores = []
+                        # Find top 5 matching jobs using KNN
+                        distances, indices = knn.kneighbors(resume_vector)
 
-                # Display the top jobs and calculate accuracy
-                st.markdown("<div class='subtitle'>Top Matching Job Titles</div>", unsafe_allow_html=True)
+                        # Ensure we're always getting the top 5 jobs, even if fewer are found
+                        num_jobs = min(5, len(distances[0]))  # Use min to avoid index error
+                        top_5_jobs = df.iloc[indices[0][:num_jobs]]  # Slice to get only the available jobs
 
-                # Use neutral style for boxes
-                for i in range(num_jobs):  # Use num_jobs instead of iterating over indices directly
-                    job_index = indices[0][i]  # Get the job index
-                    score = 1 - distances[0][i]  # Calculate accuracy (1 - distance gives similarity score)
-                    accuracy_scores.append(score)
-                    job_row = df.iloc[job_index]  # Get the job details using the index
+                        st.markdown("---")  # Separator between different resumes
 
-                    # Box styling with neutral background
+            except Exception as e:
+                # Display error message for the specific file if any exception occurs
+                st.error(f"An error occurred while processing {uploaded_file.name}: {str(e)}")
+
+            # Only process job details if num_jobs is defined (i.e., skills were found and processing was successful)
+            if 'num_jobs' in locals():
+                # Box styling with neutral background for each job
+                for i in range(num_jobs):
+                    job_index = indices[0][i]
+                    score = 1 - distances[0][i]  # Calculate similarity score
+                    job_row = df.iloc[job_index]
+
+                    # Display job details inside the box without extra outside display
                     st.markdown(f"""
-                    <div style="
-                       /* Dark text for contrast */
-                        padding: 20px;
-                        margin: 10px;
-                        border-radius: 10px;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                        font-size: 1.1em;
-                    ">
-                        <strong>Job Title:</strong> {job_row['Job Title']}<br>
-                        <strong>Matched Skills:</strong> {job_row['Skills']}<br>
-                       
-                    </div>
+                        <div style="
+                            padding: 20px;
+                            margin: 10px;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            font-size: 1.1em;
+                           ">
+                            <strong>Job Title:</strong> {job_row['Job Title']}<br>
+                            <strong>Matched Skills:</strong> {job_row['Skills']}<br>
+                            <strong>Accuracy:</strong> {score:.2f}
+                        </div>
                     """, unsafe_allow_html=True)
 
                 # Pie chart visualization for the top job accuracy scores
                 labels = top_5_jobs['Job Title']
+                accuracy_scores = [score for score in distances[0][:num_jobs]]  # Use the calculated accuracy scores
+
+                # Convert accuracy scores to percentages
                 sizes = [score * 100 for score in accuracy_scores]  # Convert to percentage
                 colors = plt.cm.Paired.colors  # Color palette
 
@@ -455,31 +511,36 @@ elif page == "Resume Analyzer":
 
                 # CSS animation and styling for highlighting
                 st.markdown(f"""
-                <div style="
-                    font-size: 2em;
-                    font-weight: bold;
-                    color: #ff6347;  /* Tomato color for emphasis */
-                    text-align: center;
-                    animation: pulse 2s infinite;
-                ">
-                    Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
-                </div>
-
-                <style>
-                    @keyframes pulse {{
-                        0% {{ transform: scale(1); }}
-                        50% {{ transform: scale(1.1); }}
-                        100% {{ transform: scale(1); }}
-                    }}
-                </style>
+                    <div style="
+                        font-size: 2em;
+                        font-weight: bold;
+                        color: #ff6347;  /* Tomato color for emphasis */
+                        text-align: center;
+                        animation: pulse 2s infinite;
+                    ">
+                        Top Matching Job: <span style="color: #008080;">{top_job_name}</span>
+                    </div>
                 """, unsafe_allow_html=True)
 
                 # Add encouraging message
                 st.markdown("""
-                <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
-                <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
+                    <div class='subtitle' style="color:green;">Keep it up! You're on the right track to finding your dream job!</div>
+                    <p style="text-align:center;">By analyzing your resume, we've matched you with top roles based on your skills fit. Keep enhancing your skills and applying for opportunities!</p>
                 """, unsafe_allow_html=True)
 
+            # Reset num_jobs for the next resume
+            del num_jobs
+
+# External CSS for animation (not displayed in output)
+st.markdown("""
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 
 
@@ -520,9 +581,10 @@ if page == "Find Jobs":
         </ul>
     </div>
     """, unsafe_allow_html=True)
+    
     # Custom CSS for styling the page
     st.markdown("""
-    <style>  
+    <style>
     .j.job-portal-link {
     background-color: #ff1493;  /* Pink color */
     color: #fff;  /* White text for contrast */
@@ -573,8 +635,7 @@ if page == "Find Jobs":
     </style>
     """, unsafe_allow_html=True)
 
-   
-    
+
     # Create 3 columns for the links
     col1, col2, col3 = st.columns(3)
     
@@ -597,9 +658,6 @@ if page == "Find Jobs":
     st.markdown("<div class='encouragement'>Pro Tip: While applying, make sure to tailor your resume for each job. Highlight relevant skills, experiences, and achievements that align with the job description.</div>", unsafe_allow_html=True)
 
     st.markdown("<div class='encouragement'>Keep improving your skills and learning new ones. The right job is just around the corner!</div>", unsafe_allow_html=True)
-
-
-
 
 
 
@@ -705,26 +763,18 @@ if page == "Enhance Skills":
 .content {
     font-size: 18px;
     line-height: 1.6;
-  /* Dark color for better readability */
+    color: #333;  /* Dark color for better readability */
 }
     .content h3 {
         color: #333;
-        
+        font-size: 24px;
     }
     </style>
     """, unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-
-
         
+
+
+
 
 # Streamlit page for Contact Us
 if page == "Contact Us":
@@ -737,14 +787,22 @@ if page == "Contact Us":
     You can contact us using the following methods:
 
     - **Email**: [resumeanalyzerr@gmail.com](mailto:resumeanalyzerr@gmail.com)
+    - **Phone**: +91 7676346378
     """)
+
     # Custom CSS for better design and layout
     st.markdown("""
     <style>    
-        .stTextInput, .stTextArea {
-        margin-bottom: 20px;
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-
     </style>
     """, unsafe_allow_html=True)
 
