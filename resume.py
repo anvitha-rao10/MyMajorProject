@@ -1,6 +1,6 @@
 # Import necessary libraries
 from sklearn.metrics import accuracy_score  # For evaluating ML models
-from PyPDF2 import PdfReader  # For reading PDF files
+# from PyPDF2 import PdfReader  # For reading PDF files
 import PyPDF2  # Additional PDF handling
 import streamlit as st  # For building web applications
 import pandas as pd  # For data analysis and manipulation
